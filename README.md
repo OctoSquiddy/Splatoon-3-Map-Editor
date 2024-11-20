@@ -1,5 +1,5 @@
 # Splatoon 3 Map Editor
-A Stage Layout viewer for Splatoon 3! (Made using KillzX's Sample-Editor & Sheldon's Splatoon 2 Editor Fork)
+A Map Editor for Splatoon 3! (Made using KillzX's Sample-Editor & Sheldon's Splatoon 2 Editor Fork)
 
 
 ## Feel free to make pull requests about new features, changes, bug fixes etc.
