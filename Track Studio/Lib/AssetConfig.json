@@ -1,0 +1,1877 @@
+{
+  "IconSize": 108.14,
+  "Settings": {
+    "MapObject_Blowouts": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_BlowoutsWide": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_BombFlowerParent": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_CanBuildMachine": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_CoopSakeShipGoldenIkuraBox": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_CoopTurret": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_DObj_FldObj_MsnBossSafe": {
+      "Categories": []
+    },
+    "MapObject_DObj_BunkerMsn01": {
+      "Categories": [
+        "Favourite 2"
+      ]
+    },
+    "MapObject_DObj_BunkerMsn02": {
+      "Categories": [
+        "Favourite 2"
+      ]
+    },
+    "MapObject_DObj_TreeSlip": {
+      "Categories": [
+        "Favourite 2"
+      ]
+    },
+    "MapObject_DObj_TreeSlipNoCol": {
+      "Categories": [
+        "Favourite 2"
+      ]
+    },
+    "MapObject_EnemyBarrierTakopter": {
+      "Categories": [
+        "Favourite 4"
+      ]
+    },
+    "MapObject_EnemyBombTakopter": {
+      "Categories": [
+        "Favourite 4"
+      ]
+    },
+    "MapObject_EnemyBoostBombTakopter": {
+      "Categories": [
+        "Favourite 4"
+      ]
+    },
+    "MapObject_EnemyBoostTakopter": {
+      "Categories": [
+        "Favourite 4"
+      ]
+    },
+    "MapObject_EnemyCleaner": {
+      "Categories": [
+        "Favourite 4"
+      ]
+    },
+    "MapObject_EnemyEscape": {
+      "Categories": [
+        "Favourite 4"
+      ]
+    },
+    "MapObject_EnemyHohei": {
+      "Categories": [
+        "Favourite 4"
+      ]
+    },
+    "MapObject_EnemyStamp": {
+      "Categories": [
+        "Favourite 4"
+      ]
+    },
+    "MapObject_EnemyStampWave": {
+      "Categories": [
+        "Favourite 4"
+      ]
+    },
+    "MapObject_EnemyTakopodDEV": {
+      "Categories": [
+        "Favourite 4"
+      ]
+    },
+    "MapObject_EnemyTakopter": {
+      "Categories": [
+        "Favourite 4"
+      ]
+    },
+    "MapObject_GachihokoCheckPoint": {
+      "Categories": [
+        "Favourite 2"
+      ]
+    },
+    "MapObject_Geyser": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_GlassCage": {
+      "Categories": [
+        "Favourite 2"
+      ]
+    },
+    "MapObject_GlassCageSmall": {
+      "Categories": [
+        "Favourite 2"
+      ]
+    },
+    "MapObject_GrindRail": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_InkBar": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_KeyTreasureBox": {
+      "Categories": [
+        "Favourite 2"
+      ]
+    },
+    "MapObject_Lft_AsariSlope10": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_KebaInkCore_Big": {
+      "Categories": [
+        "Favourite"
+      ]
+    },
+    "MapObject_KebaInkCore_Small": {
+      "Categories": [
+        "Favourite"
+      ]
+    },
+    "MapObject_Lft_DecaCubeN30x60x60_Octa": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_FldObj_AlternaBoss02": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_FldObj_AlternaBoss03": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_FldObj_AlternaBoss04": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_FldObj_AlternaBoss04Move": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_FldObj_AlternaTree": {
+      "Categories": [
+        "Favourite 2"
+      ]
+    },
+    "MapObject_Lft_FldObj_CraterParts02_LiftWall": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_FldObj_CraterParts03_BoxUp03": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_FldObj_CraterParts03_WallDown": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_FldObj_CreterParts00": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_FldObj_CreterParts01": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_FldObj_CreterParts02": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_FldObj_CreterParts03": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_FldObj_GeneralBoxNoPaint_45x15x15_Blitz": {
+      "Categories": [
+        "Favourite 5"
+      ]
+    },
+    "MapObject_Lft_FldObj_GeneralBox_Upland_Blitz": {
+      "Categories": [
+        "Favourite 5"
+      ]
+    },
+    "MapObject_Lft_FldObj_MsnBossTreasurePedestal": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_FldObj_KumaRocketFloor": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_FldObj_MsnMoai": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_FldObj_MsnStartCreanRoom": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_FldObj_RocketFence60x30": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_FldObj_RocketFence60x60": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_FldObj_RocketGateDoor00": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_FldObj_RocketLift00": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_FldObj_RocketLift01": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_FldObj_RocketLiftRack00": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_FldObj_RocketLiftStage02": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_FldObj_RocketLiftStage01": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_FldObj_RocketLiftStage00": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_GeneralBoxHalfPaint_30x30x30_Blitz": {
+      "Categories": [
+        "Favourite 5"
+      ]
+    },
+    "MapObject_Lft_GeneralCube15x15x15NP": {
+      "Categories": [
+        "Favourite 5"
+      ]
+    },
+    "MapObject_Lft_GeneralCube15x15x15AP": {
+      "Categories": [
+        "Favourite 5"
+      ]
+    },
+    "MapObject_Lft_GeneralCube30x30x30NP": {
+      "Categories": [
+        "Favourite 5"
+      ]
+    },
+    "MapObject_Lft_GeneralCube60x60x15NP": {
+      "Categories": [
+        "Favourite 5"
+      ]
+    },
+    "MapObject_Lft_GeneralCube30x15x80AP": {
+      "Categories": [
+        "Favourite 5"
+      ]
+    },
+    "MapObject_Lft_GeneralCube30x30x15AP": {
+      "Categories": [
+        "Favourite 5"
+      ]
+    },
+    "MapObject_Lft_GeneralCube30x30x30AP": {
+      "Categories": [
+        "Favourite 5"
+      ]
+    },
+    "MapObject_Lft_GeneralSlope30x30x60AP": {
+      "Categories": [
+        "Favourite 5"
+      ]
+    },
+    "MapObject_Lft_MsnBlowoutsBaseCube40x20x20NP": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnCrossFloor180x15x180": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnCube10x30x10NP": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnCube105x15x3Fence": {
+      "Categories": [
+        "Favourite 2"
+      ]
+    },
+    "MapObject_Lft_MsnCube10x30x180NP": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnCube10x30x60NP": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnCube120x100x120AP": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnCube120x50x120AP": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnCube15x120x15NP": {
+      "Categories": [
+        "Favourite 2"
+      ]
+    },
+    "MapObject_Lft_MsnCube15x15x3Fence": {
+      "Categories": [
+        "Favourite 2"
+      ]
+    },
+    "MapObject_Lft_MsnCube165x15x3Fence": {
+      "Categories": [
+        "Favourite 2"
+      ]
+    },
+    "MapObject_Lft_MsnCube45x15x3Fence": {
+      "Categories": [
+        "Favourite 2"
+      ]
+    },
+    "MapObject_Lft_MsnCube20x25x20AP": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnCube30x30x10Glass": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnCube30x30x30AP": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnCube30x60x30XP": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnCube3x30x60Fence": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnCube3x60x60Fence": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnCube40x40x40AP": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnCube60x10x60Glass": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnCylinder15x15x15AP": {
+      "Categories": [
+        "Favourite 2"
+      ]
+    },
+    "MapObject_Lft_MsnCube90x90x10Glass": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnCube75x15x3Fence": {
+      "Categories": [
+        "Favourite 2"
+      ]
+    },
+    "MapObject_Lft_MsnCube60x90x15Glass": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnFloor180x15x180AP": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnFloor120x15x180AP": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnFloor120x15x120AP": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnEdge75x20x3Fence": {
+      "Categories": [
+        "Favourite 2"
+      ]
+    },
+    "MapObject_Lft_MsnEdge45x20x3Fence": {
+      "Categories": [
+        "Favourite 2"
+      ]
+    },
+    "MapObject_Lft_MsnEdge165x20x3Fence": {
+      "Categories": [
+        "Favourite 2"
+      ]
+    },
+    "MapObject_Lft_MsnEdge15x20x3Fence": {
+      "Categories": [
+        "Favourite 2"
+      ]
+    },
+    "MapObject_Lft_MsnEdge105x20x3Fence": {
+      "Categories": [
+        "Favourite 2"
+      ]
+    },
+    "MapObject_Lft_MsnCube60x40x60AP": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnCube60x60x10Glass": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnCube60x60x180AP": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnCube60x60x60AP": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnFloor300x15x300AP": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnFloor30x15x180AP": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnFloor30x3x30Fence": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnFloor360x15x180NP": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnFloor60x100x180AP": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnFloor60x15x120AP": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnFloor60x15x15TP": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnFloor60x15x180AP": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnFloor60x15x30AP": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnFloor60x15x60AP": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnFloor60x15x60NP": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnFloor90x3x30Fence": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnFloor90x15x90NP": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnFloor90x15x90AP": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnFloor90x15x180NP": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnFloor90x15x120AP": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnFloor60x5x60Fence": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnFloor60x5x40Fence": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnFloor60x3x30Fence": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnFloor60x15x90AP": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnFloor60x15x60TP": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnGateR150x180x20NP": {
+      "Categories": [
+        "Favourite"
+      ]
+    },
+    "MapObject_Lft_MsnGoalFloor180x30x90AP": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnGoalGateNP": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnHoleFloor180x15x180AP": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnHoleFloor300x15x300AP": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnOctagonFloor180x15x180AP": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnOctagonFloor240x15x240AP": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnOctagonFloor60x15x60AP": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnOctagonPiller120x180x120AP": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnOctagonPiller15x15x15AP": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnOctagonPiller15x60x15AP": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnPylamid15x15x30NP": {
+      "Categories": [
+        "Favourite 2"
+      ]
+    },
+    "MapObject_Lft_MsnPylamid15x15x15NP": {
+      "Categories": [
+        "Favourite 2"
+      ]
+    },
+    "MapObject_Lft_MsnPiller40x600x40NP": {
+      "Categories": [
+        "Favourite 2"
+      ]
+    },
+    "MapObject_Lft_MsnPedestal60x5x60AP": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnPedestal60x20x60AP": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnOctagonPiller60x180x60AP": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnOctagonPiller30x90x30NP": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnOctagonPiller30x90x30AP": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnOctagonPiller30x90x0NP": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnOctagonPiller30x30x30AP": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnOctagonPiller60x60x60AP": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnSlope150x60x30AP": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnSlope90x60x150AP": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnSlope60x60x150AP": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnTriangleFloor30x15x30": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnTriangleFloor60x15x60": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnTriangleFloor90x15x90": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_Obj_VendingMachine": {
+      "Categories": [
+        "Favourite 2"
+      ]
+    },
+    "MapObject_Lft_Shakeship00": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_UplandSculpture": {
+      "Categories": [
+        "Favourite"
+      ]
+    },
+    "MapObject_MissionGateway": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_MovePainterFixedDirection": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_Mpt_AsariSlope10": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Mpt_FldObj_AlternaTree": {
+      "Categories": [
+        "Favourite 2"
+      ]
+    },
+    "MapObject_Mpt_FldObj_CraterParts02_LiftWall": {
+      "Categories": [
+        "Favourite"
+      ]
+    },
+    "MapObject_NpcAmiiboAori": {
+      "Categories": [
+        "Favourite"
+      ]
+    },
+    "MapObject_NavigateAirBall": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_NavigateAirBall_Tutorial": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_Mpt_TicketGate00_Octa": {
+      "Categories": [
+        "Favourite"
+      ]
+    },
+    "MapObject_NpcAmiiboHime": {
+      "Categories": [
+        "Favourite"
+      ]
+    },
+    "MapObject_NpcAmiiboHotaru": {
+      "Categories": [
+        "Favourite"
+      ]
+    },
+    "MapObject_NpcAmiiboIida": {
+      "Categories": [
+        "Favourite"
+      ]
+    },
+    "MapObject_NpcIdolDanceA_Fsodr": {
+      "Categories": [
+        "Favourite"
+      ]
+    },
+    "MapObject_NpcIdolDanceB_Fsodr": {
+      "Categories": [
+        "Favourite"
+      ]
+    },
+    "MapObject_NpcLobbyJudge": {
+      "Categories": [
+        "Favourite"
+      ]
+    },
+    "MapObject_Obj_GoalMissionAlterna": {
+      "Categories": [
+        "Favourite 2"
+      ]
+    },
+    "MapObject_Obj_GoalMission": {
+      "Categories": [
+        "Favourite 2"
+      ]
+    },
+    "MapObject_Obj_MsnWallaBox15x8x15": {
+      "Categories": [
+        "Favourite"
+      ]
+    },
+    "MapObject_Obj_RespawnPos": {
+      "Categories": [
+        "Favourite 2"
+      ]
+    },
+    "MapObject_Obj_RollingCone": {
+      "Categories": [
+        "Favourite"
+      ]
+    },
+    "MapObject_Obj_SprinklerGimmick": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_Obj_SupplyPoint": {
+      "Categories": [
+        "Favourite 2"
+      ]
+    },
+    "MapObject_Obj_TicketGate": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Obj_YagaraBox00": {
+      "Categories": [
+        "Favourite"
+      ]
+    },
+    "MapObject_Obj_YagaraBox01": {
+      "Categories": [
+        "Favourite"
+      ]
+    },
+    "MapObject_Obj_YagaraBox02": {
+      "Categories": [
+        "Favourite"
+      ]
+    },
+    "MapObject_Obj_YagaraBox03": {
+      "Categories": [
+        "Favourite"
+      ]
+    },
+    "MapObject_Obj_YagaraBox04": {
+      "Categories": [
+        "Favourite"
+      ]
+    },
+    "MapObject_Obj_YagaraBox05": {
+      "Categories": [
+        "Favourite"
+      ]
+    },
+    "MapObject_PaintingLiftSlide12M": {
+      "Categories": [
+        "Favourite"
+      ]
+    },
+    "MapObject_PlayerCustomTricolNoroshi": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_Periscope": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_PaintingLiftSlide6M": {
+      "Categories": [
+        "Favourite"
+      ]
+    },
+    "MapObject_PlayerSpawner": {
+      "Categories": [
+        "Favourite"
+      ]
+    },
+    "MapObject_SplEnemyCharge": {
+      "Categories": [
+        "Favourite 4"
+      ]
+    },
+    "MapObject_SplEnemyChargeElite": {
+      "Categories": [
+        "Favourite 4"
+      ]
+    },
+    "MapObject_SplEnemySpinner": {
+      "Categories": [
+        "Favourite 4"
+      ]
+    },
+    "MapObject_SplWorldAgent3MakeObj": {
+      "Categories": [
+        "Favourite"
+      ]
+    },
+    "MapObject_SplWorldLotteryDroneObj": {
+      "Categories": [
+        "Favourite"
+      ]
+    },
+    "MapObject_Sponge": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_SpongeSmall": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_SpongeSmall_3p0_VS": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_SpongeSmall_VS": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_SpongeTall": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_SpongeTall_4p5_VS": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_Sponge_VS": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_StartPos": {
+      "Categories": [
+        "Favourite"
+      ]
+    },
+    "MapObject_StartPosForBigWorld": {
+      "Categories": [
+        "Favourite"
+      ]
+    },
+    "MapObject_StartPosForCoopBossRound": {
+      "Categories": [
+        "Favourite"
+      ]
+    },
+    "MapObject_StartPosForLaunchPadWorld": {
+      "Categories": [
+        "Favourite"
+      ]
+    },
+    "MapObject_StartPosTipsTrial": {
+      "Categories": []
+    },
+    "MapObject_SwitchPaint": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_SwitchPaintSmall": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_SpongeRectangle": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_RivalAppearPoint": {
+      "Categories": [
+        "Favourite",
+        "Favourite 6"
+      ]
+    },
+    "MapObject_ItemWeaponBuffDocument": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_ItemAncientDocument": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_DashPanel10": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_DashPanel10Ice": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_DashPanel30": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_PaintedArea_Cube": {
+      "Categories": [
+        "Favourite"
+      ]
+    },
+    "MapObject_PaintedArea_Cylinder": {
+      "Categories": [
+        "Favourite"
+      ]
+    },
+    "MapObject_AirBallParent": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_DObj_ChangeClothCoop": {
+      "Categories": [
+        "Favourite 2"
+      ]
+    },
+    "MapObject_DObj_ChangeClothLocal": {
+      "Categories": [
+        "Favourite 2"
+      ]
+    },
+    "MapObject_DObj_CraterTent": {
+      "Categories": [
+        "Favourite"
+      ]
+    },
+    "MapObject_MissionCheckPoint": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_MissionFirstCheckPoint": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_AirBall_IgnoreCulling": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_CoopEnemySakeCopter": {
+      "Categories": [
+        "Favourite 4"
+      ]
+    },
+    "MapObject_DObj_Bunker01": {
+      "Categories": [
+        "Favourite 2"
+      ]
+    },
+    "MapObject_DObj_Bunker02": {
+      "Categories": [
+        "Favourite 2"
+      ]
+    },
+    "MapObject_DObj_BunkerCliff01": {
+      "Categories": [
+        "Favourite 2"
+      ]
+    },
+    "MapObject_DObj_BunkerCliff02": {
+      "Categories": [
+        "Favourite 2"
+      ]
+    },
+    "MapObject_DObj_BunkerHalfWall01": {
+      "Categories": [
+        "Favourite 2"
+      ]
+    },
+    "MapObject_DObj_BunkerWall01": {
+      "Categories": [
+        "Favourite 2"
+      ]
+    },
+    "MapObject_DObj_BunkerWall02": {
+      "Categories": [
+        "Favourite 2"
+      ]
+    },
+    "MapObject_DObj_ManualCoop": {
+      "Categories": [
+        "Favourite 2"
+      ]
+    },
+    "MapObject_DObj_Minigame": {
+      "Categories": [
+        "Favourite 2"
+      ]
+    },
+    "MapObject_DObj_MinigameChairBlue": {
+      "Categories": [
+        "Favourite 2"
+      ]
+    },
+    "MapObject_DObj_ShiftBoardCoop": {
+      "Categories": []
+    },
+    "MapObject_DashPanelVertical": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_DashPanelVerticalStrong": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_DashPanelWall": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_EnemyFlyingHoheiMissile": {
+      "Categories": [
+        "Favourite 4"
+      ]
+    },
+    "MapObject_EnemyFlyingHoheiMother": {
+      "Categories": [
+        "Favourite 4"
+      ]
+    },
+    "MapObject_EnemyFlyingHohei": {
+      "Categories": [
+        "Favourite 4"
+      ]
+    },
+    "MapObject_EnemyFlyingHoheiMotherRide": {
+      "Categories": [
+        "Favourite 4"
+      ]
+    },
+    "MapObject_EnemyFlyingHoheiRide": {
+      "Categories": [
+        "Favourite 4"
+      ]
+    },
+    "MapObject_EnemyTakolienFixedBounceShieldVehicle": {
+      "Categories": [
+        "Favourite 4"
+      ]
+    },
+    "MapObject_EnemyTakolienFixedBounceVehicle": {
+      "Categories": [
+        "Favourite 4"
+      ]
+    },
+    "MapObject_EnemyTakolienEasyHideVehicle": {
+      "Categories": []
+    },
+    "MapObject_EnemyTakolienBounceVehicle": {
+      "Categories": [
+        "Favourite 4"
+      ]
+    },
+    "MapObject_EnemyTakolienBounceShieldVehicle": {
+      "Categories": [
+        "Favourite 4"
+      ]
+    },
+    "MapObject_EnemyTakolienBoostVehicle": {
+      "Categories": [
+        "Favourite 4"
+      ]
+    },
+    "MapObject_EnemyTakolienBoostShieldVehicle": {
+      "Categories": [
+        "Favourite 4"
+      ]
+    },
+    "MapObject_EnemyTakodozer": {
+      "Categories": [
+        "Favourite 4"
+      ]
+    },
+    "MapObject_EnemyTakoHopperHide": {
+      "Categories": [
+        "Favourite 4"
+      ]
+    },
+    "MapObject_EnemyTakoHopperFree": {
+      "Categories": [
+        "Favourite 4"
+      ]
+    },
+    "MapObject_EnemyTakoHopper": {
+      "Categories": [
+        "Favourite 4"
+      ]
+    },
+    "MapObject_EnemyTakolienEasyShieldVehicle": {
+      "Categories": [
+        "Favourite 4"
+      ]
+    },
+    "MapObject_EnemyTakolienEasyVehicle": {
+      "Categories": [
+        "Favourite 4"
+      ]
+    },
+    "MapObject_EnemyTakolienVehicle": {
+      "Categories": [
+        "Favourite 4"
+      ]
+    },
+    "MapObject_EnemyTakolienShieldVehicle": {
+      "Categories": [
+        "Favourite 4"
+      ]
+    },
+    "MapObject_EnemyTakolienHideVehicle": {
+      "Categories": [
+        "Favourite 4"
+      ]
+    },
+    "MapObject_EnemyTakolienFixedVehicle": {
+      "Categories": [
+        "Favourite 4"
+      ]
+    },
+    "MapObject_EnemyTakolienFixedShieldVehicle": {
+      "Categories": [
+        "Favourite 4"
+      ]
+    },
+    "MapObject_EnemyTakolienFixedEasyVehicle": {
+      "Categories": [
+        "Favourite 4"
+      ]
+    },
+    "MapObject_EnemyTakolienFixedEasyShieldVehicle": {
+      "Categories": [
+        "Favourite 4"
+      ]
+    },
+    "MapObject_EnemyUtsubox": {
+      "Categories": [
+        "Favourite 4"
+      ]
+    },
+    "MapObject_GeyserUnridable": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_GrindRailBigWorld": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_InkRail": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_InkRailBigWorld": {
+      "Categories": []
+    },
+    "MapObject_IntervalSpawnerForEnemyFlyingHohei": {
+      "Categories": [
+        "Favourite 4"
+      ]
+    },
+    "MapObject_IntervalSpawnerForEnemyFlyingHoheiMother": {
+      "Categories": [
+        "Favourite 4"
+      ]
+    },
+    "MapObject_IntervalSpawnerForMovePainter": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_ItemArmor": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_ItemArmorLastBoss": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_ItemCanInfinitySpecial_SuperHook": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_ItemCanSpecialBase": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_ItemCanSpecial_Blower": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_ItemCanSpecial_Chariot": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_ItemCanSpecial_InkStorm": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_ItemCanSpecial_Jetpack": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_ItemCanSpecial_MicroLaser": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_ItemCanSpecial_MultiMissile": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_ItemCanSpecial_ShockSonar": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_ItemCanSpecial_Skewer": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_ItemCanSpecial_SuperHook": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_ItemCanSpecial_SuperLanding": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_ItemCanSpecial_TripleTornado": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_ItemCanSpecial_UltraShot": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_ItemCanSpecial_UltraStamp": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_ItemCardKey": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_ItemFoodTicket": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_ItemIkura": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_ItemIkuraBottle": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_ItemIkuraLarge": {
+      "Categories": []
+    },
+    "MapObject_ItemInkBottle": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_JumpPanel": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_Lft_Bridge": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_CaviarCan": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_Lft_DitchTree": {
+      "Categories": [
+        "Favourite 2"
+      ]
+    },
+    "MapObject_Lft_FldObj_AlternaPoleSuccess": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_FldObj_GeneralBoxNoPaintDither15x15x15": {
+      "Categories": [
+        "Favourite 5"
+      ]
+    },
+    "MapObject_Lft_FldObj_GeneralBoxNoPaintDither30x15x15": {
+      "Categories": [
+        "Favourite 5"
+      ]
+    },
+    "MapObject_Lft_FldObj_GeneralSlope_60x30x60_Pivot": {
+      "Categories": [
+        "Favourite 5"
+      ]
+    },
+    "MapObject_Lft_FldObj_Hiagari03Area": {
+      "Categories": []
+    },
+    "MapObject_Lft_FldObj_RocketRotateBridge00": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_FldObj_RocketRotateBridge01": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_FldObj_RocketSlideWall00": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_FldObj_RocketVinylFloor30x60": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_FldObj_RocketVinylFloor60x60": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_FldObj_RocketVinylFloor60x60Box": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_FldObj_RocketVinylFloor90x60": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_FldObj_RubberPole00": {
+      "Categories": [
+        "Favourite 2"
+      ]
+    },
+    "MapObject_Lft_FldObj_UplandSculptureSingle": {
+      "Categories": [
+        "Favourite 2"
+      ]
+    },
+    "MapObject_Lft_GeneralCube30x30x15NP": {
+      "Categories": [
+        "Favourite 5"
+      ]
+    },
+    "MapObject_Lft_GeneralCube30x15x45AP": {
+      "Categories": [
+        "Favourite 5"
+      ]
+    },
+    "MapObject_Lft_GeneralCube30x15x30AP": {
+      "Categories": [
+        "Favourite 5"
+      ]
+    },
+    "MapObject_Lft_GeneralCube30x15x15NP": {
+      "Categories": [
+        "Favourite 5"
+      ]
+    },
+    "MapObject_Lft_GeneralCube30x15x15AP": {
+      "Categories": [
+        "Favourite 5"
+      ]
+    },
+    "MapObject_Lft_GeneralCube15x45x30NP": {
+      "Categories": [
+        "Favourite 5"
+      ]
+    },
+    "MapObject_Lft_GeneralCube15x30x15NP": {
+      "Categories": [
+        "Favourite 5"
+      ]
+    },
+    "MapObject_Lft_GeneralCube15x15x70NP": {
+      "Categories": [
+        "Favourite 5"
+      ]
+    },
+    "MapObject_Lft_GeneralCube30x30x45AP": {
+      "Categories": [
+        "Favourite 5"
+      ]
+    },
+    "MapObject_Lft_GeneralCube30x30x80AP": {
+      "Categories": [
+        "Favourite 5"
+      ]
+    },
+    "MapObject_Lft_GeneralCube30x45x15AP": {
+      "Categories": [
+        "Favourite 5"
+      ]
+    },
+    "MapObject_Lft_GeneralCube30x45x30AP": {
+      "Categories": [
+        "Favourite 5"
+      ]
+    },
+    "MapObject_Lft_GeneralCube30x45x30NP": {
+      "Categories": [
+        "Favourite 5"
+      ]
+    },
+    "MapObject_Lft_GeneralCube45x15x15AP": {
+      "Categories": [
+        "Favourite 5"
+      ]
+    },
+    "MapObject_Lft_GeneralCube60x30x45AP": {
+      "Categories": [
+        "Favourite 5"
+      ]
+    },
+    "MapObject_Lft_GeneralCube60x60x15AP": {
+      "Categories": [
+        "Favourite 5"
+      ]
+    },
+    "MapObject_Lft_GeneralSlope60x25x45AP": {
+      "Categories": [
+        "Favourite 5"
+      ]
+    },
+    "MapObject_Lft_GeneralSlope70x30x60AP": {
+      "Categories": [
+        "Favourite 5"
+      ]
+    },
+    "MapObject_Lft_GeneralSlope_60x30x60AP": {
+      "Categories": [
+        "Favourite 5"
+      ]
+    },
+    "MapObject_Lft_HokoSignBoard": {
+      "Categories": [
+        "Favourite 2"
+      ]
+    },
+    "MapObject_Lft_HokoSignBoard_Narrow": {
+      "Categories": [
+        "Favourite 2"
+      ]
+    },
+    "MapObject_Lft_IkanikeLongPivot": {
+      "Categories": [
+        "Favourite 2"
+      ]
+    },
+    "MapObject_Lft_IkanikePivot": {
+      "Categories": [
+        "Favourite 2"
+      ]
+    },
+    "MapObject_Lft_MsnCube60x60x60NP": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnFloor180x15x60AP": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnFloor180x15x90AP": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_Lft_MsnFloor180x40x60XP": {
+      "Categories": [
+        "Favourite 1"
+      ]
+    },
+    "MapObject_MissionBossGateway": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_MovePainterRailFollow": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_Obj_SupplyPointAuto": {
+      "Categories": [
+        "Favourite 2"
+      ]
+    },
+    "MapObject_Obj_SprinklerGimmick_TipsTrial": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_ShootingAirBall": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_ShootingNGAirBall": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_ShootingBoxL": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_ShootingBoxLHard": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_ShootingBoxLHard_EnemyBreakable": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_ShootingBoxL_EnemyBreakable": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_ShootingBoxS": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_ShootingBoxS_EnemyBreakable": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_SnakeBlock": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_SwitchPaintSmallEasy": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_SwitchShock": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_SwitchStep": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_TimeLimitStartArea": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_TimeLimitStop": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_WoodenBox": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_WoodenBoxHard": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_WoodenBoxHard_NG": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_WoodenBoxHard_SalmonRoe": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_WoodenBoxSmall": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_WoodenBoxSmall_SalmonRoe": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_WoodenBox_NG": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_WoodenBox_SalmonRoe": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    },
+    "MapObject_Lft_KeepOutEnemy": {
+      "Categories": [
+        "Favourite 6"
+      ]
+    },
+    "MapObject_Lft_KeepOutPlayer": {
+      "Categories": [
+        "Favourite 6"
+      ]
+    },
+    "MapObject_GeneralLocator": {
+      "Categories": [
+        "Favourite 6"
+      ]
+    },
+    "MapObject_RivalJumpTarget": {
+      "Categories": [
+        "Favourite 6"
+      ]
+    },
+    "MapObject_LocatorAreaSwitch": {
+      "Categories": [
+        "Favourite 6"
+      ]
+    },
+    "MapObject_SplAutoWarpPoint": {
+      "Categories": [
+        "Favourite 6"
+      ]
+    },
+    "MapObject_SplAutoWarpPointWithChangeScene": {
+      "Categories": [
+        "Favourite 6"
+      ]
+    },
+    "MapObject_Lft_AbstractBlitzCompatibles": {
+      "Categories": [
+        "Favourite 6"
+      ]
+    },
+    "MapObject_AerialRing": {
+      "Categories": [
+        "Favourite 3"
+      ]
+    }
+  }
+}
