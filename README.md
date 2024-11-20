@@ -5,6 +5,7 @@ A Stage Layout viewer for Splatoon 3! (Made using KillzX's Sample-Editor & Sheld
 - Logic (.ainb) reading/editing
 - Environment editor (FieldEnv, RenderingDay/Night, Ocean etc)
 
+## Feel free to make pull requests about new features, changes, bug fixes etc.
 
 ## Libraries
 - GLFrameworkEngine : A 3D engine used for manipulating 3D opengl data with gizmo tools, selection handling, ray casting, and much more. This also includes various helper classes to handle OpenGL easier.  
