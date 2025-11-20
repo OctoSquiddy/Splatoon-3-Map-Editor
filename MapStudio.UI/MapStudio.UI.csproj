@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
-    <Platforms>AnyCPU;x86</Platforms>
+    <Platforms>AnyCPU;x86;x64</Platforms>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <AssemblyName>MapStudioUI</AssemblyName>
     <RootNamespace>MapStudio.UI</RootNamespace>
@@ -26,6 +26,7 @@
 
   <ItemGroup>
     <PackageReference Include="Discord.Net.Webhook" Version="3.3.2" />
+    <PackageReference Include="Microsoft.Win32.Registry" Version="5.0.0" />
     <PackageReference Include="Octokit" Version="0.50.0" />
     <PackageReference Include="SharpEXR" Version="1.0.0.19" />
     <PackageReference Include="SixLabors.ImageSharp" Version="1.0.4" />

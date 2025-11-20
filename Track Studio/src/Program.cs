@@ -22,11 +22,7 @@ namespace MapStudio
             //Set global for method that compiles during debug building.
             IsDebugCheck(ref IS_DEBUG);
 
-            //Hide the console unless debugging
-         /*   if (!IS_DEBUG)
-                ConsoleWindowUtil.Hide();
-            else
-                ConsoleWindowUtil.Show();*/
+                ConsoleWindowUtil.Show();
 
             //Assembly searching from folders
             var domain = AppDomain.CurrentDomain;

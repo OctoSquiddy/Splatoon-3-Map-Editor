@@ -11,7 +11,7 @@ namespace ValueGetter
     {
         public static string GetModPath()
         {
-            return GlobalSettings.ModOutputPath;
+            return MapStudio.UI.GlobalSettings.Current != null ? MapStudio.UI.GlobalSettings.Current.Program.ModPath : null;
         }
     }
 }

@@ -96,6 +96,18 @@ namespace MapStudio.UI
         }
 
         /// <summary>
+        /// Migrates old theme settings to new defaults.
+        /// </summary>
+        public void MigrateTheme()
+        {
+            if (string.IsNullOrEmpty(Program.Theme) || Program.Theme == "DARK_BLUE_THEME" || Program.Theme == "WINDOWS11_THEME")
+            {
+                Program.Theme = "Midnight";
+                Save();
+            }
+        }
+
+        /// <summary>
         /// Reloads the current theme in the program.
         /// </summary>
         public void ReloadTheme()
@@ -199,7 +211,7 @@ namespace MapStudio.UI
 
         public class ProgramSettings
         {
-            public string Theme { get; set; } = "DARK_BLUE_THEME";
+            public string Theme { get; set; } = "Midnight";
 
             /// <summary>
             /// The language of the program.
@@ -210,6 +222,11 @@ namespace MapStudio.UI
             /// The font scale of the program.
             /// </summary>
             public float FontScale { get; set; } = 1.0f;
+
+            /// <summary>
+            /// The mod output path for saving.
+            /// </summary>
+            public string ModPath { get; set; } = "";
 
             /// <summary>
             /// Gets the current project directory.

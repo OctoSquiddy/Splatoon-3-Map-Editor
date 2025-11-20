@@ -10,28 +10,20 @@ using Toolbox.Core;
 
 namespace SampleMapEditor
 {
-    /// <summary>
-    /// Represents UI for the plugin which is currently showing in the Paths section of the main menu UI.
-    /// This is used to configure game paths.
-    /// </summary>
     public class PluginConfig : IPluginConfig
     {
-        //Only load the config once when this constructor is activated.
         internal static bool init = false;
 
         public PluginConfig() { init = true; }
 
-        /*[JsonProperty]
-        public static string GamePath = "";*/
+        [JsonProperty]
+        public static string S3GameVersion1 = "a";
 
         [JsonProperty]
-        public static int S3GameVersion1 = 3;
+        public static string S3GameVersion2 = "1";
 
         [JsonProperty]
-        public static int S3GameVersion2 = 1;
-
-        [JsonProperty]
-        public static int S3GameVersion3 = 0;
+        public static string S3GameVersion3 = "0";
 
         [JsonProperty]
         public static string S3GamePath = "";
@@ -45,77 +37,87 @@ namespace SampleMapEditor
         [JsonProperty]
         public static string S3ModPath = "";
 
-        /// <summary>
-        /// Renders the current configuration UI.
-        /// </summary>
+        [JsonProperty]
+        public static string ModPath = "";
+
         public void DrawUI()
         {
-            if (ImguiCustomWidgets.PathSelector("Splatoon 3", ref S3GamePath))
-            {
-                Save();
-            }
-            if (ImguiCustomWidgets.PathSelector("Splatoon 3: Inkopolis Plaza", ref S3IPPath))
-            {
-                Save();
-            }
-            if (ImguiCustomWidgets.PathSelector("Splatoon 3: Side Order", ref S3SDORPath))
-            {
-                Save();
-            }
-            if (ImguiCustomWidgets.PathSelector("Splatoon 3 File Saving Path", ref S3ModPath))
-            {
-                Save();
-            }
+            if (ImguiCustomWidgets.PathSelector("Splatoon 3", ref S3GamePath)) Save();
+            if (ImguiCustomWidgets.PathSelector("Splatoon 3: Inkopolis Plaza", ref S3IPPath)) Save();
+            if (ImguiCustomWidgets.PathSelector("Splatoon 3: Side Order", ref S3SDORPath)) Save();
+            if (ImguiCustomWidgets.PathSelector("Mod Saving Folder", ref ModPath)) Save();
         }
 
-        unsafe public void DrawInSettings()
+        public void DrawInSettings()
         {
-            int[] IntArr = { S3GameVersion1, S3GameVersion2, S3GameVersion3 };
 
-            fixed (int* arrayPtr = &IntArr[0])
+            byte[] buffer1 = new byte[8];
+            byte[] buffer2 = new byte[8];
+            byte[] buffer3 = new byte[8];
+
+            Array.Copy(System.Text.Encoding.ASCII.GetBytes(S3GameVersion1 ?? ""), buffer1, Math.Min(S3GameVersion1?.Length ?? 0, buffer1.Length));
+            Array.Copy(System.Text.Encoding.ASCII.GetBytes(S3GameVersion2 ?? ""), buffer2, Math.Min(S3GameVersion2?.Length ?? 0, buffer2.Length));
+            Array.Copy(System.Text.Encoding.ASCII.GetBytes(S3GameVersion3 ?? ""), buffer3, Math.Min(S3GameVersion3?.Length ?? 0, buffer3.Length));
+
+            bool changed = false;
+
+            ImGui.PushItemWidth(50); // Optional: control width of each input box
+
+            changed |= ImGui.InputText("##ver1", buffer1, (uint)buffer1.Length);
+            ImGui.SameLine();
+            changed |= ImGui.InputText("##ver2", buffer2, (uint)buffer2.Length);
+            ImGui.SameLine();
+            changed |= ImGui.InputText("##ver3", buffer3, (uint)buffer3.Length);
+
+            ImGui.PopItemWidth();
+
+            ImGui.SameLine();
+            ImGui.Text("Game Version");
+
+            if (changed)
             {
-                if (ImGui.InputScalarN("Game Version", ImGuiDataType.S32, (IntPtr)arrayPtr, 3))
-                {
-                    S3GameVersion1 = IntArr[0];
-                    S3GameVersion2 = IntArr[1];
-                    S3GameVersion3 = IntArr[2];
+                S3GameVersion1 = CleanInput(buffer1);
+                S3GameVersion2 = CleanInput(buffer2);
+                S3GameVersion3 = CleanInput(buffer3);
 
-                    Save();
-                }
+                Save();
             }
         }
 
-        /// <summary>
-        /// Loads the config json file on disc or creates a new one if it does not exist.
-        /// </summary>
-        /// <returns></returns>
-        public static PluginConfig Load() {
-            Console.WriteLine("Loading config...");
-            if (!File.Exists($"{Runtime.ExecutableDir}\\SampleMapEditorConfig.json")) { new PluginConfig().Save(); }
+        private static string CleanInput(byte[] buffer)
+        {
+            int len = Array.IndexOf(buffer, (byte)0);
+            if (len < 0) len = buffer.Length;
+            return System.Text.Encoding.ASCII.GetString(buffer, 0, len).Trim();
+        }
 
-            var config = JsonConvert.DeserializeObject<PluginConfig>(File.ReadAllText($"{Runtime.ExecutableDir}\\SampleMapEditorConfig.json"));
+        public static PluginConfig Load()
+        {
+            Console.WriteLine("Loading config...");
+            string path = $"{Runtime.ExecutableDir}\\SampleMapEditorConfig.json";
+
+            if (!File.Exists(path))
+                new PluginConfig().Save();
+
+            var config = JsonConvert.DeserializeObject<PluginConfig>(File.ReadAllText(path));
             config.Reload();
             return config;
         }
 
-        /// <summary>
-        /// Saves the current configuration to json on disc.
-        /// </summary>
-        public void Save() {
+        public void Save()
+        {
             Console.WriteLine("Saving config...");
             File.WriteAllText($"{Runtime.ExecutableDir}\\SampleMapEditorConfig.json", JsonConvert.SerializeObject(this));
             Reload();
         }
 
-        /// <summary>
-        /// Called when the config file has been loaded or saved.
-        /// </summary>
         public void Reload()
         {
             GlobalSettings.GamePath = S3GamePath;
             GlobalSettings.IPPath = S3IPPath;
             GlobalSettings.SDORPath = S3SDORPath;
             GlobalSettings.ModOutputPath = S3ModPath;
+            MapStudio.UI.GlobalSettings.Current.Program.ModPath = ModPath;
 
             GlobalSettings.S3GameVersion1 = S3GameVersion1;
             GlobalSettings.S3GameVersion2 = S3GameVersion2;

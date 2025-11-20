@@ -1,0 +1,20 @@
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Track Studio\bin\Release\net8.0\plugins\net8.0\Lib\Shaders\BFRES\Bfres.frag
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Track Studio\bin\Release\net8.0\plugins\net8.0\Lib\Shaders\BFRES\Bfres.vert
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Track Studio\bin\Release\net8.0\plugins\net8.0\Lib\Shaders\BFRES\BfresDebug.frag
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Track Studio\bin\Release\net8.0\plugins\net8.0\Lib\Shaders\BFRES\BfresDebug.vert
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Track Studio\bin\Release\net8.0\plugins\net8.0\x64\libzstd.dll
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Track Studio\bin\Release\net8.0\plugins\net8.0\x86\libzstd.dll
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Track Studio\bin\Release\net8.0\plugins\net8.0\SampleMapEditor.deps.json
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Track Studio\bin\Release\net8.0\plugins\net8.0\SampleMapEditor.dll
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Track Studio\bin\Release\net8.0\plugins\net8.0\SampleMapEditor.pdb
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Plugins\SampleMapEditor\obj\Release\net8.0\SampleMapEditor.csproj.AssemblyReference.cache
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Plugins\SampleMapEditor\obj\Release\net8.0\SampleMapEditor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Plugins\SampleMapEditor\obj\Release\net8.0\SampleMapEditor.AssemblyInfoInputs.cache
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Plugins\SampleMapEditor\obj\Release\net8.0\SampleMapEditor.AssemblyInfo.cs
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Plugins\SampleMapEditor\obj\Release\net8.0\SampleMapEditor.csproj.CoreCompileInputs.cache
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Plugins\SampleMapEditor\obj\Release\net8.0\SampleMapEditor.sourcelink.json
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Plugins\SampleMapEditor\obj\Release\net8.0\SampleMa.046AC256.Up2Date
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Plugins\SampleMapEditor\obj\Release\net8.0\SampleMapEditor.dll
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Plugins\SampleMapEditor\obj\Release\net8.0\refint\SampleMapEditor.dll
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Plugins\SampleMapEditor\obj\Release\net8.0\SampleMapEditor.pdb
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Plugins\SampleMapEditor\obj\Release\net8.0\ref\SampleMapEditor.dll

@@ -1,0 +1,19 @@
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor\Plugins\SampleMapEditor\obj\Debug\net5.0\SampleMapEditor.csproj.AssemblyReference.cache
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor\Plugins\SampleMapEditor\obj\Debug\net5.0\SampleMapEditor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor\Plugins\SampleMapEditor\obj\Debug\net5.0\SampleMapEditor.AssemblyInfoInputs.cache
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor\Plugins\SampleMapEditor\obj\Debug\net5.0\SampleMapEditor.AssemblyInfo.cs
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor\Plugins\SampleMapEditor\obj\Debug\net5.0\SampleMapEditor.csproj.CoreCompileInputs.cache
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor\Track Studio\bin\Debug\net5.0\plugins\net5.0\Lib\Shaders\BFRES\Bfres.frag
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor\Track Studio\bin\Debug\net5.0\plugins\net5.0\Lib\Shaders\BFRES\Bfres.vert
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor\Track Studio\bin\Debug\net5.0\plugins\net5.0\Lib\Shaders\BFRES\BfresDebug.frag
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor\Track Studio\bin\Debug\net5.0\plugins\net5.0\Lib\Shaders\BFRES\BfresDebug.vert
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor\Track Studio\bin\Debug\net5.0\plugins\net5.0\x64\libzstd.dll
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor\Track Studio\bin\Debug\net5.0\plugins\net5.0\x86\libzstd.dll
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor\Track Studio\bin\Debug\net5.0\plugins\net5.0\SampleMapEditor.deps.json
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor\Track Studio\bin\Debug\net5.0\plugins\net5.0\SampleMapEditor.dll
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor\Track Studio\bin\Debug\net5.0\plugins\net5.0\SampleMapEditor.pdb
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor\Plugins\SampleMapEditor\obj\Debug\net5.0\SampleMa.046AC256.Up2Date
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor\Plugins\SampleMapEditor\obj\Debug\net5.0\SampleMapEditor.dll
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor\Plugins\SampleMapEditor\obj\Debug\net5.0\refint\SampleMapEditor.dll
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor\Plugins\SampleMapEditor\obj\Debug\net5.0\SampleMapEditor.pdb
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor\Plugins\SampleMapEditor\obj\Debug\net5.0\ref\SampleMapEditor.dll

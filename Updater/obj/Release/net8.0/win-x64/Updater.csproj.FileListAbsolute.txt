@@ -1,0 +1,16 @@
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Track Studio\bin\Release\net8.0\win-x64\Updater.exe
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Track Studio\bin\Release\net8.0\win-x64\Updater.deps.json
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Track Studio\bin\Release\net8.0\win-x64\Updater.runtimeconfig.json
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Track Studio\bin\Release\net8.0\win-x64\Updater.dll
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Track Studio\bin\Release\net8.0\win-x64\Updater.pdb
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Updater\obj\Release\net8.0\win-x64\Updater.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Updater\obj\Release\net8.0\win-x64\Updater.AssemblyInfoInputs.cache
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Updater\obj\Release\net8.0\win-x64\Updater.AssemblyInfo.cs
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Updater\obj\Release\net8.0\win-x64\Updater.csproj.CoreCompileInputs.cache
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Updater\obj\Release\net8.0\win-x64\Updater.sourcelink.json
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Updater\obj\Release\net8.0\win-x64\Updater.csproj.Up2Date
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Updater\obj\Release\net8.0\win-x64\Updater.dll
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Updater\obj\Release\net8.0\win-x64\refint\Updater.dll
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Updater\obj\Release\net8.0\win-x64\Updater.pdb
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Updater\obj\Release\net8.0\win-x64\Updater.genruntimeconfig.cache
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Updater\obj\Release\net8.0\win-x64\ref\Updater.dll

@@ -9,9 +9,28 @@ using System.Net;
 using System.IO.Compression;
 using System.Diagnostics;
 using System.Threading;
+using Newtonsoft.Json;
 
 namespace MapStudio.UI
 {
+    /// <summary>
+    /// A helper class for downloading releases content
+    /// </summary>
+    public class CustomRelease
+    {
+        public string TagName { get; set; }
+        public string Name { get; set; }
+        public List<CustomAsset> Assets { get; set; } = new List<CustomAsset>();
+        public string TargetCommitish { get; set; }
+    }
+
+    public class CustomAsset
+    {
+        public string BrowserDownloadUrl { get; set; }
+        public string Name { get; set; }
+        public DateTime UpdatedAt { get; set; }
+    }
+
     /// <summary>
     /// A helper class for downloading releases content
     /// </summary>
@@ -22,10 +41,11 @@ namespace MapStudio.UI
         private static string _process_name = "";
         private static string _version_txt = "Version.txt";
 
-        private static Release[] releases;
+        private static CustomRelease[] releases;
 
         /// <summary>
         /// Prepares the updater with the repo owner, repo name, and process to target installing.
+        /// Or use a custom URL starting with https:// for custom server.
         /// </summary>
         public static void Setup(string owner, string repo, string versionTxt, string process = "")
         {
@@ -36,16 +56,25 @@ namespace MapStudio.UI
 
             //Get the current set of releases for the owner and repo
             ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
-            var client = new GitHubClient(new ProductHeaderValue("UpdaterTool"));
-            GetReleases(client).Wait();
+
+            if (_owner.StartsWith("https://"))
+            {
+                //Custom URL mode: assume owner is the URL to a JSON array of releases
+                GetReleasesCustom().Wait();
+            }
+            else
+            {
+                var client = new GitHubClient(new ProductHeaderValue("UpdaterTool"));
+                GetReleases(client).Wait();
+            }
         }
 
         /// <summary>
         /// Gets the first release instance of the github releases.
         /// </summary>
-        public Release GetRelease() => releases.FirstOrDefault();
+        public CustomRelease GetRelease() => releases.FirstOrDefault();
 
-        public static Release TryGetLatest(string folder, int assetIndex = 0)
+        public static CustomRelease TryGetLatest(string folder, int assetIndex = 0)
         {
             //Check the current version date
             string currentDate = GetRepoCompileDate(folder);
@@ -101,7 +130,7 @@ namespace MapStudio.UI
             }
         }
 
-        public static async Task DownloadRelease(string folder, Release release, int assetIndex, Action onFinished = null)
+        public static async Task DownloadRelease(string folder, CustomRelease release, int assetIndex, Action onFinished = null)
         {
             //ProgressBar progressBar = new ProgressBar();
 
@@ -126,9 +155,8 @@ namespace MapStudio.UI
                 Uri uri = new Uri(address);
                 await webClient.DownloadFileTaskAsync(uri, Path.Combine(folder,$"{name}.zip")).ConfigureAwait(false);
 
-             //   progressBar.Dispose();
+//   progressBar.Dispose();
 
-                Console.WriteLine($"");
 
                 ProcessLoading.Instance.Update(0, 100, $"Extracting update!", "Updater");
 
@@ -208,10 +236,26 @@ namespace MapStudio.UI
 
         static async Task GetReleases(GitHubClient client)
         {
-            List<Release> Releases = new List<Release>();
-            foreach (Release r in await client.Repository.Release.GetAll(_owner, _repo))
-                Releases.Add(r);
-            releases = Releases.ToArray();
+            var gitReleases = await client.Repository.Release.GetAll(_owner, _repo);
+            releases = gitReleases.Select(r => new CustomRelease
+            {
+                TagName = r.TagName,
+                Name = r.Name,
+                Assets = r.Assets.Select(a => new CustomAsset
+                {
+                    BrowserDownloadUrl = a.BrowserDownloadUrl,
+                    Name = a.Name,
+                    UpdatedAt = a.UpdatedAt.DateTime
+                }).ToList(),
+                TargetCommitish = r.TargetCommitish
+            }).ToArray();
+        }
+
+        static async Task GetReleasesCustom()
+        {
+            using var webClient = new WebClient();
+            string json = await webClient.DownloadStringTaskAsync(_owner);
+            releases = JsonConvert.DeserializeObject<CustomRelease[]>(json);
         }
 
         //
@@ -228,7 +272,7 @@ namespace MapStudio.UI
         }
 
         //Stores the current release information within a .txt file
-        static void WriteRepoVersion(string folder, Release release)
+        static void WriteRepoVersion(string folder, CustomRelease release)
         {
             using (StreamWriter writer = new StreamWriter(Path.Combine(folder,_version_txt)))
             {

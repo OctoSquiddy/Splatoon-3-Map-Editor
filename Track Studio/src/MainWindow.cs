@@ -13,21 +13,24 @@ using GLFrameworkEngine;
 using ImGuiNET;
 using System.Drawing.Printing;
 using ValueGetter;
+using System.Threading.Tasks;
+using Updater;
+using DiscordRPC;
 
 namespace MapStudio
 {
     public class MainWindow : UIFramework.MainWindow
     {
         /// <summary>
-        /// List of workspace windows used to load and edit file data.
+        /// List of workspaces used to load and edit file data.
         /// </summary>
         List<Workspace> Workspaces = new List<Workspace>();
         /// <summary>
         /// The recently opened files.
         /// </summary>
-        List<string> RecentFiles = new List<string>();
+        public List<string> RecentFiles = new List<string>();
         /// <summary>
-        /// The recently opened or saved project files.
+        /// The recently opened project files.
         /// </summary>
         List<string> RecentProjects = new List<string>();
         //Argument data from the command line
@@ -47,8 +50,10 @@ namespace MapStudio
         private bool showDemoWindow = false;
         //Settings window
         private SettingsWindow SettingsWindow;
-        //About Window
+        //About window
         private AboutWindow AboutWindow;
+        //Discord RPC
+        private DiscordRpcClient _discordClient;
 
         public MainWindow(Program.Arguments arguments)
         {
@@ -65,12 +70,16 @@ namespace MapStudio
 
             //Load global settings like language configuration
             GlobalSettings = GlobalSettings.Load();
+            GlobalSettings.MigrateTheme();
             GlobalSettings.ReloadLanguage();
             GlobalSettings.ReloadTheme();
 
+//Window will be normal, opening menu covers the client area
+
             SettingsWindow = new SettingsWindow(GlobalSettings);
-            AboutWindow = new AboutWindow();
             Windows.Add(SettingsWindow);
+
+            AboutWindow = new AboutWindow();
             Windows.Add(AboutWindow);
 
             //Set the adjustable global font scale
@@ -97,6 +106,60 @@ namespace MapStudio
 
             PluginSettingsUI = Toolbox.Core.FileManager.GetPluginSettings();
             SettingsWindow.PluginSettingsUI = PluginSettingsUI;
+
+            //Init Discord RPC
+            try
+            {
+                _discordClient = new DiscordRpcClient("1434256235888115722");
+                _discordClient.Initialize();
+                UpdateDiscordPresence();
+            }
+            catch
+            {
+                
+            }
+
+            // Check for updates on startup
+            Task.Run(() =>
+            {
+                try
+                {
+                    StudioLogger.WriteLine("Update check starting...");
+
+                    // If there's a downloaded update waiting, install it first
+                    if (Directory.Exists(Runtime.ExecutableDir + "\\latest"))
+                    {
+                        StudioLogger.WriteLine("Installing previously downloaded update...");
+                        JsonUpdaterHelper.Install(Runtime.ExecutableDir);
+                        StudioLogger.WriteLine("Update installed!");
+                    }
+
+                    JsonUpdaterHelper.Setup("https://ylwpnk.dev/mapeditor/update/releases.json", "MapStudio.exe");
+
+                    if (JsonUpdaterHelper.GetRemoteVersionInfo() != null)
+                    {
+                        var localVersion = JsonUpdaterHelper.GetLocalVersion(Runtime.ExecutableDir);
+                        var remoteVersion = JsonUpdaterHelper.GetRemoteVersionInfo()!.Version;
+                        if (Version.Parse(remoteVersion) > Version.Parse(localVersion ?? "0.0.0"))
+                        {
+                            int result = TinyFileDialog.MessageBoxInfoYesNo($"Found a new release: {remoteVersion}\nDo you want to update?");
+                            if (result == 1)
+                            {
+                                StudioLogger.WriteLine("Downloading update...");
+                                JsonUpdaterHelper.DownloadLatest(Runtime.ExecutableDir);
+                                TinyFileDialog.MessageBoxInfoOk($"Update downloaded! Application will close now.\nThe new update is in a new folder named latest.");
+                                _window.Exit(); // Restart app
+                            }
+                        }
+                        else
+                            StudioLogger.WriteLine("Build is up to date!");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    StudioLogger.WriteError($"Failed to check for updates: {ex.Message}");
+                }
+            });
         }
 
         public override void Render()
@@ -106,7 +169,7 @@ namespace MapStudio
             //Window spawn sizes
             var contentSize = ImGui.GetWindowSize();
 
-            //Show demo window for debugging UI 
+            //Show demo window for debugging UI
             if (showDemoWindow)
                 ImGui.ShowDemoWindow();
             //Show style editor for debugging styles
@@ -153,6 +216,10 @@ namespace MapStudio
             foreach (var window in Windows)
                 window.Show();
 
+            // Draw opening menu if no workspaces
+            if (Workspaces.Count == 0)
+                DrawOpeningMenu();
+
             //Show any pop up dialogs if active
             DialogHandler.RenderActiveWindows();
 
@@ -161,13 +228,56 @@ namespace MapStudio
                 ProcessLoading.Instance.Draw(_window.Width, _window.Height);
         }
 
-        #region MainMenuBar
+        private void DrawOpeningMenu()
+        {
+            if (!IconManager.HasIcon("TOOL_ICON"))
+                IconManager.AddIcon("TOOL_ICON", Properties.Resources.Icon, false);
+
+            // Center the content
+            var windowSize = ImGui.GetWindowSize();
+            var iconSize = new System.Numerics.Vector2(64, 64);
+            var iconPosX = (windowSize.X - iconSize.X) / 2;
+            var iconPosY = (windowSize.Y - iconSize.Y) / 2 - 50;
+
+            ImGui.SetCursorPos(new System.Numerics.Vector2(iconPosX, iconPosY));
+            ImGui.Image((IntPtr)IconManager.GetTextureIcon("TOOL_ICON"), iconSize);
+
+            var text = "Map Editor 4.1";
+            // Calculate text size with the scale
+            ImGui.SetWindowFontScale(2.0f);
+            var textSize = ImGui.CalcTextSize(text);
+            ImGui.SetWindowFontScale(1.0f);
+
+            var textPosX = (windowSize.X - textSize.X) / 2;
+            var textPosY = iconPosY + iconSize.Y + 20;
+
+            ImGui.SetCursorPos(new System.Numerics.Vector2(textPosX, textPosY));
+            ImGui.SetWindowFontScale(2.0f);
+            ImGui.TextColored(new System.Numerics.Vector4(1,1,1,1), text);
+            ImGui.SetWindowFontScale(1.0f);
+
+            var subText = "Made by OctoSquiddy, Updated by ylwpnk";
+            var subTextSize = ImGui.CalcTextSize(subText);
+            var subTextPosX = (windowSize.X - subTextSize.X) / 2;
+            var subTextPosY = textPosY + 50;
+
+            ImGui.SetCursorPos(new System.Numerics.Vector2(subTextPosX, subTextPosY));
+            ImGui.TextColored(new System.Numerics.Vector4(1,1,1,1), subText);
+        }
 
         public override void MainMenuDraw()
         {
             base.MainMenuDraw();
 
-            MapStudio.UI.ImGuiHelper.IncrementCursorPosX(20);
+            MapStudio.UI.ImGuiHelper.IncrementCursorPosX(15);
+
+            ImGui.SameLine();
+            ImGui.SetCursorPosX(ImGui.GetWindowWidth() - 120);
+            ImGui.PushStyleColor(ImGuiCol.Text, new System.Numerics.Vector4(0.45f, 0.53f, 0.85f, 1.0f));
+            if (ImGui.MenuItem("Join Discord")) { WebUtil.OpenURL("https://discord.gg/53fkXqqhZm"); }
+            ImGui.PopStyleColor(1);
+
+
 
             if (Workspace.ActiveWorkspace != null)
             {
@@ -204,6 +314,7 @@ namespace MapStudio
             }
         }
 
+
         private void Init()
         {
             MenuItems.Clear();
@@ -211,14 +322,11 @@ namespace MapStudio
             {
                 RenderItems = () =>
                 {
-                    //Improve the window popup for the "NEW" menu so the items aren't so small.
-                    //Todo improve this more
                     ImGui.SetNextWindowSize(new System.Numerics.Vector2(200, 24 * UIManager.CreateNewEditors.Count));
                 }
             };
-            // fileMenu.MenuItems.Add(new MenuItem($"NEW", IconManager.NEW_FILE_ICON) { RenderItems = LoadNewFileMenu });
             fileMenu.MenuItems.Add(new MenuItem($"OPEN", IconManager.OPEN_ICON, OpenFileWithDialog) { Shortcut = "Ctrl+O" });
-            fileMenu.MenuItems.Add(new MenuItem($"RECENT", ' ') { RenderItems = LoadRecentFiles });
+            fileMenu.MenuItems.Add(new MenuItem($"RECENT", ' ') { RenderItems = () => { ImGui.SetNextWindowSize(new System.Numerics.Vector2(1200, 800)); LoadRecentFiles(); } });
 
             SaveMenu = new MenuItem($"SAVE", IconManager.SAVE_ICON, () =>
             {
@@ -237,14 +345,13 @@ namespace MapStudio
             fileMenu.MenuItems.Add(SaveAsMenu);
             fileMenu.MenuItems.Add(SaveToModFolder);
             fileMenu.MenuItems.Add(new MenuItem("")); //splitter
-            fileMenu.MenuItems.Add(new MenuItem($"OPEN_PROJECT", IconManager.PROJECT_ICON, OpenProject));
-            fileMenu.MenuItems.Add(new MenuItem($"RECENT_PROJECTS", ' ') { RenderItems = LoadRecentProjects });
-            SaveProjectMenu = new MenuItem($"SAVE_PROJECT", ' ', SaveProject);
-            fileMenu.MenuItems.Add(SaveProjectMenu);
-            SaveAsProjectMenu = new MenuItem($"SAVE_PROJECT_AS", ' ', SaveProjectWithDialog);
-            fileMenu.MenuItems.Add(SaveAsProjectMenu);
+            // fileMenu.MenuItems.Add(new MenuItem($"OPEN_PROJECT", IconManager.PROJECT_ICON, OpenProject));
+            // fileMenu.MenuItems.Add(new MenuItem($"RECENT_PROJECTS", ' ') { RenderItems = LoadRecentProjects });
 
-            fileMenu.MenuItems.Add(new MenuItem("")); //splitter
+            SaveProjectMenu = new MenuItem($"SAVE_PROJECT", ' ', SaveProject);
+            // fileMenu.MenuItems.Add(SaveProjectMenu);
+            SaveAsProjectMenu = new MenuItem($"SAVE_PROJECT_AS", ' ', SaveProjectWithDialog);
+            // fileMenu.MenuItems.Add(SaveAsProjectMenu);
 
             fileMenu.MenuItems.Add(new MenuItem($"CLEAR_WORKSPACE", IconManager.DELETE_ICON, ClearWorkspace));
             fileMenu.MenuItems.Add(new MenuItem($"EXIT", ' ', () => { _window.Exit(); }));
@@ -256,25 +363,14 @@ namespace MapStudio
             var windowsMenu = new MenuItem("WINDOWS") { RenderItems = LoadWindowMenu };
             var pluginsMenu = new MenuItem("PLUGINS") { RenderItems = LoadPluginMenus };
             var helpMenu = new MenuItem("HELP");
-            helpMenu.MenuItems.Add(new MenuItem("CHECK_UPDATES", CheckUpdates));
-            helpMenu.MenuItems.Add(new MenuItem("DOCUMENTATION", OpenDocsOnline));
-            helpMenu.MenuItems.Add(new MenuItem("ABOUT", () =>
-            {
-                AboutWindow.Opened = !AboutWindow.Opened;
-            }));
-            helpMenu.MenuItems.Add(new MenuItem(""));
-            helpMenu.MenuItems.Add(new MenuItem("DONATE", WebUtil.OpenDonation));
 
-
-            
             MenuItems.Add(fileMenu);
-            MenuItems.Add(saveConfigMenu);
             MenuItems.Add(editMenu);
             MenuItems.Add(pathMenu);
             MenuItems.Add(settingsMenu);
-            MenuItems.Add(windowsMenu);
+            MenuItems.Add(new MenuItem("")); //splitter
             MenuItems.Add(pluginsMenu);
-            MenuItems.Add(helpMenu);
+            MenuItems.Add(new MenuItem("Credits", LoadAboutWindow));
 
             SaveMenu.Enabled = false;
             SaveAsMenu.Enabled = false;
@@ -287,8 +383,7 @@ namespace MapStudio
         {
             try
             {
-                //UpdaterHelper.Setup("MapStudioProject", "Track-Studio", "Version.txt", "TrackStudio.exe");
-                UpdaterHelper.Setup("Sheldon10095", "Splatoon-2-Stage-Layout-Editor", "Version.txt", "MapStudio.exe");
+                UpdaterHelper.Setup("https://ylwpnk.dev/mapeditor/update/releases.json", "", "Version.txt", "MapStudio.exe");
 
                 var release = UpdaterHelper.TryGetLatest(Runtime.ExecutableDir, 0);
                 if (release == null)
@@ -333,6 +428,11 @@ namespace MapStudio
             SettingsWindow.Opened = !SettingsWindow.Opened;
         }
 
+        private void LoadAboutWindow()
+        {
+            AboutWindow.Opened = !AboutWindow.Opened;
+        }
+
         private void LoadPluginMenus()
         {
             foreach (var plugin in PluginManager.LoadPlugins())
@@ -340,14 +440,16 @@ namespace MapStudio
                 ImGui.Text(plugin.PluginHandler.Name);
             }
         }
-            
+
         private void LoadRecentFiles()
         {
+            ImGui.PushItemWidth(-1.0f);
             foreach (var file in RecentFiles)
             {
                 if (ImGui.Selectable(file))
                     UIManager.ActionExecBeforeUIDraw = () => { LoadFileFormat(file); };
             }
+            ImGui.PopItemWidth();
         }
 
         private void LoadFileConfigMenu()
@@ -547,8 +649,6 @@ namespace MapStudio
             }
         }
 
-        #endregion
-
         private string GetWorkspaceID() {
             return Utils.RenameDuplicateString("Space", Workspaces.Select(x => x.ID).ToList());
         }
@@ -616,9 +716,11 @@ namespace MapStudio
             bool canSave = Workspace.ActiveWorkspace != null;
             SaveMenu.Enabled = canSave;
             SaveAsMenu.Enabled = canSave;
-            SaveToModFolder.Enabled = canSave && isModPathSet;
+            SaveToModFolder.Enabled = canSave && isModPathSet && Directory.Exists(ValueGetter.ValueGetter.GetModPath() ?? "");
             // SaveProjectMenu.Enabled = canSave;
             //  SaveAsProjectMenu.Enabled = canSave;
+
+            UpdateDiscordPresence();
         }
 
         private void ClearWorkspace()
@@ -657,6 +759,30 @@ namespace MapStudio
             OnWorkspaceChanged();
         }
 
+        private void UpdateDiscordPresence()
+        {
+            if (_discordClient == null) return;
+
+            if (Workspace.ActiveWorkspace != null && Workspace.ActiveWorkspace.ActiveEditor != null)
+            {
+                var fileFormat = Workspace.ActiveWorkspace.ActiveEditor.Root.Tag as Toolbox.Core.IFileFormat;
+                var filePath = fileFormat?.FileInfo?.FilePath;
+                if (!string.IsNullOrEmpty(filePath) && filePath.EndsWith(".pack.zs"))
+                {
+                    string fileName = Path.GetFileName(filePath);
+                    _discordClient.SetPresence(new RichPresence() { Details = "Editing Scene", State = fileName });
+                }
+                else
+                {
+                    _discordClient.SetPresence(new RichPresence() { Details = "Editing", State = Workspace.ActiveWorkspace.Name });
+                }
+            }
+            else
+            {
+                _discordClient.SetPresence(new RichPresence() { Details = "Idle" });
+            }
+        }
+
         public override void OnFileDrop(string filePath) => LoadFileFormat(filePath);
 
         public override void OnKeyDown(KeyboardKeyEventArgs e)
@@ -693,6 +819,12 @@ namespace MapStudio
                     OpenFileWithDialog();
                     return;
                 }
+                //Close About window with ESC
+                if (AboutWindow.Opened && e.Key == Key.Escape)
+                {
+                    AboutWindow.Opened = false;
+                    return;
+                }
             }
 
             Workspace.ActiveWorkspace?.OnKeyDown(state, e.IsRepeat);
@@ -708,6 +840,8 @@ namespace MapStudio
 
         public override void OnClosing(CancelEventArgs e)
         {
+            _discordClient?.Dispose();
+
             //Check if there is opened workspaces in the tool
             if (Workspaces.Count > 0)
             {

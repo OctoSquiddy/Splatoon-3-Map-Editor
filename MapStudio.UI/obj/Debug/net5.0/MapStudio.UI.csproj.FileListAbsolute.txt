@@ -1,0 +1,7 @@
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor\MapStudio.UI\obj\Debug\net5.0\MapStudio.UI.csproj.AssemblyReference.cache
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor\MapStudio.UI\obj\Debug\net5.0\MapStudio.UI.Properties.Resources.resources
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor\MapStudio.UI\obj\Debug\net5.0\MapStudio.UI.csproj.GenerateResource.cache
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor\MapStudio.UI\obj\Debug\net5.0\MapStudio.UI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor\MapStudio.UI\obj\Debug\net5.0\MapStudio.UI.AssemblyInfoInputs.cache
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor\MapStudio.UI\obj\Debug\net5.0\MapStudio.UI.AssemblyInfo.cs
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor\MapStudio.UI\obj\Debug\net5.0\MapStudio.UI.csproj.CoreCompileInputs.cache

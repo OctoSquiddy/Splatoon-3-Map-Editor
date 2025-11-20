@@ -1,3 +1,6 @@
+Version -  Map Editor 4.0
+:More Themes! :3
+Fixed not being able to enter 'a' into Game Version for 10.0.0
 Version 0.84 Beta
 IMPROVEMENT:Improved icon resolution for map objects in the asset viewer.
 BUG:Fixed the lap point reference not being selectable for map object UI.

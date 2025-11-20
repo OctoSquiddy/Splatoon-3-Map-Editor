@@ -14,9 +14,9 @@ namespace SampleMapEditor
         //public static Dictionary<int, ActorDefinition> ActorDatabase = new Dictionary<int, ActorDefinition>();    // use name instead
         public static Dictionary<string, ActorDefinition> ActorDatabase = new Dictionary<string, ActorDefinition>();
 
-        public static int S3GameVersion1 = 3;
-        public static int S3GameVersion2 = 1;
-        public static int S3GameVersion3 = 0;
+        public static string S3GameVersion1 = "a";
+        public static string S3GameVersion2 = "1";
+        public static string S3GameVersion3 = "0";
 
         public static string GamePath { get; set; }
 

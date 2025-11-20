@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "dgSpecHash": "fQLb59XEh1E=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\Toolbox.Core\\Toolbox.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\zach\\.nuget\\packages\\system.drawing.common\\5.0.2\\system.drawing.common.5.0.2.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1904",
+      "level": "Warning",
+      "message": "Package 'System.Drawing.Common' 5.0.2 has a known critical severity vulnerability, https://github.com/advisories/GHSA-rxg9-xrhp-64gj",
+      "projectPath": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\Toolbox.Core\\Toolbox.Core.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\Toolbox.Core\\Toolbox.Core.csproj",
+      "libraryId": "System.Drawing.Common",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.1"
+      ]
+    }
+  ]
+}

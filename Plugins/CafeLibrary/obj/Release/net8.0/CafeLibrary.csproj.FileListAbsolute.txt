@@ -1,0 +1,20 @@
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Track Studio\bin\Release\net8.0\plugins\net8.0\Lib\Shaders\BFRES\Bfres.frag
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Track Studio\bin\Release\net8.0\plugins\net8.0\Lib\Shaders\BFRES\Bfres.vert
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Track Studio\bin\Release\net8.0\plugins\net8.0\Lib\Shaders\BFRES\BfresDebug.frag
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Track Studio\bin\Release\net8.0\plugins\net8.0\Lib\Shaders\BFRES\BfresDebug.vert
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Track Studio\bin\Release\net8.0\plugins\net8.0\CafeLibrary.deps.json
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Track Studio\bin\Release\net8.0\plugins\net8.0\CafeLibrary.dll
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Track Studio\bin\Release\net8.0\plugins\net8.0\CafeLibrary.pdb
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Plugins\CafeLibrary\obj\Release\net8.0\CafeLibrary.csproj.AssemblyReference.cache
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Plugins\CafeLibrary\obj\Release\net8.0\CafeLibrary.Properties.Resources.resources
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Plugins\CafeLibrary\obj\Release\net8.0\CafeLibrary.csproj.GenerateResource.cache
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Plugins\CafeLibrary\obj\Release\net8.0\CafeLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Plugins\CafeLibrary\obj\Release\net8.0\CafeLibrary.AssemblyInfoInputs.cache
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Plugins\CafeLibrary\obj\Release\net8.0\CafeLibrary.AssemblyInfo.cs
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Plugins\CafeLibrary\obj\Release\net8.0\CafeLibrary.csproj.CoreCompileInputs.cache
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Plugins\CafeLibrary\obj\Release\net8.0\CafeLibrary.sourcelink.json
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Plugins\CafeLibrary\obj\Release\net8.0\CafeLibr.02E68240.Up2Date
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Plugins\CafeLibrary\obj\Release\net8.0\CafeLibrary.dll
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Plugins\CafeLibrary\obj\Release\net8.0\refint\CafeLibrary.dll
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Plugins\CafeLibrary\obj\Release\net8.0\CafeLibrary.pdb
+C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Plugins\CafeLibrary\obj\Release\net8.0\ref\CafeLibrary.dll
