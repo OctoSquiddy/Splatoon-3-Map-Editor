@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\Track Studio\\MapStudio.csproj": {}
+    "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\Track Studio\\MapStudio.csproj": {}
   },
   "projects": {
-    "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\GLFrameworkEngine\\GLFrameworkEngine.csproj": {
+    "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\GLFrameworkEngine\\GLFrameworkEngine.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\GLFrameworkEngine\\GLFrameworkEngine.csproj",
+        "projectUniqueName": "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\GLFrameworkEngine\\GLFrameworkEngine.csproj",
         "projectName": "GLFrameworkEngine",
-        "projectPath": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\GLFrameworkEngine\\GLFrameworkEngine.csproj",
+        "projectPath": "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\GLFrameworkEngine\\GLFrameworkEngine.csproj",
         "packagesPath": "C:\\Users\\zach\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\GLFrameworkEngine\\obj\\",
+        "outputPath": "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\GLFrameworkEngine\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "netstandard2.1": {
             "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\Toolbox.Core\\Toolbox.Core.csproj": {
-                "projectPath": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\Toolbox.Core\\Toolbox.Core.csproj"
+              "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\Toolbox.Core\\Toolbox.Core.csproj": {
+                "projectPath": "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\Toolbox.Core\\Toolbox.Core.csproj"
               }
             }
           }
@@ -83,14 +83,14 @@
         }
       }
     },
-    "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\MapStudio.UI\\MapStudio.UI.csproj": {
+    "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\MapStudio.UI\\MapStudio.UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\MapStudio.UI\\MapStudio.UI.csproj",
+        "projectUniqueName": "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\MapStudio.UI\\MapStudio.UI.csproj",
         "projectName": "MapStudioUI",
-        "projectPath": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\MapStudio.UI\\MapStudio.UI.csproj",
+        "projectPath": "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\MapStudio.UI\\MapStudio.UI.csproj",
         "packagesPath": "C:\\Users\\zach\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\MapStudio.UI\\obj\\",
+        "outputPath": "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\MapStudio.UI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -111,11 +111,11 @@
           "netstandard2.1": {
             "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\GLFrameworkEngine\\GLFrameworkEngine.csproj": {
-                "projectPath": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\GLFrameworkEngine\\GLFrameworkEngine.csproj"
+              "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\GLFrameworkEngine\\GLFrameworkEngine.csproj": {
+                "projectPath": "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\GLFrameworkEngine\\GLFrameworkEngine.csproj"
               },
-              "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\Toolbox.Core\\Toolbox.Core.csproj": {
-                "projectPath": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\Toolbox.Core\\Toolbox.Core.csproj"
+              "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\Toolbox.Core\\Toolbox.Core.csproj": {
+                "projectPath": "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\Toolbox.Core\\Toolbox.Core.csproj"
               }
             }
           }
@@ -185,14 +185,14 @@
         }
       }
     },
-    "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\Plugins\\CafeLibrary\\CafeLibrary.csproj": {
+    "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\Plugins\\CafeLibrary\\CafeLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\Plugins\\CafeLibrary\\CafeLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\Plugins\\CafeLibrary\\CafeLibrary.csproj",
         "projectName": "CafeLibrary",
-        "projectPath": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\Plugins\\CafeLibrary\\CafeLibrary.csproj",
+        "projectPath": "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\Plugins\\CafeLibrary\\CafeLibrary.csproj",
         "packagesPath": "C:\\Users\\zach\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\Plugins\\CafeLibrary\\obj\\",
+        "outputPath": "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\Plugins\\CafeLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -213,14 +213,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\GLFrameworkEngine\\GLFrameworkEngine.csproj": {
-                "projectPath": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\GLFrameworkEngine\\GLFrameworkEngine.csproj"
+              "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\GLFrameworkEngine\\GLFrameworkEngine.csproj": {
+                "projectPath": "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\GLFrameworkEngine\\GLFrameworkEngine.csproj"
               },
-              "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\MapStudio.UI\\MapStudio.UI.csproj": {
-                "projectPath": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\MapStudio.UI\\MapStudio.UI.csproj"
+              "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\MapStudio.UI\\MapStudio.UI.csproj": {
+                "projectPath": "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\MapStudio.UI\\MapStudio.UI.csproj"
               },
-              "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\Toolbox.Core\\Toolbox.Core.csproj": {
-                "projectPath": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\Toolbox.Core\\Toolbox.Core.csproj"
+              "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\Toolbox.Core\\Toolbox.Core.csproj": {
+                "projectPath": "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\Toolbox.Core\\Toolbox.Core.csproj"
               }
             }
           }
@@ -260,14 +260,14 @@
         }
       }
     },
-    "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\Plugins\\SampleMapEditor\\SampleMapEditor.csproj": {
+    "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\Plugins\\SampleMapEditor\\SampleMapEditor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\Plugins\\SampleMapEditor\\SampleMapEditor.csproj",
+        "projectUniqueName": "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\Plugins\\SampleMapEditor\\SampleMapEditor.csproj",
         "projectName": "SampleMapEditor",
-        "projectPath": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\Plugins\\SampleMapEditor\\SampleMapEditor.csproj",
+        "projectPath": "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\Plugins\\SampleMapEditor\\SampleMapEditor.csproj",
         "packagesPath": "C:\\Users\\zach\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\Plugins\\SampleMapEditor\\obj\\",
+        "outputPath": "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\Plugins\\SampleMapEditor\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -288,17 +288,17 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\GLFrameworkEngine\\GLFrameworkEngine.csproj": {
-                "projectPath": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\GLFrameworkEngine\\GLFrameworkEngine.csproj"
+              "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\GLFrameworkEngine\\GLFrameworkEngine.csproj": {
+                "projectPath": "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\GLFrameworkEngine\\GLFrameworkEngine.csproj"
               },
-              "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\MapStudio.UI\\MapStudio.UI.csproj": {
-                "projectPath": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\MapStudio.UI\\MapStudio.UI.csproj"
+              "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\MapStudio.UI\\MapStudio.UI.csproj": {
+                "projectPath": "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\MapStudio.UI\\MapStudio.UI.csproj"
               },
-              "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\Plugins\\CafeLibrary\\CafeLibrary.csproj": {
-                "projectPath": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\Plugins\\CafeLibrary\\CafeLibrary.csproj"
+              "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\Plugins\\CafeLibrary\\CafeLibrary.csproj": {
+                "projectPath": "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\Plugins\\CafeLibrary\\CafeLibrary.csproj"
               },
-              "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\Toolbox.Core\\Toolbox.Core.csproj": {
-                "projectPath": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\Toolbox.Core\\Toolbox.Core.csproj"
+              "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\Toolbox.Core\\Toolbox.Core.csproj": {
+                "projectPath": "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\Toolbox.Core\\Toolbox.Core.csproj"
               }
             }
           }
@@ -348,14 +348,14 @@
         }
       }
     },
-    "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\Toolbox.Core\\Toolbox.Core.csproj": {
+    "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\Toolbox.Core\\Toolbox.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\Toolbox.Core\\Toolbox.Core.csproj",
+        "projectUniqueName": "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\Toolbox.Core\\Toolbox.Core.csproj",
         "projectName": "Toolbox.Core",
-        "projectPath": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\Toolbox.Core\\Toolbox.Core.csproj",
+        "projectPath": "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\Toolbox.Core\\Toolbox.Core.csproj",
         "packagesPath": "C:\\Users\\zach\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\Toolbox.Core\\obj\\",
+        "outputPath": "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\Toolbox.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -419,14 +419,14 @@
         }
       }
     },
-    "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\Track Studio\\MapStudio.csproj": {
+    "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\Track Studio\\MapStudio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\Track Studio\\MapStudio.csproj",
+        "projectUniqueName": "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\Track Studio\\MapStudio.csproj",
         "projectName": "MapStudio",
-        "projectPath": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\Track Studio\\MapStudio.csproj",
+        "projectPath": "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\Track Studio\\MapStudio.csproj",
         "packagesPath": "C:\\Users\\zach\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\Track Studio\\obj\\",
+        "outputPath": "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\Track Studio\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -447,17 +447,17 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\GLFrameworkEngine\\GLFrameworkEngine.csproj": {
-                "projectPath": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\GLFrameworkEngine\\GLFrameworkEngine.csproj"
+              "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\GLFrameworkEngine\\GLFrameworkEngine.csproj": {
+                "projectPath": "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\GLFrameworkEngine\\GLFrameworkEngine.csproj"
               },
-              "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\MapStudio.UI\\MapStudio.UI.csproj": {
-                "projectPath": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\MapStudio.UI\\MapStudio.UI.csproj"
+              "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\MapStudio.UI\\MapStudio.UI.csproj": {
+                "projectPath": "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\MapStudio.UI\\MapStudio.UI.csproj"
               },
-              "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\Plugins\\SampleMapEditor\\SampleMapEditor.csproj": {
-                "projectPath": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\Plugins\\SampleMapEditor\\SampleMapEditor.csproj"
+              "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\Plugins\\SampleMapEditor\\SampleMapEditor.csproj": {
+                "projectPath": "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\Plugins\\SampleMapEditor\\SampleMapEditor.csproj"
               },
-              "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\Updater\\Updater.csproj": {
-                "projectPath": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\Updater\\Updater.csproj"
+              "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\Updater\\Updater.csproj": {
+                "projectPath": "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\Updater\\Updater.csproj"
               }
             }
           }
@@ -586,14 +586,14 @@
         }
       }
     },
-    "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\Updater\\Updater.csproj": {
+    "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\Updater\\Updater.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\Updater\\Updater.csproj",
+        "projectUniqueName": "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\Updater\\Updater.csproj",
         "projectName": "Updater",
-        "projectPath": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\Updater\\Updater.csproj",
+        "projectPath": "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\Updater\\Updater.csproj",
         "packagesPath": "C:\\Users\\zach\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\Updater\\obj\\",
+        "outputPath": "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\Updater\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\Toolbox.Core\\Toolbox.Core.csproj": {}
+    "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\Toolbox.Core\\Toolbox.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\Toolbox.Core\\Toolbox.Core.csproj": {
+    "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\Toolbox.Core\\Toolbox.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\Toolbox.Core\\Toolbox.Core.csproj",
+        "projectUniqueName": "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\Toolbox.Core\\Toolbox.Core.csproj",
         "projectName": "Toolbox.Core",
-        "projectPath": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\Toolbox.Core\\Toolbox.Core.csproj",
+        "projectPath": "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\Toolbox.Core\\Toolbox.Core.csproj",
         "packagesPath": "C:\\Users\\zach\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\Toolbox.Core\\obj\\",
+        "outputPath": "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\Toolbox.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

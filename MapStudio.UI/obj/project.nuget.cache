@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/3rTnuRAjhs=",
+  "dgSpecHash": "XxV5yWOVT2I=",
   "success": true,
-  "projectFilePath": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\MapStudio.UI\\MapStudio.UI.csproj",
+  "projectFilePath": "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\MapStudio.UI\\MapStudio.UI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\zach\\.nuget\\packages\\discord.net.core\\3.3.2\\discord.net.core.3.3.2.nupkg.sha512",
     "C:\\Users\\zach\\.nuget\\packages\\discord.net.rest\\3.3.2\\discord.net.rest.3.3.2.nupkg.sha512",
@@ -44,9 +44,9 @@
       "code": "NU1903",
       "level": "Warning",
       "message": "Package 'SixLabors.ImageSharp' 1.0.4 has a known high severity vulnerability, https://github.com/advisories/GHSA-2cmq-823j-5qj8",
-      "projectPath": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\MapStudio.UI\\MapStudio.UI.csproj",
+      "projectPath": "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\MapStudio.UI\\MapStudio.UI.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\MapStudio.UI\\MapStudio.UI.csproj",
+      "filePath": "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\MapStudio.UI\\MapStudio.UI.csproj",
       "libraryId": "SixLabors.ImageSharp",
       "targetGraphs": [
         ".NETStandard,Version=v2.1"
@@ -56,9 +56,9 @@
       "code": "NU1902",
       "level": "Warning",
       "message": "Package 'SixLabors.ImageSharp' 1.0.4 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-5x7m-6737-26cr",
-      "projectPath": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\MapStudio.UI\\MapStudio.UI.csproj",
+      "projectPath": "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\MapStudio.UI\\MapStudio.UI.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\MapStudio.UI\\MapStudio.UI.csproj",
+      "filePath": "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\MapStudio.UI\\MapStudio.UI.csproj",
       "libraryId": "SixLabors.ImageSharp",
       "targetGraphs": [
         ".NETStandard,Version=v2.1"
@@ -68,9 +68,9 @@
       "code": "NU1903",
       "level": "Warning",
       "message": "Package 'SixLabors.ImageSharp' 1.0.4 has a known high severity vulnerability, https://github.com/advisories/GHSA-63p8-c4ww-9cg7",
-      "projectPath": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\MapStudio.UI\\MapStudio.UI.csproj",
+      "projectPath": "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\MapStudio.UI\\MapStudio.UI.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\MapStudio.UI\\MapStudio.UI.csproj",
+      "filePath": "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\MapStudio.UI\\MapStudio.UI.csproj",
       "libraryId": "SixLabors.ImageSharp",
       "targetGraphs": [
         ".NETStandard,Version=v2.1"
@@ -80,9 +80,9 @@
       "code": "NU1903",
       "level": "Warning",
       "message": "Package 'SixLabors.ImageSharp' 1.0.4 has a known high severity vulnerability, https://github.com/advisories/GHSA-65x7-c272-7g7r",
-      "projectPath": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\MapStudio.UI\\MapStudio.UI.csproj",
+      "projectPath": "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\MapStudio.UI\\MapStudio.UI.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\MapStudio.UI\\MapStudio.UI.csproj",
+      "filePath": "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\MapStudio.UI\\MapStudio.UI.csproj",
       "libraryId": "SixLabors.ImageSharp",
       "targetGraphs": [
         ".NETStandard,Version=v2.1"
@@ -92,9 +92,9 @@
       "code": "NU1902",
       "level": "Warning",
       "message": "Package 'SixLabors.ImageSharp' 1.0.4 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-g85r-6x2q-45w7",
-      "projectPath": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\MapStudio.UI\\MapStudio.UI.csproj",
+      "projectPath": "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\MapStudio.UI\\MapStudio.UI.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\MapStudio.UI\\MapStudio.UI.csproj",
+      "filePath": "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\MapStudio.UI\\MapStudio.UI.csproj",
       "libraryId": "SixLabors.ImageSharp",
       "targetGraphs": [
         ".NETStandard,Version=v2.1"
@@ -104,9 +104,9 @@
       "code": "NU1902",
       "level": "Warning",
       "message": "Package 'SixLabors.ImageSharp' 1.0.4 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-qxrv-gp6x-rc23",
-      "projectPath": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\MapStudio.UI\\MapStudio.UI.csproj",
+      "projectPath": "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\MapStudio.UI\\MapStudio.UI.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\MapStudio.UI\\MapStudio.UI.csproj",
+      "filePath": "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\MapStudio.UI\\MapStudio.UI.csproj",
       "libraryId": "SixLabors.ImageSharp",
       "targetGraphs": [
         ".NETStandard,Version=v2.1"
@@ -116,9 +116,9 @@
       "code": "NU1902",
       "level": "Warning",
       "message": "Package 'SixLabors.ImageSharp' 1.0.4 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-rxmq-m78w-7wmc",
-      "projectPath": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\MapStudio.UI\\MapStudio.UI.csproj",
+      "projectPath": "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\MapStudio.UI\\MapStudio.UI.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\MapStudio.UI\\MapStudio.UI.csproj",
+      "filePath": "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\MapStudio.UI\\MapStudio.UI.csproj",
       "libraryId": "SixLabors.ImageSharp",
       "targetGraphs": [
         ".NETStandard,Version=v2.1"
@@ -128,9 +128,9 @@
       "code": "NU1904",
       "level": "Warning",
       "message": "Package 'System.Drawing.Common' 5.0.2 has a known critical severity vulnerability, https://github.com/advisories/GHSA-rxg9-xrhp-64gj",
-      "projectPath": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\MapStudio.UI\\MapStudio.UI.csproj",
+      "projectPath": "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\MapStudio.UI\\MapStudio.UI.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\MapStudio.UI\\MapStudio.UI.csproj",
+      "filePath": "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\MapStudio.UI\\MapStudio.UI.csproj",
       "libraryId": "System.Drawing.Common",
       "targetGraphs": [
         ".NETStandard,Version=v2.1"

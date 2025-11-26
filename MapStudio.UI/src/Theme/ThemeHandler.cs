@@ -82,7 +82,7 @@ namespace MapStudio.UI
             style.GrabMinSize = 3.7f;
             style.GrabRounding = 20.0f;
             ImGui.GetStyle().WindowPadding = new Vector2(4);
-            ImGui.GetStyle().FramePadding = new Vector2(ImGui.GetStyle().FramePadding.X + 2, ImGui.GetStyle().FramePadding.Y + 2);
+            ImGui.GetStyle().FramePadding = new Vector2(6, 5);
 
             ImGui.GetStyle().Colors[(int)ImGuiCol.Text] = theme.Text;
             ImGui.GetStyle().Colors[(int)ImGuiCol.WindowBg] = theme.WindowBg;

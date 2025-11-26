@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tV9oqtkFtlo=",
+  "dgSpecHash": "G2D2SRkKScU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\Plugins\\SampleMapEditor\\SampleMapEditor.csproj",
+  "projectFilePath": "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\Plugins\\SampleMapEditor\\SampleMapEditor.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\zach\\.nuget\\packages\\discord.net.core\\3.3.2\\discord.net.core.3.3.2.nupkg.sha512",
     "C:\\Users\\zach\\.nuget\\packages\\discord.net.rest\\3.3.2\\discord.net.rest.3.3.2.nupkg.sha512",

@@ -18,3 +18,23 @@ C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Plugins\CafeLibrar
 C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Plugins\CafeLibrary\obj\Debug\net8.0\refint\CafeLibrary.dll
 C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Plugins\CafeLibrary\obj\Debug\net8.0\CafeLibrary.pdb
 C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Plugins\CafeLibrary\obj\Debug\net8.0\ref\CafeLibrary.dll
+C:\Users\zach\Documents\GitHub\Splatoon-3-Map-Editor\Track Studio\bin\Debug\net8.0\plugins\net8.0\Lib\Shaders\BFRES\Bfres.frag
+C:\Users\zach\Documents\GitHub\Splatoon-3-Map-Editor\Track Studio\bin\Debug\net8.0\plugins\net8.0\Lib\Shaders\BFRES\Bfres.vert
+C:\Users\zach\Documents\GitHub\Splatoon-3-Map-Editor\Track Studio\bin\Debug\net8.0\plugins\net8.0\Lib\Shaders\BFRES\BfresDebug.frag
+C:\Users\zach\Documents\GitHub\Splatoon-3-Map-Editor\Track Studio\bin\Debug\net8.0\plugins\net8.0\Lib\Shaders\BFRES\BfresDebug.vert
+C:\Users\zach\Documents\GitHub\Splatoon-3-Map-Editor\Track Studio\bin\Debug\net8.0\plugins\net8.0\CafeLibrary.deps.json
+C:\Users\zach\Documents\GitHub\Splatoon-3-Map-Editor\Track Studio\bin\Debug\net8.0\plugins\net8.0\CafeLibrary.dll
+C:\Users\zach\Documents\GitHub\Splatoon-3-Map-Editor\Track Studio\bin\Debug\net8.0\plugins\net8.0\CafeLibrary.pdb
+C:\Users\zach\Documents\GitHub\Splatoon-3-Map-Editor\Plugins\CafeLibrary\obj\Debug\net8.0\CafeLibrary.csproj.AssemblyReference.cache
+C:\Users\zach\Documents\GitHub\Splatoon-3-Map-Editor\Plugins\CafeLibrary\obj\Debug\net8.0\CafeLibrary.Properties.Resources.resources
+C:\Users\zach\Documents\GitHub\Splatoon-3-Map-Editor\Plugins\CafeLibrary\obj\Debug\net8.0\CafeLibrary.csproj.GenerateResource.cache
+C:\Users\zach\Documents\GitHub\Splatoon-3-Map-Editor\Plugins\CafeLibrary\obj\Debug\net8.0\CafeLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zach\Documents\GitHub\Splatoon-3-Map-Editor\Plugins\CafeLibrary\obj\Debug\net8.0\CafeLibrary.AssemblyInfoInputs.cache
+C:\Users\zach\Documents\GitHub\Splatoon-3-Map-Editor\Plugins\CafeLibrary\obj\Debug\net8.0\CafeLibrary.AssemblyInfo.cs
+C:\Users\zach\Documents\GitHub\Splatoon-3-Map-Editor\Plugins\CafeLibrary\obj\Debug\net8.0\CafeLibrary.csproj.CoreCompileInputs.cache
+C:\Users\zach\Documents\GitHub\Splatoon-3-Map-Editor\Plugins\CafeLibrary\obj\Debug\net8.0\CafeLibrary.sourcelink.json
+C:\Users\zach\Documents\GitHub\Splatoon-3-Map-Editor\Plugins\CafeLibrary\obj\Debug\net8.0\CafeLibr.02E68240.Up2Date
+C:\Users\zach\Documents\GitHub\Splatoon-3-Map-Editor\Plugins\CafeLibrary\obj\Debug\net8.0\CafeLibrary.dll
+C:\Users\zach\Documents\GitHub\Splatoon-3-Map-Editor\Plugins\CafeLibrary\obj\Debug\net8.0\refint\CafeLibrary.dll
+C:\Users\zach\Documents\GitHub\Splatoon-3-Map-Editor\Plugins\CafeLibrary\obj\Debug\net8.0\CafeLibrary.pdb
+C:\Users\zach\Documents\GitHub\Splatoon-3-Map-Editor\Plugins\CafeLibrary\obj\Debug\net8.0\ref\CafeLibrary.dll

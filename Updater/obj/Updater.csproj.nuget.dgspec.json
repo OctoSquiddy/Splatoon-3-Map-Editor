@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\Updater\\Updater.csproj": {}
+    "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\Updater\\Updater.csproj": {}
   },
   "projects": {
-    "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\Updater\\Updater.csproj": {
+    "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\Updater\\Updater.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\Updater\\Updater.csproj",
+        "projectUniqueName": "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\Updater\\Updater.csproj",
         "projectName": "Updater",
-        "projectPath": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\Updater\\Updater.csproj",
+        "projectPath": "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\Updater\\Updater.csproj",
         "packagesPath": "C:\\Users\\zach\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\Updater\\obj\\",
+        "outputPath": "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\Updater\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

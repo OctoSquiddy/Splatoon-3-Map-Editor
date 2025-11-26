@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1IaAgbQ7718=",
+  "dgSpecHash": "6qObAoldSek=",
   "success": true,
-  "projectFilePath": "C:\\Users\\zach\\Desktop\\MapEditor-Fork\\MapEditor-Updated\\source\\Track Studio\\MapStudio.csproj",
+  "projectFilePath": "C:\\Users\\zach\\Documents\\GitHub\\Splatoon-3-Map-Editor\\Track Studio\\MapStudio.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\zach\\.nuget\\packages\\discord.net.core\\3.3.2\\discord.net.core.3.3.2.nupkg.sha512",
     "C:\\Users\\zach\\.nuget\\packages\\discord.net.rest\\3.3.2\\discord.net.rest.3.3.2.nupkg.sha512",
