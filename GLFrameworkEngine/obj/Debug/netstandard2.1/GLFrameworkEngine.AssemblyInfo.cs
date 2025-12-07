@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GLFrameworkEngine")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6f3798075d430ede24712d465d4e8373bdbb4ac5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bb9162f404539158f9c9a0ea6f0bd04d74f1b153")]
 [assembly: System.Reflection.AssemblyProductAttribute("GLFrameworkEngine")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GLFrameworkEngine")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -57,9 +57,7 @@ namespace MapStudio.UI
 
         }
 
-        /// <summary>
-        /// Updates the current theme of the application.
-        /// </summary>
+
         public static void UpdateTheme(ThemeHandler theme)
         {
             Theme = theme;
@@ -127,14 +125,8 @@ namespace MapStudio.UI
 
             Themes.Clear();
 
-            // Add built-in themes
-            Themes.Add(new LightTheme());
-            Themes.Add(new DarkTheme());
             Themes.Add(new DarkBlueTheme());
-            Themes.Add(new UE4Theme());
-            Themes.Add(new Windows11Theme());
 
-            // Load custom themes from files
             foreach (var theme in Directory.GetFiles(folder))
             {
                 Themes.Add(JsonConvert.DeserializeObject<ThemeHandler>(File.ReadAllText(theme)));
@@ -158,95 +150,9 @@ namespace MapStudio.UI
         }
     }
 
-    /// <summary>
-    /// A standard light theme.
-    /// </summary>
-    public class LightTheme : ThemeHandler
-    {
-        public override string Name { get; set; } = "LIGHT_THEME";
-
-        public LightTheme()
-        {
-            Text = new Vector4(0, 0, 0, 1.00f);
-            WindowBg = new Vector4(0.91f, 0.91f, 0.91f, 0.94f);
-            ChildBg = new Vector4(0, 0, 0, 0.00f);
-            Border = new Vector4(0.80f, 0.80f, 0.80f, 0.50f);
-            PopupBg = new Vector4(1, 1, 1, 0.94f);
-            FrameBg = new Vector4(1, 1, 1, 1);
-            FrameBgActive = new Vector4(0.5f, 0.5f, 0.5f, 0.67f);
-            TitleBg = new Vector4(0.85f, 0.85f, 0.85f, 1.000f);
-            TitleBgActive = new Vector4(0.84f, 0.84f, 0.84f, 1.00f);
-            CheckMark = new Vector4(0.37f, 0.53f, 0.71f, 1.00f);
-            ButtonActive = new Vector4(0.34f, 0.54f, 1, 1.00f);
-            Button = new Vector4(0.75f, 0.75f, 0.75f, 1.00f);
-            Header = new Vector4(0.7f, 0.7f, 0.7f, 0.31f);
-            HeaderHovered = new Vector4(0.7f, 0.7f, 0.7f, 0.80f);
-            HeaderActive = new Vector4(0.7f, 0.7f, 0.7f, 1.00f);
-            SeparatorHovered = new Vector4(0.82f, 0.82f, 0.82f, 0.78f);
-            SeparatorActive = new Vector4(0.53f, 0.53f, 0.53f, 1.00f);
-            Separator = new Vector4(0.85f, 0.85f, 0.85f, 1.00f);
-            Tab = new Vector4(1, 1, 1, 0.86f);
-            TabHovered = new Vector4(0.9f, 0.9f, 0.9f, 0.80f);
-            TabActive = new Vector4(0.9f, 0.9f, 0.9f, 1.00f);
-            TabUnfocused = new Vector4(0.9f, 0.9f, 0.9f, 0.98f);
-            TabUnfocusedActive = new Vector4(0.9f, 0.9f, 0.9f, 1.00f);
-            DockingPreview = new Vector4(0.6f, 0.6f, 0.6f, 0.70f);
-            DockingEmptyBg = new Vector4(0.65f, 0.65f, 0.65f, 0.70f);
-            TextSelectedBg = new Vector4(0.24f, 0.45f, 0.68f, 0.35f);
-            NavHighlight = new Vector4(0.4f, 0.4f, 0.4f, 0);
-            Error = new Vector4(1f, 0.3f, 0.3f, 1.0f);
-            Warning = new Vector4(1, 1, 0.3f, 1.0f);
-        }
-    }
-
-    /// <summary>
-    /// A standard dark theme.
-    /// </summary>
-    public class DarkTheme : ThemeHandler
-    {
-        public override string Name { get; set; } = "DARK_THEME";
-
-        public DarkTheme()
-        {
-            Text = new Vector4(0.95f, 0.95f, 0.95f, 1.00f);
-            WindowBg = new Vector4(0.23f, 0.23f, 0.23f, 0.94f);
-            ChildBg = new Vector4(0.20f, 0.20f, 0.20f, 0.50f);
-            Border = new Vector4(0.15f, 0.15f, 0.15f, 0.50f);
-            PopupBg = new Vector4(0.25f, 0.25f, 0.25f, 0.94f);
-            FrameBg = new Vector4(0.15f, 0.15f, 0.15f, 0.60f);
-            FrameBgHovered = new Vector4(0.25f, 0.25f, 0.25f, 0.60f);
-            FrameBgActive = new Vector4(0.35f, 0.35f, 0.35f, 0.67f);
-            TitleBg = new Vector4(0.18f, 0.18f, 0.18f, 1.000f);
-            TitleBgActive = new Vector4(0.25f, 0.25f, 0.25f, 1.00f);
-            CheckMark = new Vector4(0.6f, 0.7f, 0.9f, 1.00f);
-            ButtonActive = new Vector4(0.38f, 0.58f, 0.98f, 1.00f);
-            Button = new Vector4(0.28f, 0.28f, 0.28f, 1.00f);
-            Header = new Vector4(0.38f, 0.38f, 0.38f, 0.31f);
-            HeaderHovered = new Vector4(0.48f, 0.48f, 0.48f, 0.80f);
-            HeaderActive = new Vector4(0.58f, 0.58f, 0.58f, 1.00f);
-            SeparatorHovered = new Vector4(0.65f, 0.65f, 0.65f, 0.78f);
-            SeparatorActive = new Vector4(0.85f, 0.85f, 0.85f, 1.00f);
-            Separator = new Vector4(0.45f, 0.45f, 0.45f, 1.00f);
-            Tab = new Vector4(0.20f, 0.20f, 0.20f, 0.86f);
-            TabHovered = new Vector4(0.26f, 0.26f, 0.26f, 0.80f);
-            TabActive = new Vector4(0.32f, 0.32f, 0.32f, 1.00f);
-            TabUnfocused = new Vector4(0.18f, 0.18f, 0.18f, 0.98f);
-            TabUnfocusedActive = new Vector4(0.28f, 0.28f, 0.28f, 1.00f);
-            DockingPreview = new Vector4(0.43f, 0.63f, 0.98f, 0.70f);
-            DockingEmptyBg = new Vector4(0.15f, 0.15f, 0.15f, 1.00f);
-            TextSelectedBg = new Vector4(0.38f, 0.58f, 0.98f, 0.35f);
-            NavHighlight = new Vector4(0.38f, 0.58f, 0.98f, 0.30f);
-            Error = new Vector4(0.98f, 0.38f, 0.38f, 1.0f);
-            Warning = new Vector4(0.98f, 0.98f, 0.38f, 1.0f);
-        }
-    }
-
-    /// <summary>
-    /// A nicely dark blue theme.
-    /// </summary>
     public class DarkBlueTheme : ThemeHandler
     {
-        public override string Name { get; set; } = "DARK_BLUE_THEME";
+        public override string Name { get; set; } = "Dark Blue";
 
         public DarkBlueTheme()
         {
@@ -279,88 +185,6 @@ namespace MapStudio.UI
             NavHighlight = new Vector4(0.26f, 0.66f, 1.00f, 0);
             Error = new Vector4(1f, 0.3f, 0.3f, 1.0f);
             Warning = new Vector4(1, 1, 0.3f, 1.0f);
-        }
-    }
-
-    /// <summary>
-    /// A theme somewhat based on UE4.
-    /// </summary>
-    public class UE4Theme : ThemeHandler
-    {
-        public override string Name { get; set; } = "UE4_THEME";
-
-        public UE4Theme()
-        {
-            Text = new Vector4(1.00f, 1.00f, 1.00f, 1.00f);
-            WindowBg = new Vector4(0.06f, 0.06f, 0.06f, 0.94f);
-            ChildBg = new Vector4(1.00f, 1.00f, 1.00f, 0.00f);
-            Border = new Vector4(0.43f, 0.43f, 0.50f, 0.50f);
-            PopupBg = new Vector4(0.08f, 0.08f, 0.08f, 0.94f);
-            FrameBg = new Vector4(0.20f, 0.21f, 0.22f, 0.54f);
-            FrameBgActive = new Vector4(0.18f, 0.18f, 0.18f, 0.67f);
-            TitleBg = new Vector4(0.04f, 0.04f, 0.04f, 1.00f);
-            TitleBgActive = new Vector4(0.29f, 0.29f, 0.29f, 1.00f);
-            CheckMark = new Vector4(0.37f, 0.53f, 0.71f, 1.00f);
-            ButtonActive = new Vector4(0.53f, 0.54f, 0.54f, 1.00f);
-            Button = new Vector4(0.24f, 0.24f, 0.24f, 1.00f);
-            Header = new Vector4(0.37f, 0.37f, 0.37f, 0.31f);
-            HeaderHovered = new Vector4(0.46f, 0.46f, 0.46f, 0.80f);
-            HeaderActive = new Vector4(0.25f, 0.25f, 0.25f, 1.00f);
-            SeparatorHovered = new Vector4(0.82f, 0.82f, 0.82f, 0.78f);
-            SeparatorActive = new Vector4(0.53f, 0.53f, 0.53f, 1.00f);
-            Separator = new Vector4(0.21f, 0.21f, 0.21f, 1.00f);
-            Tab = new Vector4(0.16f, 0.16f, 0.16f, 0.86f);
-            TabHovered = new Vector4(0.22f, 0.22f, 0.22f, 0.80f);
-            TabActive = new Vector4(0.27f, 0.27f, 0.27f, 1.00f);
-            TabUnfocused = new Vector4(0.12f, 0.12f, 0.12f, 0.98f);
-            TabUnfocusedActive = new Vector4(0.31f, 0.31f, 0.31f, 1.00f);
-            DockingPreview = new Vector4(0.34f, 0.34f, 0.34f, 0.70f);
-            TextSelectedBg = new Vector4(0.24f, 0.45f, 0.68f, 0.35f);
-            NavHighlight = new Vector4(0.26f, 0.66f, 1.00f, 0);
-            Error = new Vector4(1f, 0.3f, 0.3f, 1.0f);
-            Warning = new Vector4(1, 1, 0.3f, 1.0f);
-        }
-    }
-
-    /// <summary>
-    /// A modern theme inspired by Windows 11 with light appearance and rounded elements.
-    /// </summary>
-    public class Windows11Theme : ThemeHandler
-    {
-        public override string Name { get; set; } = "WINDOWS11_THEME";
-
-        public Windows11Theme()
-        {
-            Text = new Vector4(0.1f, 0.1f, 0.1f, 1.00f);
-            WindowBg = new Vector4(0.96f, 0.96f, 0.96f, 0.94f);
-            ChildBg = new Vector4(0.98f, 0.98f, 0.98f, 1.00f);
-            Border = new Vector4(0.85f, 0.85f, 0.85f, 1.00f);
-            PopupBg = new Vector4(1.00f, 1.00f, 1.00f, 1.00f);
-            FrameBg = new Vector4(1.00f, 1.00f, 1.00f, 1.00f);
-            FrameBgHovered = new Vector4(0.90f, 0.90f, 0.90f, 1.00f);
-            FrameBgActive = new Vector4(0.80f, 0.80f, 0.80f, 1.00f);
-            TitleBg = new Vector4(0.90f, 0.90f, 0.90f, 1.00f);
-            TitleBgActive = new Vector4(0.85f, 0.85f, 0.85f, 1.00f);
-            CheckMark = new Vector4(0.00f, 0.47f, 0.84f, 1.00f);
-            ButtonActive = new Vector4(0.00f, 0.47f, 0.84f, 1.00f);
-            Button = new Vector4(0.96f, 0.96f, 0.96f, 1.00f);
-            Header = new Vector4(0.92f, 0.92f, 0.92f, 1.00f);
-            HeaderHovered = new Vector4(0.88f, 0.88f, 0.88f, 1.00f);
-            HeaderActive = new Vector4(0.80f, 0.80f, 0.80f, 1.00f);
-            SeparatorHovered = new Vector4(0.85f, 0.85f, 0.85f, 1.00f);
-            SeparatorActive = new Vector4(0.70f, 0.70f, 0.70f, 1.00f);
-            Separator = new Vector4(0.90f, 0.90f, 0.90f, 1.00f);
-            Tab = new Vector4(0.96f, 0.96f, 0.96f, 1.00f);
-            TabHovered = new Vector4(0.92f, 0.92f, 0.92f, 1.00f);
-            TabActive = new Vector4(1.00f, 1.00f, 1.00f, 1.00f);
-            TabUnfocused = new Vector4(0.96f, 0.96f, 0.96f, 1.00f);
-            TabUnfocusedActive = new Vector4(1.00f, 1.00f, 1.00f, 1.00f);
-            DockingPreview = new Vector4(0.00f, 0.47f, 0.84f, 0.30f);
-            DockingEmptyBg = new Vector4(0.00f, 0.47f, 0.84f, 0.10f);
-            TextSelectedBg = new Vector4(0.00f, 0.47f, 0.84f, 0.35f);
-            NavHighlight = new Vector4(0.00f, 0.47f, 0.84f, 0.20f);
-            Error = new Vector4(0.84f, 0.00f, 0.00f, 1.00f);
-            Warning = new Vector4(0.90f, 0.60f, 0.00f, 1.00f);
         }
     }
 }

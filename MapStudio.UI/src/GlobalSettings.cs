@@ -100,7 +100,7 @@ namespace MapStudio.UI
         /// </summary>
         public void MigrateTheme()
         {
-            if (string.IsNullOrEmpty(Program.Theme) || Program.Theme == "DARK_BLUE_THEME" || Program.Theme == "WINDOWS11_THEME")
+            if (string.IsNullOrEmpty(Program.Theme) || Program.Theme == "NO_THEME")
             {
                 Program.Theme = "Midnight";
                 Save();
@@ -211,7 +211,7 @@ namespace MapStudio.UI
 
         public class ProgramSettings
         {
-            public string Theme { get; set; } = "Midnight";
+            public string Theme { get; set; } = "Midnight Purple";
 
             /// <summary>
             /// The language of the program.

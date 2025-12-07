@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Toolbox.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+156f01f860c51f3e0f74a1069b417fa05876a87a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bb9162f404539158f9c9a0ea6f0bd04d74f1b153")]
 [assembly: System.Reflection.AssemblyProductAttribute("Toolbox.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Toolbox.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

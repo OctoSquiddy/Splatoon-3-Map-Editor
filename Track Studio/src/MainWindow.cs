@@ -107,7 +107,6 @@ namespace MapStudio
             PluginSettingsUI = Toolbox.Core.FileManager.GetPluginSettings();
             SettingsWindow.PluginSettingsUI = PluginSettingsUI;
 
-            //Init Discord RPC
             try
             {
                 _discordClient = new DiscordRpcClient("1434256235888115722");
@@ -242,7 +241,7 @@ namespace MapStudio
             ImGui.SetCursorPos(new System.Numerics.Vector2(iconPosX, iconPosY));
             ImGui.Image((IntPtr)IconManager.GetTextureIcon("TOOL_ICON"), iconSize);
 
-            var text = "Map Editor 4.1";
+            var text = "Map Editor 4.1.1";
             // Calculate text size with the scale
             ImGui.SetWindowFontScale(2.0f);
             var textSize = ImGui.CalcTextSize(text);
@@ -842,7 +841,6 @@ namespace MapStudio
         {
             _discordClient?.Dispose();
 
-            //Check if there is opened workspaces in the tool
             if (Workspaces.Count > 0)
             {
                 int result = TinyFileDialog.MessageBoxInfoYesNo(TranslationSource.GetText("EXIT_NOTIFY"));

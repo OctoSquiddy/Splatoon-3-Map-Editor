@@ -6535,8 +6535,6 @@ C:\Users\zach\Documents\GitHub\Splatoon-3-Map-Editor\Track Studio\bin\Debug\net8
 C:\Users\zach\Documents\GitHub\Splatoon-3-Map-Editor\Track Studio\bin\Debug\net8.0\Lib\Syroot.NintenTools.NSW.Bfres.dll
 C:\Users\zach\Documents\GitHub\Splatoon-3-Map-Editor\Track Studio\bin\Debug\net8.0\Lib\Syroot.NintenTools.NSW.Bfres.xml
 C:\Users\zach\Documents\GitHub\Splatoon-3-Map-Editor\Track Studio\bin\Debug\net8.0\Lib\Syroot.NintenTools.NSW.Bntx.dll
-C:\Users\zach\Documents\GitHub\Splatoon-3-Map-Editor\Track Studio\bin\Debug\net8.0\Lib\Themes\DARK_THEME.json
-C:\Users\zach\Documents\GitHub\Splatoon-3-Map-Editor\Track Studio\bin\Debug\net8.0\Lib\Themes\LIGHT_THEME.json
 C:\Users\zach\Documents\GitHub\Splatoon-3-Map-Editor\Track Studio\bin\Debug\net8.0\Lib\Themes\Midnight.json
 C:\Users\zach\Documents\GitHub\Splatoon-3-Map-Editor\Track Studio\bin\Debug\net8.0\Lib\Themes\Midnight_Blue.json
 C:\Users\zach\Documents\GitHub\Splatoon-3-Map-Editor\Track Studio\bin\Debug\net8.0\Lib\Themes\Midnight_Purple.json
@@ -6612,3 +6610,6 @@ C:\Users\zach\Documents\GitHub\Splatoon-3-Map-Editor\Track Studio\obj\Debug\net8
 C:\Users\zach\Documents\GitHub\Splatoon-3-Map-Editor\Track Studio\obj\Debug\net8.0\MapStudio.pdb
 C:\Users\zach\Documents\GitHub\Splatoon-3-Map-Editor\Track Studio\obj\Debug\net8.0\MapStudio.genruntimeconfig.cache
 C:\Users\zach\Documents\GitHub\Splatoon-3-Map-Editor\Track Studio\obj\Debug\net8.0\ref\MapStudio.dll
+C:\Users\zach\Documents\GitHub\Splatoon-3-Map-Editor\Track Studio\bin\Debug\net8.0\Lib\Themes\Midnight_Light.json
+C:\Users\zach\Documents\GitHub\Splatoon-3-Map-Editor\Track Studio\bin\Debug\net8.0\Lib\Themes\True_Dark.json
+C:\Users\zach\Documents\GitHub\Splatoon-3-Map-Editor\Track Studio\bin\Debug\net8.0\Lib\Themes\True_Light.json
