@@ -1733,6 +1733,8 @@ namespace SampleMapEditor.LayoutEditor
                     ImGui.SetTooltip($"Add {_ainbPresetNames[_selectedAINBPreset]}");
                 }
 
+                // Red "+" button - temporarily disabled
+                /*
                 ImGui.SameLine();
 
                 // Red "+" button - opens preset picker popup
@@ -1755,6 +1757,7 @@ namespace SampleMapEditor.LayoutEditor
 
                 // Preset picker popup window
                 DrawAINBPresetPickerPopup(obj, ainbData, ainbAvailable);
+                */
 
                 // Show current AIGroupID if set
                 if (!string.IsNullOrEmpty(obj.AIGroupID))

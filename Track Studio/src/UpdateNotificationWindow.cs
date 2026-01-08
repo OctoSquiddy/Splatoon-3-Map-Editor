@@ -269,7 +269,7 @@ namespace MapStudio
                         icon = "\uf118"; // smile icon
                     }
 
-                    ImGui.TextColored(color, $"  {icon}  {content}");
+                    ImGui.TextColored(color, $"  {icon}   {content}");
                 }
                 // Regular text
                 else

@@ -1,0 +1,6 @@
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[Dump]\[v10.1.0]\Pack\Scene\Msn_A06_09C.pack.zs
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\Project-Redux-Shifty\[Shifty Stations]\Fld_Deli_Octa17\Pack\Scene\Vss_Deli_Octa17.pack.zs
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\Project-Redux-Shifty\[Shifty Stations]\Fld_Deli_Octa16\Pack\Scene\Vss_Deli_Octa16.pack.zs
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\Project-Redux-Shifty\[Shifty Stations]\Fld_Deli_Octa15\Pack\Scene\Vss_Deli_Octa15.pack.zs
+C:\Users\Anwender\AppData\Roaming\Ryujinx\sdcard\atmosphere\contents\0100c2500fc20000\romfs\Pack\Scene\Msn_A01_01.pack - Kopie.zs
+C:\Users\Anwender\AppData\Roaming\Ryujinx\sdcard\atmosphere\contents\0100c2500fc20000\romfs\Pack\Scene\Msn_A01_01.pack.zs
