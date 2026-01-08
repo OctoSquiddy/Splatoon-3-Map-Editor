@@ -1,1 +1,5 @@
 *.vsidx
+/Track Studio/bin/Release
+/Track Studio/obj/Release
+/Plugins/SampleMapEditor/obj/Release/net5.0
+/Plugins/CafeLibrary/obj/Release
