@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wKCra6WCED4=",
+  "dgSpecHash": "VLuOsnSkj6g=",
   "success": true,
-  "projectFilePath": "D:\\[OneDrive]\\OneDrive\\[Hacking]\\[Splatoon 3]\\[[Projects]]\\[[[[[[[OctoToolbox]]]]]]]]\\OctoToolbox\\EditorAINB\\MapStudio\\GLFrameworkEngine\\GLFrameworkEngine.csproj",
+  "projectFilePath": "D:\\[OneDrive]\\OneDrive\\[Hacking]\\[Splatoon 3]\\[[Projects]]\\Splatoon-3-Map-Editor\\GLFrameworkEngine\\GLFrameworkEngine.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Anwender\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\Anwender\\.nuget\\packages\\system.drawing.common\\5.0.2\\system.drawing.common.5.0.2.nupkg.sha512"

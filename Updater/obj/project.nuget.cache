@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XKvlIz6VpOg=",
+  "dgSpecHash": "920HRIU3mFE=",
   "success": true,
-  "projectFilePath": "D:\\[OneDrive]\\OneDrive\\[Hacking]\\[Splatoon 3]\\[[Projects]]\\[[[[[[[OctoToolbox]]]]]]]]\\OctoToolbox\\EditorAINB\\MapStudio\\Updater\\Updater.csproj",
+  "projectFilePath": "D:\\[OneDrive]\\OneDrive\\[Hacking]\\[Splatoon 3]\\[[Projects]]\\Splatoon-3-Map-Editor\\Updater\\Updater.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Anwender\\.nuget\\packages\\octokit\\0.50.0\\octokit.0.50.0.nupkg.sha512"
   ],

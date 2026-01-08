@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SampleMapEditor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d69a747016db147d8f6df46e828240ceccb00dde")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e6d66df3e0e5c109961503d4b34bb173308411d5")]
 [assembly: System.Reflection.AssemblyProductAttribute("SampleMapEditor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SampleMapEditor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

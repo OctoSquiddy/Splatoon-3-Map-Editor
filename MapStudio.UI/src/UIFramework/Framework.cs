@@ -41,7 +41,7 @@ namespace UIFramework
             Title += $" Version: {asssemblyVersion}";
             Title += $": {TranslationSource.GetText("OPENGL_VERSION")}: " + GL.GetString(StringName.Version);
 
-            Title = "Splatoon 3 Map Editor - Version 4.0";
+            Title = "Splatoon 3 Map Editor - Version 5.0";
 
             ProcessLoading = new ProcessLoading();
             ProcessLoading.OnUpdated += delegate

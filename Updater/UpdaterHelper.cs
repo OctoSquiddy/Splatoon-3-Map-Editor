@@ -50,9 +50,9 @@ namespace Updater
         {
             Console.WriteLine($"Downloading latest repo!");
 
-            //Check the current version date
-            string currentDate = GetRepoCompileDate(folder);
-            //Check if the current date matches the first release
+            //Check the current version
+            string currentVersion = GetRepoVersion(folder);
+            //Check if the current version matches the first release
             var release = releases.FirstOrDefault();
             if (release == null) { //No release uploaded so skip
                 Console.WriteLine($"Failed to find release! None found!");
@@ -62,8 +62,10 @@ namespace Updater
                 Console.WriteLine($"Failed to uploaded asset for the latest release!");
                 return;
             }
-            //Check if the asset uploaded has an equal compile date
-            if (!release.Assets[assetIndex].UpdatedAt.ToString().Equals(currentDate) || force)
+            //Check if the release tag matches the current version
+            string releaseVersion = release.TagName.TrimStart('v', 'V');
+            string localVersion = currentVersion.TrimStart('v', 'V');
+            if (!releaseVersion.Equals(localVersion, StringComparison.OrdinalIgnoreCase) || force)
             {
                 //Remove existing install directories if they exist
                 if (Directory.Exists($"{folder}\\{"latest"}" + "/"))
@@ -173,6 +175,19 @@ namespace Updater
             string[] versionInfo = File.ReadLines($"{folder}\\Version.txt").ToArray();
             if (versionInfo.Length >= 3)
                 return versionInfo[1];
+
+            return "";
+        }
+
+        // Gets the version number from line 1 of Version.txt
+        static string GetRepoVersion(string folder)
+        {
+            if (!File.Exists($"{folder}\\Version.txt"))
+                return "";
+
+            string[] versionInfo = File.ReadLines($"{folder}\\Version.txt").ToArray();
+            if (versionInfo.Length >= 1)
+                return versionInfo[0].Trim();
 
             return "";
         }

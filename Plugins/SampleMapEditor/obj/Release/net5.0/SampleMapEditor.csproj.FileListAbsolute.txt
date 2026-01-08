@@ -58,3 +58,23 @@ D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]
 D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\Plugins\SampleMapEditor\obj\Release\net5.0\refint\SampleMapEditor.dll
 D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\Plugins\SampleMapEditor\obj\Release\net5.0\SampleMapEditor.pdb
 D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\Plugins\SampleMapEditor\obj\Release\net5.0\ref\SampleMapEditor.dll
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\Splatoon-3-Map-Editor\Track Studio\bin\Release\net5.0\plugins\net5.0\Lib\Shaders\BFRES\Bfres.frag
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\Splatoon-3-Map-Editor\Track Studio\bin\Release\net5.0\plugins\net5.0\Lib\Shaders\BFRES\Bfres.vert
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\Splatoon-3-Map-Editor\Track Studio\bin\Release\net5.0\plugins\net5.0\Lib\Shaders\BFRES\BfresDebug.frag
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\Splatoon-3-Map-Editor\Track Studio\bin\Release\net5.0\plugins\net5.0\Lib\Shaders\BFRES\BfresDebug.vert
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\Splatoon-3-Map-Editor\Track Studio\bin\Release\net5.0\plugins\net5.0\x64\libzstd.dll
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\Splatoon-3-Map-Editor\Track Studio\bin\Release\net5.0\plugins\net5.0\x86\libzstd.dll
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\Splatoon-3-Map-Editor\Track Studio\bin\Release\net5.0\plugins\net5.0\SampleMapEditor.deps.json
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\Splatoon-3-Map-Editor\Track Studio\bin\Release\net5.0\plugins\net5.0\SampleMapEditor.dll
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\Splatoon-3-Map-Editor\Track Studio\bin\Release\net5.0\plugins\net5.0\SampleMapEditor.pdb
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\Splatoon-3-Map-Editor\Plugins\SampleMapEditor\obj\Release\net5.0\SampleMapEditor.csproj.AssemblyReference.cache
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\Splatoon-3-Map-Editor\Plugins\SampleMapEditor\obj\Release\net5.0\SampleMapEditor.GeneratedMSBuildEditorConfig.editorconfig
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\Splatoon-3-Map-Editor\Plugins\SampleMapEditor\obj\Release\net5.0\SampleMapEditor.AssemblyInfoInputs.cache
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\Splatoon-3-Map-Editor\Plugins\SampleMapEditor\obj\Release\net5.0\SampleMapEditor.AssemblyInfo.cs
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\Splatoon-3-Map-Editor\Plugins\SampleMapEditor\obj\Release\net5.0\SampleMapEditor.csproj.CoreCompileInputs.cache
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\Splatoon-3-Map-Editor\Plugins\SampleMapEditor\obj\Release\net5.0\SampleMapEditor.sourcelink.json
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\Splatoon-3-Map-Editor\Plugins\SampleMapEditor\obj\Release\net5.0\SampleMa.046AC256.Up2Date
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\Splatoon-3-Map-Editor\Plugins\SampleMapEditor\obj\Release\net5.0\SampleMapEditor.dll
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\Splatoon-3-Map-Editor\Plugins\SampleMapEditor\obj\Release\net5.0\refint\SampleMapEditor.dll
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\Splatoon-3-Map-Editor\Plugins\SampleMapEditor\obj\Release\net5.0\SampleMapEditor.pdb
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\Splatoon-3-Map-Editor\Plugins\SampleMapEditor\obj\Release\net5.0\ref\SampleMapEditor.dll

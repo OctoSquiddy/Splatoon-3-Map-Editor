@@ -47,9 +47,9 @@ namespace MapStudio.UI
 
         public static Release TryGetLatest(string folder, int assetIndex = 0)
         {
-            //Check the current version date
-            string currentDate = GetRepoCompileDate(folder);
-            //Check if the current date matches the first release
+            //Check the current version
+            string currentVersion = GetRepoVersion(folder);
+            //Check if the current version matches the first release
             var release = releases.FirstOrDefault();
             if (release == null)
             { //No release uploaded so skip
@@ -61,8 +61,10 @@ namespace MapStudio.UI
                 Console.WriteLine($"Failed to uploaded asset for the latest release!");
                 return null;
             }
-            //Check if the asset uploaded has an equal compile date
-            if (!release.Assets[assetIndex].UpdatedAt.ToString().Equals(currentDate))
+            //Check if the release tag matches the current version
+            string releaseVersion = release.TagName.TrimStart('v', 'V');
+            string localVersion = currentVersion.TrimStart('v', 'V');
+            if (!releaseVersion.Equals(localVersion, StringComparison.OrdinalIgnoreCase))
                 return release;
             return null;
         }
@@ -223,6 +225,19 @@ namespace MapStudio.UI
             string[] versionInfo = File.ReadLines(Path.Combine(folder,_version_txt)).ToArray();
             if (versionInfo.Length >= 3)
                 return versionInfo[1];
+
+            return "";
+        }
+
+        // Gets the version number from line 1 of Version.txt
+        static string GetRepoVersion(string folder)
+        {
+            if (!File.Exists(Path.Combine(folder,_version_txt)))
+                return "";
+
+            string[] versionInfo = File.ReadLines(Path.Combine(folder,_version_txt)).ToArray();
+            if (versionInfo.Length >= 1)
+                return versionInfo[0].Trim();
 
             return "";
         }

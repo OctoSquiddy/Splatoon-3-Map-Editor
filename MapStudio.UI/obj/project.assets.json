@@ -1871,11 +1871,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\[OneDrive]\\OneDrive\\[Hacking]\\[Splatoon 3]\\[[Projects]]\\[[[[[[[OctoToolbox]]]]]]]]\\OctoToolbox\\EditorAINB\\MapStudio\\MapStudio.UI\\MapStudio.UI.csproj",
+      "projectUniqueName": "D:\\[OneDrive]\\OneDrive\\[Hacking]\\[Splatoon 3]\\[[Projects]]\\Splatoon-3-Map-Editor\\MapStudio.UI\\MapStudio.UI.csproj",
       "projectName": "MapStudioUI",
-      "projectPath": "D:\\[OneDrive]\\OneDrive\\[Hacking]\\[Splatoon 3]\\[[Projects]]\\[[[[[[[OctoToolbox]]]]]]]]\\OctoToolbox\\EditorAINB\\MapStudio\\MapStudio.UI\\MapStudio.UI.csproj",
+      "projectPath": "D:\\[OneDrive]\\OneDrive\\[Hacking]\\[Splatoon 3]\\[[Projects]]\\Splatoon-3-Map-Editor\\MapStudio.UI\\MapStudio.UI.csproj",
       "packagesPath": "C:\\Users\\Anwender\\.nuget\\packages\\",
-      "outputPath": "D:\\[OneDrive]\\OneDrive\\[Hacking]\\[Splatoon 3]\\[[Projects]]\\[[[[[[[OctoToolbox]]]]]]]]\\OctoToolbox\\EditorAINB\\MapStudio\\MapStudio.UI\\obj\\",
+      "outputPath": "D:\\[OneDrive]\\OneDrive\\[Hacking]\\[Splatoon 3]\\[[Projects]]\\Splatoon-3-Map-Editor\\MapStudio.UI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1894,11 +1894,11 @@
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
           "projectReferences": {
-            "D:\\[OneDrive]\\OneDrive\\[Hacking]\\[Splatoon 3]\\[[Projects]]\\[[[[[[[OctoToolbox]]]]]]]]\\OctoToolbox\\EditorAINB\\MapStudio\\GLFrameworkEngine\\GLFrameworkEngine.csproj": {
-              "projectPath": "D:\\[OneDrive]\\OneDrive\\[Hacking]\\[Splatoon 3]\\[[Projects]]\\[[[[[[[OctoToolbox]]]]]]]]\\OctoToolbox\\EditorAINB\\MapStudio\\GLFrameworkEngine\\GLFrameworkEngine.csproj"
+            "D:\\[OneDrive]\\OneDrive\\[Hacking]\\[Splatoon 3]\\[[Projects]]\\Splatoon-3-Map-Editor\\GLFrameworkEngine\\GLFrameworkEngine.csproj": {
+              "projectPath": "D:\\[OneDrive]\\OneDrive\\[Hacking]\\[Splatoon 3]\\[[Projects]]\\Splatoon-3-Map-Editor\\GLFrameworkEngine\\GLFrameworkEngine.csproj"
             },
-            "D:\\[OneDrive]\\OneDrive\\[Hacking]\\[Splatoon 3]\\[[Projects]]\\[[[[[[[OctoToolbox]]]]]]]]\\OctoToolbox\\EditorAINB\\MapStudio\\Toolbox.Core\\Toolbox.Core.csproj": {
-              "projectPath": "D:\\[OneDrive]\\OneDrive\\[Hacking]\\[Splatoon 3]\\[[Projects]]\\[[[[[[[OctoToolbox]]]]]]]]\\OctoToolbox\\EditorAINB\\MapStudio\\Toolbox.Core\\Toolbox.Core.csproj"
+            "D:\\[OneDrive]\\OneDrive\\[Hacking]\\[Splatoon 3]\\[[Projects]]\\Splatoon-3-Map-Editor\\Toolbox.Core\\Toolbox.Core.csproj": {
+              "projectPath": "D:\\[OneDrive]\\OneDrive\\[Hacking]\\[Splatoon 3]\\[[Projects]]\\Splatoon-3-Map-Editor\\Toolbox.Core\\Toolbox.Core.csproj"
             }
           }
         }

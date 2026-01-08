@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\[OneDrive]\\OneDrive\\[Hacking]\\[Splatoon 3]\\[[Projects]]\\[[[[[[[OctoToolbox]]]]]]]]\\OctoToolbox\\EditorAINB\\MapStudio\\Updater\\Updater.csproj": {}
+    "D:\\[OneDrive]\\OneDrive\\[Hacking]\\[Splatoon 3]\\[[Projects]]\\Splatoon-3-Map-Editor\\Updater\\Updater.csproj": {}
   },
   "projects": {
-    "D:\\[OneDrive]\\OneDrive\\[Hacking]\\[Splatoon 3]\\[[Projects]]\\[[[[[[[OctoToolbox]]]]]]]]\\OctoToolbox\\EditorAINB\\MapStudio\\Updater\\Updater.csproj": {
+    "D:\\[OneDrive]\\OneDrive\\[Hacking]\\[Splatoon 3]\\[[Projects]]\\Splatoon-3-Map-Editor\\Updater\\Updater.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\[OneDrive]\\OneDrive\\[Hacking]\\[Splatoon 3]\\[[Projects]]\\[[[[[[[OctoToolbox]]]]]]]]\\OctoToolbox\\EditorAINB\\MapStudio\\Updater\\Updater.csproj",
+        "projectUniqueName": "D:\\[OneDrive]\\OneDrive\\[Hacking]\\[Splatoon 3]\\[[Projects]]\\Splatoon-3-Map-Editor\\Updater\\Updater.csproj",
         "projectName": "Updater",
-        "projectPath": "D:\\[OneDrive]\\OneDrive\\[Hacking]\\[Splatoon 3]\\[[Projects]]\\[[[[[[[OctoToolbox]]]]]]]]\\OctoToolbox\\EditorAINB\\MapStudio\\Updater\\Updater.csproj",
+        "projectPath": "D:\\[OneDrive]\\OneDrive\\[Hacking]\\[Splatoon 3]\\[[Projects]]\\Splatoon-3-Map-Editor\\Updater\\Updater.csproj",
         "packagesPath": "C:\\Users\\Anwender\\.nuget\\packages\\",
-        "outputPath": "D:\\[OneDrive]\\OneDrive\\[Hacking]\\[Splatoon 3]\\[[Projects]]\\[[[[[[[OctoToolbox]]]]]]]]\\OctoToolbox\\EditorAINB\\MapStudio\\Updater\\obj\\",
+        "outputPath": "D:\\[OneDrive]\\OneDrive\\[Hacking]\\[Splatoon 3]\\[[Projects]]\\Splatoon-3-Map-Editor\\Updater\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bC7QhXAhl78=",
+  "dgSpecHash": "kQ2kbc/WIC0=",
   "success": true,
-  "projectFilePath": "D:\\[OneDrive]\\OneDrive\\[Hacking]\\[Splatoon 3]\\[[Projects]]\\[[[[[[[OctoToolbox]]]]]]]]\\OctoToolbox\\EditorAINB\\MapStudio\\Toolbox.Core\\Toolbox.Core.csproj",
+  "projectFilePath": "D:\\[OneDrive]\\OneDrive\\[Hacking]\\[Splatoon 3]\\[[Projects]]\\Splatoon-3-Map-Editor\\Toolbox.Core\\Toolbox.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Anwender\\.nuget\\packages\\system.drawing.common\\5.0.2\\system.drawing.common.5.0.2.nupkg.sha512"
   ],

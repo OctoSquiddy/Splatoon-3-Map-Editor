@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8dEMJCRazOM=",
+  "dgSpecHash": "OGm+W0PXIJs=",
   "success": true,
-  "projectFilePath": "D:\\[OneDrive]\\OneDrive\\[Hacking]\\[Splatoon 3]\\[[Projects]]\\[[[[[[[OctoToolbox]]]]]]]]\\OctoToolbox\\EditorAINB\\MapStudio\\Plugins\\CafeLibrary\\CafeLibrary.csproj",
+  "projectFilePath": "D:\\[OneDrive]\\OneDrive\\[Hacking]\\[Splatoon 3]\\[[Projects]]\\Splatoon-3-Map-Editor\\Plugins\\CafeLibrary\\CafeLibrary.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Anwender\\.nuget\\packages\\discord.net.core\\3.3.2\\discord.net.core.3.3.2.nupkg.sha512",
     "C:\\Users\\Anwender\\.nuget\\packages\\discord.net.rest\\3.3.2\\discord.net.rest.3.3.2.nupkg.sha512",
