@@ -4,7 +4,6 @@ using System.Linq;
 using System.Drawing;
 using OpenTK;
 using OpenTK.Graphics.OpenGL;
-using Bitmap = System.Drawing.Bitmap;
 
 namespace GLFrameworkEngine
 {

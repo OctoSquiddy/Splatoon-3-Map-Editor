@@ -1,39 +1,60 @@
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor\Track Studio\bin\Release\net5.0\plugins\net5.0\Lib\Shaders\BFRES\Bfres.frag
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor\Track Studio\bin\Release\net5.0\plugins\net5.0\Lib\Shaders\BFRES\Bfres.vert
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor\Track Studio\bin\Release\net5.0\plugins\net5.0\Lib\Shaders\BFRES\BfresDebug.frag
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor\Track Studio\bin\Release\net5.0\plugins\net5.0\Lib\Shaders\BFRES\BfresDebug.vert
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor\Track Studio\bin\Release\net5.0\plugins\net5.0\CafeLibrary.deps.json
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor\Track Studio\bin\Release\net5.0\plugins\net5.0\CafeLibrary.dll
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor\Track Studio\bin\Release\net5.0\plugins\net5.0\CafeLibrary.pdb
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor\Plugins\CafeLibrary\obj\Release\net5.0\CafeLibrary.csproj.AssemblyReference.cache
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor\Plugins\CafeLibrary\obj\Release\net5.0\CafeLibrary.Properties.Resources.resources
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor\Plugins\CafeLibrary\obj\Release\net5.0\CafeLibrary.csproj.GenerateResource.cache
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor\Plugins\CafeLibrary\obj\Release\net5.0\CafeLibrary.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor\Plugins\CafeLibrary\obj\Release\net5.0\CafeLibrary.AssemblyInfoInputs.cache
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor\Plugins\CafeLibrary\obj\Release\net5.0\CafeLibrary.AssemblyInfo.cs
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor\Plugins\CafeLibrary\obj\Release\net5.0\CafeLibrary.csproj.CoreCompileInputs.cache
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor\Plugins\CafeLibrary\obj\Release\net5.0\CafeLibr.02E68240.Up2Date
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor\Plugins\CafeLibrary\obj\Release\net5.0\CafeLibrary.dll
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor\Plugins\CafeLibrary\obj\Release\net5.0\refint\CafeLibrary.dll
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor\Plugins\CafeLibrary\obj\Release\net5.0\CafeLibrary.pdb
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor\Plugins\CafeLibrary\obj\Release\net5.0\ref\CafeLibrary.dll
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Track Studio\bin\Release\net5.0\plugins\net5.0\Lib\Shaders\BFRES\Bfres.frag
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Track Studio\bin\Release\net5.0\plugins\net5.0\Lib\Shaders\BFRES\Bfres.vert
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Track Studio\bin\Release\net5.0\plugins\net5.0\Lib\Shaders\BFRES\BfresDebug.frag
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Track Studio\bin\Release\net5.0\plugins\net5.0\Lib\Shaders\BFRES\BfresDebug.vert
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Track Studio\bin\Release\net5.0\plugins\net5.0\CafeLibrary.deps.json
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Track Studio\bin\Release\net5.0\plugins\net5.0\CafeLibrary.dll
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Track Studio\bin\Release\net5.0\plugins\net5.0\CafeLibrary.pdb
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Plugins\CafeLibrary\obj\Release\net5.0\CafeLibrary.csproj.AssemblyReference.cache
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Plugins\CafeLibrary\obj\Release\net5.0\CafeLibrary.Properties.Resources.resources
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Plugins\CafeLibrary\obj\Release\net5.0\CafeLibrary.csproj.GenerateResource.cache
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Plugins\CafeLibrary\obj\Release\net5.0\CafeLibrary.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Plugins\CafeLibrary\obj\Release\net5.0\CafeLibrary.AssemblyInfoInputs.cache
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Plugins\CafeLibrary\obj\Release\net5.0\CafeLibrary.AssemblyInfo.cs
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Plugins\CafeLibrary\obj\Release\net5.0\CafeLibrary.csproj.CoreCompileInputs.cache
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Plugins\CafeLibrary\obj\Release\net5.0\CafeLibrary.sourcelink.json
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Plugins\CafeLibrary\obj\Release\net5.0\CafeLibr.02E68240.Up2Date
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Plugins\CafeLibrary\obj\Release\net5.0\CafeLibrary.dll
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Plugins\CafeLibrary\obj\Release\net5.0\refint\CafeLibrary.dll
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Plugins\CafeLibrary\obj\Release\net5.0\CafeLibrary.pdb
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Plugins\CafeLibrary\obj\Release\net5.0\ref\CafeLibrary.dll
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\MapStudio\Track Studio\bin\Release\net5.0\plugins\net5.0\Lib\Shaders\BFRES\Bfres.frag
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\MapStudio\Track Studio\bin\Release\net5.0\plugins\net5.0\Lib\Shaders\BFRES\Bfres.vert
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\MapStudio\Track Studio\bin\Release\net5.0\plugins\net5.0\Lib\Shaders\BFRES\BfresDebug.frag
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\MapStudio\Track Studio\bin\Release\net5.0\plugins\net5.0\Lib\Shaders\BFRES\BfresDebug.vert
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\MapStudio\Track Studio\bin\Release\net5.0\plugins\net5.0\CafeLibrary.deps.json
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\MapStudio\Track Studio\bin\Release\net5.0\plugins\net5.0\CafeLibrary.dll
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\MapStudio\Track Studio\bin\Release\net5.0\plugins\net5.0\CafeLibrary.pdb
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\MapStudio\Plugins\CafeLibrary\obj\Release\net5.0\CafeLibrary.csproj.AssemblyReference.cache
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\MapStudio\Plugins\CafeLibrary\obj\Release\net5.0\CafeLibrary.Properties.Resources.resources
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\MapStudio\Plugins\CafeLibrary\obj\Release\net5.0\CafeLibrary.csproj.GenerateResource.cache
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\MapStudio\Plugins\CafeLibrary\obj\Release\net5.0\CafeLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\MapStudio\Plugins\CafeLibrary\obj\Release\net5.0\CafeLibrary.AssemblyInfoInputs.cache
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\MapStudio\Plugins\CafeLibrary\obj\Release\net5.0\CafeLibrary.AssemblyInfo.cs
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\MapStudio\Plugins\CafeLibrary\obj\Release\net5.0\CafeLibrary.csproj.CoreCompileInputs.cache
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\MapStudio\Plugins\CafeLibrary\obj\Release\net5.0\CafeLibrary.sourcelink.json
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\MapStudio\Plugins\CafeLibrary\obj\Release\net5.0\CafeLibrary.csproj.CopyComplete
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\MapStudio\Plugins\CafeLibrary\obj\Release\net5.0\CafeLibrary.dll
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\MapStudio\Plugins\CafeLibrary\obj\Release\net5.0\refint\CafeLibrary.dll
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\MapStudio\Plugins\CafeLibrary\obj\Release\net5.0\CafeLibrary.pdb
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\MapStudio\Plugins\CafeLibrary\obj\Release\net5.0\ref\CafeLibrary.dll
+C:\Users\octosquiddy\OneDrive\[MacBook]\GitHub\MapStudio\Track Studio\bin\Release\net5.0\plugins\net5.0\Lib\Shaders\BFRES\Bfres.frag
+C:\Users\octosquiddy\OneDrive\[MacBook]\GitHub\MapStudio\Track Studio\bin\Release\net5.0\plugins\net5.0\Lib\Shaders\BFRES\Bfres.vert
+C:\Users\octosquiddy\OneDrive\[MacBook]\GitHub\MapStudio\Track Studio\bin\Release\net5.0\plugins\net5.0\Lib\Shaders\BFRES\BfresDebug.frag
+C:\Users\octosquiddy\OneDrive\[MacBook]\GitHub\MapStudio\Track Studio\bin\Release\net5.0\plugins\net5.0\Lib\Shaders\BFRES\BfresDebug.vert
+C:\Users\octosquiddy\OneDrive\[MacBook]\GitHub\MapStudio\Track Studio\bin\Release\net5.0\plugins\net5.0\CafeLibrary.deps.json
+C:\Users\octosquiddy\OneDrive\[MacBook]\GitHub\MapStudio\Track Studio\bin\Release\net5.0\plugins\net5.0\CafeLibrary.dll
+C:\Users\octosquiddy\OneDrive\[MacBook]\GitHub\MapStudio\Track Studio\bin\Release\net5.0\plugins\net5.0\CafeLibrary.pdb
+C:\Users\octosquiddy\OneDrive\[MacBook]\GitHub\MapStudio\Plugins\CafeLibrary\obj\Release\net5.0\CafeLibrary.csproj.AssemblyReference.cache
+C:\Users\octosquiddy\OneDrive\[MacBook]\GitHub\MapStudio\Plugins\CafeLibrary\obj\Release\net5.0\CafeLibrary.Properties.Resources.resources
+C:\Users\octosquiddy\OneDrive\[MacBook]\GitHub\MapStudio\Plugins\CafeLibrary\obj\Release\net5.0\CafeLibrary.csproj.GenerateResource.cache
+C:\Users\octosquiddy\OneDrive\[MacBook]\GitHub\MapStudio\Plugins\CafeLibrary\obj\Release\net5.0\CafeLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\octosquiddy\OneDrive\[MacBook]\GitHub\MapStudio\Plugins\CafeLibrary\obj\Release\net5.0\CafeLibrary.AssemblyInfoInputs.cache
+C:\Users\octosquiddy\OneDrive\[MacBook]\GitHub\MapStudio\Plugins\CafeLibrary\obj\Release\net5.0\CafeLibrary.AssemblyInfo.cs
+C:\Users\octosquiddy\OneDrive\[MacBook]\GitHub\MapStudio\Plugins\CafeLibrary\obj\Release\net5.0\CafeLibrary.csproj.CoreCompileInputs.cache
+C:\Users\octosquiddy\OneDrive\[MacBook]\GitHub\MapStudio\Plugins\CafeLibrary\obj\Release\net5.0\CafeLibrary.sourcelink.json
+C:\Users\octosquiddy\OneDrive\[MacBook]\GitHub\MapStudio\Plugins\CafeLibrary\obj\Release\net5.0\CafeLibr.02E68240.Up2Date
+C:\Users\octosquiddy\OneDrive\[MacBook]\GitHub\MapStudio\Plugins\CafeLibrary\obj\Release\net5.0\CafeLibrary.dll
+C:\Users\octosquiddy\OneDrive\[MacBook]\GitHub\MapStudio\Plugins\CafeLibrary\obj\Release\net5.0\refint\CafeLibrary.dll
+C:\Users\octosquiddy\OneDrive\[MacBook]\GitHub\MapStudio\Plugins\CafeLibrary\obj\Release\net5.0\CafeLibrary.pdb
+C:\Users\octosquiddy\OneDrive\[MacBook]\GitHub\MapStudio\Plugins\CafeLibrary\obj\Release\net5.0\ref\CafeLibrary.dll
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\Track Studio\bin\Release\net5.0\plugins\net5.0\Lib\Shaders\BFRES\Bfres.frag
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\Track Studio\bin\Release\net5.0\plugins\net5.0\Lib\Shaders\BFRES\Bfres.vert
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\Track Studio\bin\Release\net5.0\plugins\net5.0\Lib\Shaders\BFRES\BfresDebug.frag
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\Track Studio\bin\Release\net5.0\plugins\net5.0\Lib\Shaders\BFRES\BfresDebug.vert
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\Track Studio\bin\Release\net5.0\plugins\net5.0\CafeLibrary.deps.json
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\Track Studio\bin\Release\net5.0\plugins\net5.0\CafeLibrary.dll
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\Track Studio\bin\Release\net5.0\plugins\net5.0\CafeLibrary.pdb
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\Plugins\CafeLibrary\obj\Release\net5.0\CafeLibrary.csproj.AssemblyReference.cache
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\Plugins\CafeLibrary\obj\Release\net5.0\CafeLibrary.Properties.Resources.resources
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\Plugins\CafeLibrary\obj\Release\net5.0\CafeLibrary.csproj.GenerateResource.cache
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\Plugins\CafeLibrary\obj\Release\net5.0\CafeLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\Plugins\CafeLibrary\obj\Release\net5.0\CafeLibrary.AssemblyInfoInputs.cache
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\Plugins\CafeLibrary\obj\Release\net5.0\CafeLibrary.AssemblyInfo.cs
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\Plugins\CafeLibrary\obj\Release\net5.0\CafeLibrary.csproj.CoreCompileInputs.cache
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\Plugins\CafeLibrary\obj\Release\net5.0\CafeLibrary.sourcelink.json
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\Plugins\CafeLibrary\obj\Release\net5.0\CafeLibr.02E68240.Up2Date
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\Plugins\CafeLibrary\obj\Release\net5.0\CafeLibrary.dll
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\Plugins\CafeLibrary\obj\Release\net5.0\refint\CafeLibrary.dll
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\Plugins\CafeLibrary\obj\Release\net5.0\CafeLibrary.pdb
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\Plugins\CafeLibrary\obj\Release\net5.0\ref\CafeLibrary.dll

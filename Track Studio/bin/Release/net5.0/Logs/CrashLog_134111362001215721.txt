@@ -1,0 +1,15 @@
+Path cannot be the empty string or all whitespace. (Parameter 'path')
+    at System.IO.Directory.CreateDirectory(String path)
+   at MapStudio.UI.Workspace.SaveFileToModFolder(String ModPath, IFileFormat fileFormat) in D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\MapStudio.UI\src\Workspace\Workspace.cs:line 636
+   at MapStudio.UI.Workspace.SaveFileToModFolder(String ModPath) in D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\MapStudio.UI\src\Workspace\Workspace.cs:line 625
+   at MapStudio.MainWindow.OnKeyDown(KeyboardKeyEventArgs e) in D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\Track Studio\src\MainWindow.cs:line 681
+   at UIFramework.Framework.OnKeyDown(KeyboardKeyEventArgs e) in D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\MapStudio.UI\src\UIFramework\Framework.cs:line 151
+   at OpenTK.NativeWindow.OnKeyDownInternal(Object sender, KeyboardKeyEventArgs e)
+   at OpenTK.Platform.NativeWindowBase.OnKeyDown(Key key, Boolean repeat)
+   at OpenTK.Platform.Windows.WinGLNative.HandleKeyboard(IntPtr handle, WindowMessage message, IntPtr wParam, IntPtr lParam)
+   at OpenTK.Platform.Windows.WinGLNative.WindowProcedure(IntPtr handle, WindowMessage message, IntPtr wParam, IntPtr lParam)
+   at OpenTK.Platform.Windows.Functions.DispatchMessage(MSG& msg)
+   at OpenTK.Platform.Windows.WinGLNative.ProcessEvents()
+   at OpenTK.GameWindow.Run(Double updates_per_second, Double frames_per_second)
+   at OpenTK.GameWindow.Run()
+   at MapStudio.Program.Main(String[] args) in D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\Track Studio\src\Program.cs:line 55

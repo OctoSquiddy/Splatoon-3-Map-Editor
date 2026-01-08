@@ -1,5 +1,0 @@
-What was changed in 4.1.1?
-- Some theme changes
-- Fixed bug when changing themes
-- Fixed release bug when trying to maximize a window
-- Set default theme to Midnight Purple

@@ -111,6 +111,7 @@ namespace UIFramework
                 float framerate = ImGui.GetIO().Framerate;
 
                 ImGui.SetCursorPosX(width - 100);
+                ImGui.Text($"({framerate:0.#} FPS)");
 
                 ImGui.EndMainMenuBar();
             }

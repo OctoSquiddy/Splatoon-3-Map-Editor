@@ -18,29 +18,14 @@ namespace Updater
             {
                 switch (arg)
                 {
-                    case "-c":
-                    case "--check":
-                        JsonUpdaterHelper.Setup("https://ylwpnk.dev/mapeditor/update/releases.json", "MapStudio.exe");
-                        var localVersion = JsonUpdaterHelper.GetLocalVersion(execDirectory);
-                        var remote = JsonUpdaterHelper.GetRemoteVersionInfo();
-                        if (remote == null)
-                        {
-                            Console.WriteLine("Unable to check for updates.");
-                            break;
-                        }
-                        if (Version.Parse(remote.Version) > Version.Parse(localVersion))
-                            Console.WriteLine($"Update available: {localVersion} -> {remote.Version}");
-                        else
-                            Console.WriteLine("Up to date.");
-                        break;
                     case "-d":
                     case "--download":
-                        JsonUpdaterHelper.Setup("https://ylwpnk.dev/mapeditor/update", "MapStudio.exe");
-                        JsonUpdaterHelper.DownloadLatest(execDirectory, force);
+                        UpdaterHelper.Setup("OctoSquiddy", "Splatoon-3-Map-Editor", "MapStudio.exe");
+                        UpdaterHelper.DownloadLatest(execDirectory, 0, force);
                         break;
                     case "-i":
                     case "--install":
-                        JsonUpdaterHelper.Install(execDirectory);
+                        UpdaterHelper.Install(execDirectory);
                         break;
                     case "-b":
                     case "--boot":

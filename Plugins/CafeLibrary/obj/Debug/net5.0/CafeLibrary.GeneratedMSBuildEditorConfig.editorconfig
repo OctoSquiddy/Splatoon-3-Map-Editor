@@ -1,5 +1,7 @@
 is_global = true
 build_property.TargetFramework = net5.0
+build_property.TargetFrameworkIdentifier = .NETCoreApp
+build_property.TargetFrameworkVersion = v5.0
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = 
 build_property.ProjectTypeGuids = 
@@ -8,7 +10,7 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CafeLibrary
-build_property.ProjectDir = C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Plugins\CafeLibrary\
+build_property.ProjectDir = D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\Plugins\CafeLibrary\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.EffectiveAnalysisLevelStyle = 5.0

@@ -9,6 +9,7 @@ using Toolbox.Core;
 using static SampleMapEditor.MuObj;
 using Wheatley.io;
 using Wheatley.io.BYML;
+using SampleMapEditor.Ainb;
 
 namespace SampleMapEditor
 {

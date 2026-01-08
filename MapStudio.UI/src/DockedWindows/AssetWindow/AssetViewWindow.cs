@@ -229,6 +229,24 @@ namespace MapStudio.UI
 
                         ImGui.PopStyleColor();
                     }
+                    else if (category.Name == "AINB Objects")
+                    {
+                        // AINB Objects with green/yellow color
+                        if (ImGui.Selectable($"## {category.Name}", isSelected))
+                        {
+                            Reload(category);
+                        }
+
+                        ImGui.SameLine();
+
+                        // Green/Yellow mixed color (lime green)
+                        ImGui.PushStyleColor(ImGuiCol.Text,
+                                        ImGui.ColorConvertFloat4ToU32(new Vector4(0.6f, 1.0f, 0.2f, 1.0f)));
+
+                        ImGui.Text("AINB Objects");
+
+                        ImGui.PopStyleColor();
+                    }
                     else
                     {
                         if (ImGui.Selectable(category.Name, isSelected))
@@ -345,7 +363,8 @@ namespace MapStudio.UI
             if (itemWidth == MIN_THUMB_SIZE)
                 columnCount = 1;
 
-            var rowCount = Math.Max(objects.Count / columnCount, 1);
+            // Use ceiling division to ensure last row is not cut off
+            var rowCount = Math.Max((objects.Count + columnCount - 1) / columnCount, 1);
             var totalItemHeight = itemHeight + 22;
             if (columnCount == 1)
                 totalItemHeight = itemHeight;

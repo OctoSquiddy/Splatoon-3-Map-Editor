@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.IO;
 using System.Threading.Tasks;
-using System.Net.Http;
-using System.Text.Json;
+using Octokit;
+using System.Security.AccessControl;
 using System.Net;
 using System.IO.Compression;
 using System.Diagnostics;
@@ -15,86 +15,75 @@ namespace Updater
     /// <summary>
     /// A helper class for downloading releases content
     /// </summary>
-    public class JsonUpdaterHelper
+    public class UpdaterHelper
     {
-        public record RemoteVersion
-        {
-            public required string Version { get; set; }
-            public required string DownloadUrl { get; set; }
-            public required DateTimeOffset UpdatedAt { get; set; }
-        }
-
-        private static string _updateUrl = "";
+        private static string _owner = "";
+        private static string _repo = "";
         private static string _process_name = "";
 
-        private static RemoteVersion? remoteVersion;
+        private static Release[] releases;
 
         /// <summary>
-        /// Prepares the updater with the update URL and process to target installing.
+        /// Prepares the updater with the repo owner, repo name, and process to target installing.
         /// </summary>
-        public static void Setup(string updateUrl, string process = "")
+        public static void Setup(string owner, string repo, string process = "")
         {
-            _updateUrl = updateUrl;
+            _owner = owner;
+            _repo = repo;
             _process_name = process;
 
-            GetRemoteVersion().Wait();
+            //Get the current set of releases for the owner and repo
+            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
+            var client = new GitHubClient(new ProductHeaderValue("UpdaterTool"));
+            GetReleases(client).Wait();
         }
 
         /// <summary>
-        /// Gets the remote version info after setup.
+        /// Gets the first release instance of the github releases.
         /// </summary>
-        public static RemoteVersion? GetRemoteVersionInfo()
-        {
-            return remoteVersion;
-        }
-
-        private static async Task GetRemoteVersion()
-        {
-            using var client = new HttpClient();
-            client.DefaultRequestHeaders.Add("Accept", "application/json");
-            try
-            {
-                var json = await client.GetStringAsync(_updateUrl);
-                remoteVersion = JsonSerializer.Deserialize<RemoteVersion>(json, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Failed to fetch remote version: {ex.Message}");
-                remoteVersion = null;
-            }
-        }
+        public Release GetRelease() => releases.FirstOrDefault();
 
         /// <summary>
         /// Downloads the latest release if the version does not match the current version.
         /// </summary>
-        public static void DownloadLatest(string folder, bool force = false)
+        public static void DownloadLatest(string folder, int assetIndex = 0, bool force = false)
         {
-            Console.WriteLine("Checking for updates...");
-            var localVersionStr = GetLocalVersion(folder);
-            if (remoteVersion == null)
-            {
-                Console.WriteLine("Cannot check for updates: remote version unavailable.");
+            Console.WriteLine($"Downloading latest repo!");
+
+            //Check the current version date
+            string currentDate = GetRepoCompileDate(folder);
+            //Check if the current date matches the first release
+            var release = releases.FirstOrDefault();
+            if (release == null) { //No release uploaded so skip
+                Console.WriteLine($"Failed to find release! None found!");
                 return;
             }
-            var localVersion = Version.TryParse(localVersionStr, out var lv) ? lv : new Version(0,0,0);
-            var remoteVer = Version.TryParse(remoteVersion.Version, out var rv) ? rv : new Version(0,0,0);
-            if (force || remoteVer > localVersion)
+            if (release.Assets.Count <= assetIndex) {
+                Console.WriteLine($"Failed to uploaded asset for the latest release!");
+                return;
+            }
+            //Check if the asset uploaded has an equal compile date
+            if (!release.Assets[assetIndex].UpdatedAt.ToString().Equals(currentDate) || force)
             {
-                Console.WriteLine($"An update is available: {localVersion} -> {remoteVersion.Version}");
-                DownloadRelease(folder, remoteVersion).Wait();
-                WriteLocalVersion(folder, remoteVersion);
+                //Remove existing install directories if they exist
+                if (Directory.Exists($"{folder}\\{"latest"}" + "/"))
+                    Directory.Delete($"{folder}\\{"latest"}" + "/", true);
+
+                DownloadRelease(folder, release, assetIndex).Wait();
             }
             else
             {
-                Console.WriteLine("Application is up to date.");
+                Console.WriteLine($"Current repo is up to date!");
             }
         }
 
-        private static async Task DownloadRelease(string folder, RemoteVersion remote)
+        static async Task DownloadRelease(string folder, Release release, int assetIndex)
         {
             ProgressBar progressBar = new ProgressBar();
             Console.WriteLine();
-            Console.WriteLine($"Downloading update from {remote.DownloadUrl}");
+            Console.WriteLine($"Downloading release {release.Name} Asset { release.Assets[assetIndex].Name}!");
+            string address = release.Assets[assetIndex].BrowserDownloadUrl;
+
             string name = "latest";
             //Download the releases zip
             using (var webClient = new WebClient())
@@ -104,17 +93,23 @@ namespace Updater
                 webClient.Proxy = webProxy;
                 webClient.DownloadProgressChanged += (s, e) =>
                 {
+                    var pos = Console.GetCursorPosition();
                     progressBar.Report(e.ProgressPercentage / 100.0f);
+                    //Thread.Sleep(20);
                 };
-                Uri uri = new Uri(remote.DownloadUrl);
+                Uri uri = new Uri(address);
                 await webClient.DownloadFileTaskAsync(uri, $"{folder}\\{name}.zip").ConfigureAwait(false);
 
                 progressBar.Report(1.0f);
                 progressBar.Dispose();
                 Console.WriteLine($"");
+
                 Console.WriteLine($"Extracting update!");
-                //Extract the zip for installing
+                //Extract the zip for intalling
                 ExtractZip($"{folder}\\{name}");
+                // Save the version info
+                WriteRepoVersion(folder, release);
+
                 Console.WriteLine($"Download finished!");
             }
         }
@@ -124,17 +119,18 @@ namespace Updater
         /// </summary>
         public static void Install(string folderDir)
         {
-            string path = $"{folderDir}\\latest\\net8.0";
-            if (!Directory.Exists(path))
-            {
-                Console.WriteLine("No downloaded directory found!");
+            string path = $"{folderDir}\\latest\\net5.0";
+
+            if (!Directory.Exists(path)) {
+                Console.WriteLine($"No downloaded directory found!");
                 return;
             }
-            if (Process.GetProcessesByName(_process_name).Any())
-            {
-                Console.WriteLine("Cannot install update while application is running. Please close it then try again!");
+
+            if (Process.GetProcessesByName(_process_name).Any()) {
+                Console.WriteLine($"Cannot install update while application is running. Please close it then try again!");
                 return;
             }
+
             //Transfer the downloaded update files onto the current tool. 
             foreach (string dir in Directory.GetDirectories(path))
             {
@@ -142,35 +138,53 @@ namespace Updater
                 //Remove existing directories
                 if (Directory.Exists(Path.Combine(folderDir, dirName + @"\")))
                     Directory.Delete(Path.Combine(folderDir, dirName + @"\"), true);
+
                 Directory.Move(dir, Path.Combine(folderDir, dirName + @"\"));
             }
             foreach (string file in Directory.GetFiles(path))
             {
                 //Little hacky. Just skip the updater files as it currently uses the same directory as the installed tool.
-                if (Path.GetFileName(file).StartsWith("Updater"))
+                if (Path.GetFileName(file).StartsWith("Updater") || file.Contains("Octokit"))
                     continue;
+
                 //Remove existing files
                 if (File.Exists(Path.Combine(folderDir, Path.GetFileName(file))))
                     File.Delete(Path.Combine(folderDir, Path.GetFileName(file)));
+
                 File.Move(file, Path.Combine(folderDir, Path.GetFileName(file)));
             }
             Directory.Delete($"{folderDir}\\latest", true);
         }
 
-        public static string GetLocalVersion(string folder)
+        static async Task GetReleases(GitHubClient client)
         {
-            if (!File.Exists($"{folder}\\Version.txt"))
-                return "0.0.0";
-            var line = File.ReadLines($"{folder}\\Version.txt").FirstOrDefault();
-            return string.IsNullOrEmpty(line) ? "0.0.0" : line;
+            List<Release> Releases = new List<Release>();
+            foreach (Release r in await client.Repository.Release.GetAll(_owner, _repo))
+                Releases.Add(r);
+            releases = Releases.ToArray();
         }
 
-        static void WriteLocalVersion(string folder, RemoteVersion remote)
+        //
+        static string GetRepoCompileDate(string folder)
+        {
+            if (!File.Exists($"{folder}\\Version.txt"))
+                return "";
+
+            string[] versionInfo = File.ReadLines($"{folder}\\Version.txt").ToArray();
+            if (versionInfo.Length >= 3)
+                return versionInfo[1];
+
+            return "";
+        }
+
+        //Stores the current release information within a .txt file
+        static void WriteRepoVersion(string folder, Release release)
         {
             using (StreamWriter writer = new StreamWriter($"{folder}\\Version.txt"))
             {
-                writer.WriteLine(remote.Version);
-                writer.WriteLine(remote.UpdatedAt.ToString());
+                writer.WriteLine($"{release.TagName}");
+                writer.WriteLine($"{release.Assets[0].UpdatedAt.ToString()}");
+                writer.WriteLine($"{release.TargetCommitish}");
             }
         }
 

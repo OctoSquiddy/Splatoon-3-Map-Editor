@@ -1,0 +1,11 @@
+Unable to cast object of type 'GLFrameworkEngine.TransformableObject' to type 'CafeLibrary.Rendering.BfresRender'.
+    at SampleMapEditor.LayoutEditor.ObjectEditor.AddObject(String actorName, Boolean spawnAtCursor) in D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\Plugins\SampleMapEditor\Editors\MapEditor\MapObjEditor\ObjectEditor.cs:line 2882
+   at SampleMapEditor.LayoutEditor.ObjectEditor.OnAssetViewportDrop(String actorName, Vector2 screenPosition) in D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\Plugins\SampleMapEditor\Editors\MapEditor\MapObjEditor\ObjectEditor.cs:line 330
+   at SampleMapEditor.StageLayoutPlugin.AssetViewportDrop(AssetItem item, Vector2 screenCoords) in D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\Plugins\SampleMapEditor\StageLayoutPlugin.cs:line 885
+   at MapStudio.UI.Workspace.<>c__DisplayClass97_0.<OnAssetViewportDrop>b__0() in D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\MapStudio.UI\src\Workspace\Workspace.cs:line 797
+   at UIFramework.Framework.OnRenderFrame(FrameEventArgs e) in D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\MapStudio.UI\src\UIFramework\Framework.cs:line 78
+   at OpenTK.GameWindow.RaiseRenderFrame(Double elapsed, Double& timestamp)
+   at OpenTK.GameWindow.DispatchRenderFrame()
+   at OpenTK.GameWindow.Run(Double updates_per_second, Double frames_per_second)
+   at OpenTK.GameWindow.Run()
+   at MapStudio.Program.Main(String[] args) in D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\Track Studio\src\Program.cs:line 55

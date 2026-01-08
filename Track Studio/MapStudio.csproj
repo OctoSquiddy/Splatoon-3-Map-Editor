@@ -2,8 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net8.0</TargetFramework>
-    <RuntimeIdentifiers>win-x64;win-x86;linux-x64;osx-x64;osx-arm64</RuntimeIdentifiers>
+    <TargetFramework>net5.0</TargetFramework>
     <RootNamespace>MapStudio</RootNamespace>
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
     <ApplicationIcon>icon.ico</ApplicationIcon>
@@ -11,7 +10,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="DiscordRichPresence" Version="1.2.1.24" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
   
@@ -36,7 +34,6 @@
 	  <ProjectReference Include="..\GLFrameworkEngine\GLFrameworkEngine.csproj" />
 	  <ProjectReference Include="..\MapStudio.UI\MapStudio.UI.csproj" />
 	  <ProjectReference Include="..\Plugins\SampleMapEditor\SampleMapEditor.csproj" />
-	  <ProjectReference Include="..\Updater\Updater.csproj" />
 	</ItemGroup>
   
 	<ItemGroup>
@@ -53,6 +50,7 @@
 	    <HintPath>Lib\Syroot.Maths.dll</HintPath>
 	  </Reference>
 	</ItemGroup>
+  
 	<ItemGroup>
 	  <Compile Update="Properties\Resources.Designer.cs">
 	    <DesignTime>True</DesignTime>

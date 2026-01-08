@@ -99,11 +99,11 @@ namespace SampleMapEditor.LayoutEditor
             var objects = isSearch ? filteredActors : actorList;
 
             var itemHeight = 40;
-            var windowSize = ImGui.GetWindowSize();
+            var contentRegion = ImGui.GetContentRegionAvail();
 
             //Setup a child with the clip size calculations for clipping the list.
             ImGuiNative.igSetNextWindowContentSize(new System.Numerics.Vector2(0.0f, objects.Count * (itemHeight + 1)));
-            ImGui.BeginChild("##object_list1", new Vector2(windowSize.X, windowSize.Y - posY - (isDialog ? 30 : 0)));
+            ImGui.BeginChild("##object_list1", new Vector2(contentRegion.X, contentRegion.Y - (isDialog ? 30 : 0)));
             //Draw object list
             RenderObjectList();
 
@@ -200,7 +200,7 @@ namespace SampleMapEditor.LayoutEditor
                 ImGui.Image((IntPtr)icon, new Vector2(itemHeight, itemHeight)); ImGui.SameLine();
                 ImGuiHelper.IncrementCursorPosX(3);
 
-                Vector2 itemSize = new Vector2(ImGui.GetWindowWidth(), itemHeight);
+                Vector2 itemSize = new Vector2(ImGui.GetContentRegionAvail().X, itemHeight);
 
                 //Selection handling
                 //bool isSelected = selectedObject == mapObject.ObjId;

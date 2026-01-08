@@ -225,6 +225,26 @@ namespace SampleMapEditor.LayoutEditor
 
             //Create the path tag instace for created paths
             path.UINode.Tag = Activator.CreateInstance(path.PathUITagType);
+
+            // Initialize the MuRail with proper Hash and InstanceID
+            var rail = path.UINode.Tag as MuRail;
+            if (rail != null)
+            {
+                var (allHashes, allInstanceIDs) = CollectAllHashesAndInstanceIDs();
+
+                // Generate unique InstanceID
+                string instanceID = GenInstanceID();
+                while (allInstanceIDs.Contains(instanceID))
+                    instanceID = GenInstanceID();
+                rail.InstanceID = instanceID;
+
+                // Generate unique Hash
+                ulong hash = GenHash();
+                while (allHashes.Contains(hash))
+                    hash = GenHash();
+                rail.Hash = hash;
+            }
+
             MapEditorIcons.ReloadIcons(path.UINode, typeof(MuRail));
 
             // Setup the path default settings
@@ -433,10 +453,16 @@ namespace SampleMapEditor.LayoutEditor
         {
             var position = new Vector3(pt.Translate.X * 10.0f, pt.Translate.Y * 10.0f, pt.Translate.Z * 10.0f);
             var point = renderable.CreatePoint(position);
-            point.Transform.RotationEuler = new Vector3(((MuRail)renderable.UINode.Tag).Rotation.X,
-                ((MuRail)renderable.UINode.Tag).Rotation.Y, ((MuRail)renderable.UINode.Tag).Rotation.Z);
-            //if (pt.Scale.HasValue) // ???
-            point.Transform.Scale = new Vector3(10.0f, 10.0f, 10.0f); //new Vector3(pt.Scale.Value.X, pt.Scale.Value.Y, pt.Scale.Value.Z);
+
+            // Use the point's own rotation, not the rail's rotation
+            point.Transform.RotationEuler = new Vector3(pt.Rotate.X, pt.Rotate.Y, pt.Rotate.Z);
+
+            // Use the point's own scale (default to 1,1,1 if not set)
+            float scaleX = pt.Scale.X != 0 ? pt.Scale.X : 1.0f;
+            float scaleY = pt.Scale.Y != 0 ? pt.Scale.Y : 1.0f;
+            float scaleZ = pt.Scale.Z != 0 ? pt.Scale.Z : 1.0f;
+            point.Transform.Scale = new Vector3(scaleX, scaleY, scaleZ);
+
             point.Transform.UpdateMatrix(true);
 
             // Draw Edit Data
@@ -683,6 +709,320 @@ namespace SampleMapEditor.LayoutEditor
             }
 
             return selected;
+        }
+
+        /// <summary>
+        /// Collects all existing hashes and instance IDs from all rails in the scene.
+        /// </summary>
+        private (HashSet<ulong> hashes, HashSet<string> instanceIDs) CollectAllHashesAndInstanceIDs()
+        {
+            HashSet<ulong> allHashes = new HashSet<ulong>();
+            HashSet<string> allInstanceIDs = new HashSet<string>();
+
+            foreach (IDrawable obj in MapEditor.Scene.Objects)
+            {
+                if (obj is RenderablePath && ((RenderablePath)obj).UINode.Tag is MuRail)
+                {
+                    var rail = (MuRail)((RenderablePath)obj).UINode.Tag;
+                    if (rail.InstanceID != null)
+                        allInstanceIDs.Add(rail.InstanceID);
+                    allHashes.Add(rail.Hash);
+
+                    foreach (MuRailPoint point in rail.Points)
+                    {
+                        allHashes.Add(point.Hash);
+                    }
+                }
+            }
+
+            return (allHashes, allInstanceIDs);
+        }
+
+        /// <summary>
+        /// Initializes point hashes for a newly created path.
+        /// Call this after CreateLinearStandard/CreateBezierStandard/CreateBezierCircle.
+        /// </summary>
+        private void InitializePointHashes(RenderablePath path)
+        {
+            var rail = path.UINode.Tag as MuRail;
+            if (rail == null) return;
+
+            var (allHashes, _) = CollectAllHashesAndInstanceIDs();
+
+            // Clear existing points and rebuild from renderer
+            rail.Points.Clear();
+
+            foreach (var renderPoint in path.PathPoints)
+            {
+                // Generate unique hash for this point
+                ulong pointHash = GenHash();
+                while (allHashes.Contains(pointHash))
+                    pointHash = GenHash();
+                allHashes.Add(pointHash);
+
+                // Create MuRailPoint with proper hash and position
+                var muPoint = new MuRailPoint
+                {
+                    Hash = pointHash,
+                    Translate = new ByamlVector3F(
+                        renderPoint.Transform.Position.X / 10.0f,
+                        renderPoint.Transform.Position.Y / 10.0f,
+                        renderPoint.Transform.Position.Z / 10.0f),
+                    Rotate = new ByamlVector3F(
+                        renderPoint.Transform.Rotation.X,
+                        renderPoint.Transform.Rotation.Y,
+                        renderPoint.Transform.Rotation.Z)
+                };
+
+                // Handle bezier control points
+                if (path.InterpolationMode == RenderablePath.Interpolation.Bezier)
+                {
+                    muPoint.Control0 = new ByamlVector3F(
+                        renderPoint.ControlPoint1.Transform.Position.X / 10.0f,
+                        renderPoint.ControlPoint1.Transform.Position.Y / 10.0f,
+                        renderPoint.ControlPoint1.Transform.Position.Z / 10.0f);
+                    muPoint.Control1 = new ByamlVector3F(
+                        renderPoint.ControlPoint2.Transform.Position.X / 10.0f,
+                        renderPoint.ControlPoint2.Transform.Position.Y / 10.0f,
+                        renderPoint.ControlPoint2.Transform.Position.Z / 10.0f);
+                }
+
+                rail.Points.Add(muPoint);
+                renderPoint.UINode.Tag = muPoint;
+
+                // Setup UI drawer for the point (same as CreatePathPoint does)
+                SetupPointUIDrawer(renderPoint, muPoint);
+            }
+        }
+
+        /// <summary>
+        /// Sets up the UI drawer for a path point. Extracted from CreatePathPoint for reuse.
+        /// </summary>
+        unsafe private void SetupPointUIDrawer(RenderablePathPoint point, MuRailPoint pt)
+        {
+            point.UINode.TagUI.UIDrawer = null;
+            point.UINode.TagUI.UIDrawer += delegate
+            {
+                var mPoint = (point.UINode as RenderablePath.PointNode).Point;
+                var points = mPoint.ParentPath.GetSelectedPoints();
+
+                ImguiBinder.LoadProperties(mPoint.Transform, (sender, e) =>
+                {
+                    var handler = (ImguiBinder.PropertyChangedCustomArgs)e;
+                    var type = mPoint.Transform.GetType().GetProperty(handler.Name);
+
+                    List<IRevertable> revertables = new List<IRevertable>();
+                    foreach (var selPt in points)
+                    {
+                        var editTransform = selPt.Transform;
+                        revertables.Add(new TransformUndo(new TransformInfo(editTransform)));
+
+                        type.SetValue(editTransform, sender);
+                        editTransform.UpdateMatrix(true);
+                    }
+                    GLContext.ActiveContext.Scene.AddToUndo(revertables);
+                    GLContext.ActiveContext.UpdateViewport = true;
+                });
+
+                if (ImGui.CollapsingHeader($"{TranslationSource.GetText("CONTROL_POINTS")}", ImGuiTreeNodeFlags.DefaultOpen))
+                {
+                    bool updated = false;
+
+                    ImGui.Columns(2);
+
+                    ImGui.Text($"Has Control Points");
+                    ImGui.NextColumn();
+
+                    float colwidth = ImGui.GetColumnWidth();
+                    ImGui.SetColumnOffset(1, ImGui.GetWindowWidth() * 0.25f);
+                    ImGui.PushItemWidth(colwidth);
+
+                    bool hasctpoints = pt.hasControlPoints;
+                    if (ImGui.Checkbox("##HashControlPoints", ref hasctpoints))
+                    {
+                        pt.hasControlPoints = hasctpoints;
+                    }
+                    ImGui.PopItemWidth();
+                    ImGui.NextColumn();
+
+                    ImGui.Text($"Point 1");
+                    ImGui.NextColumn();
+
+                    ImGui.SetColumnOffset(1, ImGui.GetWindowWidth() * 0.25f);
+                    ImGui.PushItemWidth(colwidth);
+
+                    updated |= ImGuiHelper.InputTKVector3($"##point1", mPoint.ControlPoint1.Transform, "Position");
+                    ImGui.PopItemWidth();
+                    ImGui.NextColumn();
+
+                    ImGui.Text($"Point 2");
+                    ImGui.NextColumn();
+
+                    ImGui.SetColumnOffset(1, ImGui.GetWindowWidth() * 0.25f);
+                    ImGui.PushItemWidth(colwidth);
+                    updated |= ImGuiHelper.InputTKVector3($"##point2", mPoint.ControlPoint2.Transform, "Position");
+                    ImGui.PopItemWidth();
+                    ImGui.NextColumn();
+
+                    ImGui.Columns(1);
+
+                    if (updated)
+                    {
+                        point.ControlPoint1.Transform.UpdateMatrix(true);
+                        point.ControlPoint2.Transform.UpdateMatrix(true);
+                        GLContext.ActiveContext.UpdateViewport = true;
+                    }
+                }
+
+                if (ImGui.CollapsingHeader($"Properties", ImGuiTreeNodeFlags.DefaultOpen))
+                {
+                    int numColumns = 2;
+                    float colwidth = 0.0f;
+
+                    ImGui.BeginColumns("##" + "Properties" + numColumns.ToString(), numColumns);
+
+                    ImGui.AlignTextToFramePadding();
+                    ImGui.Text("Hash");
+                    ImGui.NextColumn();
+
+                    ulong inputValue = pt.Hash;
+                    ulong* ulongptr = &inputValue;
+
+                    colwidth = ImGui.GetColumnWidth();
+                    ImGui.PushItemWidth(colwidth - 6);
+
+                    if (ImGui.InputScalar($"###PathPointHashBox", ImGuiDataType.U64, (IntPtr)ulongptr))
+                    {
+                        pt.Hash = (ulong)inputValue;
+                    }
+
+                    ImGui.NextColumn();
+
+                    ImGui.PopItemWidth();
+                    ImGui.EndColumns();
+                }
+
+                if (ImGui.CollapsingHeader($"Tower Control Properties", ImGuiTreeNodeFlags.DefaultOpen))
+                {
+                    int numColumns = 2;
+                    float colwidth = 0.0f;
+
+                    ImGui.BeginColumns("##" + "TCProperties" + numColumns.ToString(), numColumns);
+
+                    ImGui.AlignTextToFramePadding();
+                    ImGui.Text("Checkpoint HP");
+                    ImGui.NextColumn();
+
+                    int inputValueInt = pt.spl__GachiyaguraRailNodeParam.CheckPointHP;
+
+                    colwidth = ImGui.GetColumnWidth();
+                    ImGui.PushItemWidth(colwidth - 6);
+
+                    if (ImGui.InputInt("###CheckpointHP", ref inputValueInt))
+                    {
+                        pt.spl__GachiyaguraRailNodeParam.CheckPointHP = inputValueInt;
+                    }
+
+                    ImGui.NextColumn();
+
+                    ImGui.AlignTextToFramePadding();
+                    ImGui.Text("Fill Up Type");
+                    ImGui.NextColumn();
+
+                    string inputString = pt.spl__GachiyaguraRailNodeParam.FillUpType;
+
+                    colwidth = ImGui.GetColumnWidth();
+                    ImGui.PushItemWidth(colwidth - 6);
+
+                    if (ImGui.InputText("###FillUpType", ref inputString, 0x1000))
+                    {
+                        pt.spl__GachiyaguraRailNodeParam.FillUpType = inputString;
+                    }
+
+                    ImGui.NextColumn();
+
+                    ImGui.AlignTextToFramePadding();
+                    ImGui.Text("Position Offset");
+                    ImGui.NextColumn();
+
+                    System.Numerics.Vector3 inputOffset = new System.Numerics.Vector3(pt.spl__GachiyaguraRailNodeParam.PositionOffset.X * 10.0f,
+                        pt.spl__GachiyaguraRailNodeParam.PositionOffset.Y * 10.0f, pt.spl__GachiyaguraRailNodeParam.PositionOffset.Z * 10.0f);
+
+                    colwidth = ImGui.GetColumnWidth();
+                    ImGui.PushItemWidth(colwidth - 6);
+
+                    if (ImGui.DragFloat3("###PositionOffset", ref inputOffset))
+                    {
+                        pt.spl__GachiyaguraRailNodeParam.PositionOffset = new ByamlVector3F(inputOffset.X / 10.0f, inputOffset.Y / 10.0f, inputOffset.Z / 10.0f);
+                    }
+
+                    ImGui.NextColumn();
+
+                    ImGui.AlignTextToFramePadding();
+                    ImGui.Text("Rotation Degree");
+                    ImGui.NextColumn();
+
+                    inputOffset = new System.Numerics.Vector3(pt.spl__GachiyaguraRailNodeParam.RotationDeg.X,
+                        pt.spl__GachiyaguraRailNodeParam.RotationDeg.Y, pt.spl__GachiyaguraRailNodeParam.RotationDeg.Z);
+
+                    colwidth = ImGui.GetColumnWidth();
+                    ImGui.PushItemWidth(colwidth - 6);
+
+                    if (ImGui.DragFloat3("###RotationDeg", ref inputOffset))
+                    {
+                        pt.spl__GachiyaguraRailNodeParam.RotationDeg = new ByamlVector3F(inputOffset.X, inputOffset.Y, inputOffset.Z);
+                    }
+
+                    ImGui.NextColumn();
+
+                    ImGui.PopItemWidth();
+                    ImGui.EndColumns();
+                }
+
+                if (ImGui.CollapsingHeader($"Rail Point Properties", ImGuiTreeNodeFlags.DefaultOpen))
+                {
+                    int numColumns = 2;
+                    float colwidth = 0.0f;
+
+                    ImGui.BeginColumns("##" + "RPProperties" + numColumns.ToString(), numColumns);
+
+                    ImGui.AlignTextToFramePadding();
+                    ImGui.Text("Break Time");
+                    ImGui.NextColumn();
+
+                    float inputValueFloat = pt.game__LiftGraphRailNodeParam.BreakTime;
+
+                    colwidth = ImGui.GetColumnWidth();
+                    ImGui.PushItemWidth(colwidth - 6);
+
+                    if (ImGui.InputFloat("###RPBreakTime", ref inputValueFloat))
+                    {
+                        pt.game__LiftGraphRailNodeParam.BreakTime = inputValueFloat;
+                    }
+
+                    ImGui.NextColumn();
+
+                    ImGui.AlignTextToFramePadding();
+                    ImGui.Text("Rotation");
+                    ImGui.NextColumn();
+
+                    System.Numerics.Vector3 inputRotation = new System.Numerics.Vector3(pt.game__LiftGraphRailNodeParam.Rotation.X,
+                        pt.game__LiftGraphRailNodeParam.Rotation.Y, pt.game__LiftGraphRailNodeParam.Rotation.Z);
+
+                    colwidth = ImGui.GetColumnWidth();
+                    ImGui.PushItemWidth(colwidth - 6);
+
+                    if (ImGui.DragFloat3("###RPRotation", ref inputRotation))
+                    {
+                        pt.game__LiftGraphRailNodeParam.Rotation = new ByamlVector3F(inputRotation.X, inputRotation.Y, inputRotation.Z);
+                    }
+
+                    ImGui.NextColumn();
+
+                    ImGui.PopItemWidth();
+                    ImGui.EndColumns();
+                }
+            };
         }
 
         private ulong GenHash()
@@ -975,6 +1315,7 @@ namespace SampleMapEditor.LayoutEditor
             this.Add(path);
             path.CreateLinearStandard(100);
             ((MuRail)path.UINode.Tag).IsClosed = false;
+            InitializePointHashes(path);
             PrepareObject(path);
 
             if (!Root.IsChecked)
@@ -988,6 +1329,7 @@ namespace SampleMapEditor.LayoutEditor
             this.Add(path);
             path.CreateBezierCircle(20);
             ((MuRail)path.UINode.Tag).IsClosed = true;
+            InitializePointHashes(path);
             PrepareObject(path);
 
             if (!Root.IsChecked)
@@ -1002,6 +1344,7 @@ namespace SampleMapEditor.LayoutEditor
             this.Add(path);
             path.CreateBezierStandard(20);
             ((MuRail)path.UINode.Tag).IsClosed = false;
+            InitializePointHashes(path);
             PrepareObject(path);
 
             if (!Root.IsChecked)
@@ -1056,6 +1399,48 @@ namespace SampleMapEditor.LayoutEditor
             foreach (RenderablePath originalRail in copied)
             {
                 MuRail originalRailData = originalRail.UINode.Tag as MuRail;
+
+                // Sync current renderer positions back to MuRailPoint data before cloning
+                for (int i = 0; i < originalRail.PathPoints.Count && i < originalRailData.Points.Count; i++)
+                {
+                    var renderPoint = originalRail.PathPoints[i];
+                    var pointData = originalRailData.Points[i];
+
+                    // Update position (divide by 10 to convert from render space)
+                    pointData.Translate = new ByamlVector3F(
+                        renderPoint.Transform.Position.X / 10.0f,
+                        renderPoint.Transform.Position.Y / 10.0f,
+                        renderPoint.Transform.Position.Z / 10.0f);
+
+                    // Update rotation
+                    pointData.Rotate = new ByamlVector3F(
+                        renderPoint.Transform.Rotation.X,
+                        renderPoint.Transform.Rotation.Y,
+                        renderPoint.Transform.Rotation.Z);
+
+                    // Update scale (only if not default 1,1,1)
+                    if (renderPoint.Transform.Scale != Vector3.One)
+                    {
+                        pointData.Scale = new ByamlVector3F(
+                            renderPoint.Transform.Scale.X,
+                            renderPoint.Transform.Scale.Y,
+                            renderPoint.Transform.Scale.Z);
+                    }
+
+                    // Update control points for bezier curves
+                    if (originalRail.InterpolationMode == RenderablePath.Interpolation.Bezier)
+                    {
+                        pointData.Control0 = new ByamlVector3F(
+                            renderPoint.ControlPoint1.Transform.Position.X / 10.0f,
+                            renderPoint.ControlPoint1.Transform.Position.Y / 10.0f,
+                            renderPoint.ControlPoint1.Transform.Position.Z / 10.0f);
+
+                        pointData.Control1 = new ByamlVector3F(
+                            renderPoint.ControlPoint2.Transform.Position.X / 10.0f,
+                            renderPoint.ControlPoint2.Transform.Position.Y / 10.0f,
+                            renderPoint.ControlPoint2.Transform.Position.Z / 10.0f);
+                    }
+                }
 
                 List<ulong> mAllHash = new List<ulong>();
                 List<string> mAllInstanceID = new List<string>();

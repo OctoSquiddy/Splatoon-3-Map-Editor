@@ -38,3 +38,23 @@ C:\Users\zach\Documents\GitHub\Splatoon-3-Map-Editor\Plugins\CafeLibrary\obj\Rel
 C:\Users\zach\Documents\GitHub\Splatoon-3-Map-Editor\Plugins\CafeLibrary\obj\Release\net8.0\refint\CafeLibrary.dll
 C:\Users\zach\Documents\GitHub\Splatoon-3-Map-Editor\Plugins\CafeLibrary\obj\Release\net8.0\CafeLibrary.pdb
 C:\Users\zach\Documents\GitHub\Splatoon-3-Map-Editor\Plugins\CafeLibrary\obj\Release\net8.0\ref\CafeLibrary.dll
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\Splatoon-3-Map-Editor\Track Studio\bin\Release\net8.0\plugins\net8.0\Lib\Shaders\BFRES\Bfres.frag
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\Splatoon-3-Map-Editor\Track Studio\bin\Release\net8.0\plugins\net8.0\Lib\Shaders\BFRES\Bfres.vert
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\Splatoon-3-Map-Editor\Track Studio\bin\Release\net8.0\plugins\net8.0\Lib\Shaders\BFRES\BfresDebug.frag
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\Splatoon-3-Map-Editor\Track Studio\bin\Release\net8.0\plugins\net8.0\Lib\Shaders\BFRES\BfresDebug.vert
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\Splatoon-3-Map-Editor\Track Studio\bin\Release\net8.0\plugins\net8.0\CafeLibrary.deps.json
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\Splatoon-3-Map-Editor\Track Studio\bin\Release\net8.0\plugins\net8.0\CafeLibrary.dll
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\Splatoon-3-Map-Editor\Track Studio\bin\Release\net8.0\plugins\net8.0\CafeLibrary.pdb
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\Splatoon-3-Map-Editor\Plugins\CafeLibrary\obj\Release\net8.0\CafeLibrary.csproj.AssemblyReference.cache
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\Splatoon-3-Map-Editor\Plugins\CafeLibrary\obj\Release\net8.0\CafeLibrary.Properties.Resources.resources
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\Splatoon-3-Map-Editor\Plugins\CafeLibrary\obj\Release\net8.0\CafeLibrary.csproj.GenerateResource.cache
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\Splatoon-3-Map-Editor\Plugins\CafeLibrary\obj\Release\net8.0\CafeLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\Splatoon-3-Map-Editor\Plugins\CafeLibrary\obj\Release\net8.0\CafeLibrary.AssemblyInfoInputs.cache
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\Splatoon-3-Map-Editor\Plugins\CafeLibrary\obj\Release\net8.0\CafeLibrary.AssemblyInfo.cs
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\Splatoon-3-Map-Editor\Plugins\CafeLibrary\obj\Release\net8.0\CafeLibrary.csproj.CoreCompileInputs.cache
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\Splatoon-3-Map-Editor\Plugins\CafeLibrary\obj\Release\net8.0\CafeLibrary.sourcelink.json
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\Splatoon-3-Map-Editor\Plugins\CafeLibrary\obj\Release\net8.0\CafeLibr.02E68240.Up2Date
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\Splatoon-3-Map-Editor\Plugins\CafeLibrary\obj\Release\net8.0\CafeLibrary.dll
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\Splatoon-3-Map-Editor\Plugins\CafeLibrary\obj\Release\net8.0\refint\CafeLibrary.dll
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\Splatoon-3-Map-Editor\Plugins\CafeLibrary\obj\Release\net8.0\CafeLibrary.pdb
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\Splatoon-3-Map-Editor\Plugins\CafeLibrary\obj\Release\net8.0\ref\CafeLibrary.dll

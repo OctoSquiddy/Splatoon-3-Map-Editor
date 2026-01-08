@@ -5,7 +5,6 @@ using ImGuiNET;
 using GLFrameworkEngine;
 using Toolbox.Core;
 
-
 namespace MapStudio.UI
 {
     public class SettingsWindow : UIFramework.Window
@@ -42,7 +41,8 @@ namespace MapStudio.UI
             if (ImGui.BeginChild("vertical_tab_settings"))
             {
                 RenderTab(0, '\uf013', "GENERAL");
-                RenderTab(1, '\uf11c', "CONTROLS");
+                RenderTab(1, '\uf53f', "APPEARANCE");
+                RenderTab(2, '\uf11c', "CONTROLS");
             }
             ImGui.EndChild();
 
@@ -53,8 +53,10 @@ namespace MapStudio.UI
             if (ImGui.BeginChild("tab_window"))
             {
                 if (selectedIndex == 0)
-                    DrawAppearance();
+                    DrawGeneral();
                 if (selectedIndex == 1)
+                    DrawAppearance();
+                if (selectedIndex == 2)
                     KeyInputWindow.Render();
             }
             ImGui.EndChild();
@@ -80,26 +82,20 @@ namespace MapStudio.UI
             ImGui.SetCursorPos(pos2);
         }
 
-        private void DrawModFolderSettings()
+        private void DrawGeneral()
         {
-            string modPath = Settings.Program.ModPath ?? "";
-            ImGui.Text("Mod Saving Folder:");
-            ImGui.SameLine();
-            if (ImGui.InputText("##modpath", ref modPath, 256))
+            DrawLanguageSettings();
+
+            if (ImGuiHelper.InputFromFloat(TranslationSource.GetText("FONT_SCALE"), Settings.Program, "FontScale"))
             {
-                Settings.Program.ModPath = modPath;
+                //Set the adjustable global font scale
+                ImGui.GetIO().FontGlobalScale = Settings.Program.FontScale;
                 Settings.Save();
             }
-            ImGui.SameLine();
-            if (ImGui.Button("Browse..."))
-            {
-                string selectedFolder = TinyFileDialog.SelectFolderDialog("Select Mod Saving Folder", "");
-                if (!string.IsNullOrEmpty(selectedFolder))
-                {
-                    Settings.Program.ModPath = selectedFolder;
-                    Settings.Save();
-                }
-            }
+
+            // Plugin entry point
+            foreach (var config in PluginSettingsUI)
+                config.DrawInSettings();
         }
 
         private void DrawLanguageSettings()
@@ -130,6 +126,8 @@ namespace MapStudio.UI
 
                 ImGui.EndCombo();
             }
+            if (ImGui.Button(TranslationSource.GetText("DUMP_UNTRANSLATED")))
+                TranslationSource.Instance.DumpUntranslated();
         }
 
         private void DrawThemeSettings()
@@ -159,13 +157,6 @@ namespace MapStudio.UI
 
         private void DrawAppearance()
         {
-
-            DrawLanguageSettings();
-
-            // Plugin entry point
-            foreach (var config in PluginSettingsUI)
-            config.DrawInSettings();
-            
             bool updateSettings = false;
             var clrFlags = ImGuiColorEditFlags.NoInputs;
 
@@ -186,6 +177,20 @@ namespace MapStudio.UI
                 updateSettings |= ImGui.ColorEdit4(TranslationSource.GetText("COLOR"), ref DrawableGridFloor.GridColor, clrFlags);
                 updateSettings |= ImGui.InputInt(TranslationSource.GetText("GRID_COUNT"), ref DrawableGridFloor.CellAmount);
                 updateSettings |= ImGui.InputFloat(TranslationSource.GetText("GRID_SIZE"), ref DrawableGridFloor.CellSize);
+            }
+            if (ImGui.CollapsingHeader(TranslationSource.GetText("BONES"), ImGuiTreeNodeFlags.DefaultOpen))
+            {
+                updateSettings |= ImGui.Checkbox($"{TranslationSource.GetText("DISPLAY")}##bdsp", ref Runtime.DisplayBones);
+                updateSettings |= ImGui.InputFloat(TranslationSource.GetText("POINT_SIZE"), ref Runtime.BonePointSize);
+            }
+            if (ImGui.CollapsingHeader(TranslationSource.GetText("SHADOWS"), ImGuiTreeNodeFlags.DefaultOpen))
+            {
+                updateSettings |= ImGui.Checkbox($"{TranslationSource.GetText("DISPLAY")}##shdsp", ref ShadowMainRenderer.Display);
+                updateSettings |= ImGui.InputFloat(TranslationSource.GetText("SCALE"), ref ShadowBox.UnitScale);
+                updateSettings |= ImGui.InputFloat(TranslationSource.GetText("DISTANCE"), ref ShadowBox.Distance);
+#if DEBUG
+                updateSettings |= ImGui.Checkbox(TranslationSource.GetText("DEBUG"), ref ShadowMainRenderer.DEBUG_QUAD);
+#endif
             }
             if (updateSettings)
                 UpdateSettings();

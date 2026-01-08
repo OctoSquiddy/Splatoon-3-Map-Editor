@@ -9,12 +9,14 @@ using CafeLibrary;
 using Syroot.BinaryData;
 using Toolbox.Core;
 using Wheatley.io.BYML;
+using SampleMapEditor.Ainb;
 using Toolbox.Core.IO;
 using Octokit;
 using Wheatley.io;
 using static SampleMapEditor.EditorLoader;
 using static System.Net.WebRequestMethods;
 using static SampleMapEditor.MuMapInfo;
+using static Toolbox.Core.GUI.Controls;
 
 namespace SampleMapEditor
 {
@@ -38,6 +40,21 @@ namespace SampleMapEditor
         private string bymlFileName => originalPath != String.Empty ? new FileInfo(originalPath).Name + ".byaml" : "Fld_Custom01_Vss.byaml";
 
         private BymlFileData BymlData;
+        private AINB _ainbFile;
+
+        /// <summary>
+        /// The AINB (AI Node Binary) logic data for this stage.
+        /// </summary>
+        public AINB AINBFile
+        {
+            get => _ainbFile;
+            set => _ainbFile = value;
+        }
+
+        /// <summary>
+        /// Indicates if the AINB file has been modified and needs saving.
+        /// </summary>
+        public bool AINBModified { get; set; } = false;
 
         public StageDefinition()
         {
@@ -72,9 +89,10 @@ namespace SampleMapEditor
         /// <param name="stream">The stream from which the instance will be loaded.</param>
         private void Load(System.IO.Stream stream)
         {
-            // Try to load ColorDataSet file
-            string path = GlobalSettings.GetContentPath($"RSDB\\TeamColorDataSet.Product.{GlobalSettings.S3GameVersion1}{GlobalSettings.S3GameVersion2}{GlobalSettings.S3GameVersion3}.rstbl.byml.zs");
-            TryLoadColorDataSetFile(path);
+            // Try to load ColorDataSet file (auto-detect version)
+            string path = GlobalSettings.FindVersionedFile("RSDB", "TeamColorDataSet.Product.*.rstbl.byml.zs");
+            if (!string.IsNullOrEmpty(path))
+                TryLoadColorDataSetFile(path);
 
             // Account for the ZStandard compression
             BinaryDataReader br = new BinaryDataReader(stream, Encoding.UTF8, false);
@@ -111,6 +129,8 @@ namespace SampleMapEditor
             }
             isSDORMapFile = bancFileCount > 1;
 
+            LoadLogicFile();
+
             if (isSDORMapFile)
             {
                 LoadBancFiles();
@@ -121,7 +141,7 @@ namespace SampleMapEditor
                 MapInfo.HasInfoMap = false; // Temporary, until MapInfo saving works
 
                 LoadBancFile();
-            }
+            }         
         }
 
         public void TryLoadColorDataSetFile(string FilePath)
@@ -860,6 +880,43 @@ namespace SampleMapEditor
             Rails?.Clear();
         }
 
+        private void LoadLogicFile()
+        {
+            ArchiveFileInfo LogicFile = null;
+
+            Console.WriteLine($"[AINB] Searching for Logic file in archive with {arc.files.Count} files...");
+
+            for (int i = 0; i < arc.files.Count; i++)
+            {
+                string[] words = arc.files[i].FileName.Split('/');
+                Console.WriteLine($"[AINB]   File {i}: {arc.files[i].FileName} (first part: {words[0]})");
+
+                if (words[0] == "Logic")
+                {
+                    LogicFile = arc.files[i];
+                    Console.WriteLine($"[AINB] Found Logic file: {arc.files[i].FileName}");
+                }
+            }
+
+            if (LogicFile != null)
+            {
+                Console.WriteLine($"[AINB] Loading AINB from Logic file ({LogicFile.FileData.ToArray().Length} bytes)...");
+                try
+                {
+                    AINBFile = AINB.LoadFromAINBData(LogicFile.FileData.ToArray().ToList());
+                    Console.WriteLine($"[AINB] AINB loaded successfully: {AINBFile?.Info?.Filename ?? "Unknown"}, {AINBFile?.Nodes?.Count ?? 0} nodes");
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"[AINB] Error loading AINB: {ex.Message}");
+                }
+            }
+            else
+            {
+                Console.WriteLine("[AINB] No Logic file found in archive - AINB Editor will not be available");
+            }
+        }
+
         public void Save() { this.Save(originalPath); }
 
         public void Save(string fileName)
@@ -877,6 +934,7 @@ namespace SampleMapEditor
                 SaveColorDataSetFile();
             }
 
+            SaveLogicFileToArchive();
             SaveMapInfoFileToArchive();
 
             if (isSDORMapFile)
@@ -1154,7 +1212,9 @@ namespace SampleMapEditor
                 "GlassCage",
                 "InkRail",
                 "ItemCardKey",
+                "Lft_AbstractBlitzCompatibles",
                 "Lft_AbstractDrawer",
+                "Lft_AbstractRotateTogglePoint",
                 "Lft_KeepOutPlayer",
                 "LocatorAreaSwitch",
                 "RivalAppearPoint",
@@ -1210,8 +1270,15 @@ namespace SampleMapEditor
                 if (skip) continue;
 
                 string Suffix = Actor.AIGroupID;
-                while (Suffix == "" || mAllSuffixes.Contains(Suffix))
+                // Only generate a new suffix if the user didn't explicitly set one.
+                // Multiple actors can share the same AIGroupID for multi-node AINB presets
+                // (e.g., SwitchShock and Lft_AbstractRotateTogglePoint both use "_6bc5")
+                if (Suffix == "")
+                {
                     Suffix = GenAiGroupSuffix();
+                    while (mAllSuffixes.Contains(Suffix))
+                        Suffix = GenAiGroupSuffix();
+                }
 
                 string AiGroupRefName = Actor.Name + "_" + Suffix;
 
@@ -1373,6 +1440,32 @@ namespace SampleMapEditor
             }
 
             return SerializedRails;
+        }
+
+        private void SaveLogicFileToArchive()
+        {
+            // Skip if no AINB data loaded
+            if (AINBFile == null)
+            {
+                Console.WriteLine("[AINB] No AINB data to save - skipping");
+                return;
+            }
+
+            // Determine the file located in the Logic folder
+            for (int i = 0; i < arc.files.Count; i++)
+            {
+                string[] words = arc.files[i].FileName.Split('/');
+
+                if (words[0] == "Logic")
+                {
+                    Console.WriteLine($"[AINB] Saving AINB to {arc.files[i].FileName}...");
+                    List<byte> ainbData = AINB.json2ainb(AINBFile.getJSONData());
+                    arc.files[i].SetData(ainbData.ToArray());
+                    arc.SarcData.Files[arc.files[i].FileName] = ainbData.ToArray();
+                    Console.WriteLine($"[AINB] Saved {ainbData.Count} bytes, {AINBFile.Nodes?.Count ?? 0} nodes");
+                    break;
+                }
+            }
         }
 
         private void SaveMapInfoFileToArchive()

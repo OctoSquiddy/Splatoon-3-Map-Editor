@@ -1,0 +1,18 @@
+Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+    at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at SampleMapEditor.LayoutEditor.RailEditor.RemovePathNodeInkRail(RenderablePath renderer, MuRail rail, Int32 Index) in D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\Plugins\SampleMapEditor\Editors\MapEditor\RailEditor\RailEditor.cs:line 937
+   at SampleMapEditor.LayoutEditor.RailEditor.<>c__DisplayClass39_0.<SetupProperties>b__1(Object <p0>, EventArgs <p1>) in D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\Plugins\SampleMapEditor\Editors\MapEditor\RailEditor\RailEditor.cs:line 282
+   at MapStudio.UI.PropertyWindow.Render(NodeBase node) in D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\MapStudio.UI\src\DockedWindows\Properties\PropertyWindow.cs:line 60
+   at MapStudio.UI.PropertyWindow.Render() in D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\MapStudio.UI\src\DockedWindows\Properties\PropertyWindow.cs:line 32
+   at UIFramework.Window.Show() in D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\MapStudio.UI\src\UIFramework\Window\Window.cs:line 106
+   at UIFramework.DockSpaceWindow.Render() in D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\MapStudio.UI\src\UIFramework\Window\DockSpaceWindow.cs:line 55
+   at MapStudio.UI.Workspace.Render() in D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\MapStudio.UI\src\Workspace\Workspace.cs:line 227
+   at UIFramework.Window.Show() in D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\MapStudio.UI\src\UIFramework\Window\Window.cs:line 106
+   at MapStudio.MainWindow.Render() in D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\Track Studio\src\MainWindow.cs:line 134
+   at UIFramework.MainWindow.OnRenderFrame() in D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\MapStudio.UI\src\UIFramework\MainWindow.cs:line 91
+   at UIFramework.Framework.OnRenderFrame(FrameEventArgs e) in D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\MapStudio.UI\src\UIFramework\Framework.cs:line 78
+   at OpenTK.GameWindow.RaiseRenderFrame(Double elapsed, Double& timestamp)
+   at OpenTK.GameWindow.DispatchRenderFrame()
+   at OpenTK.GameWindow.Run(Double updates_per_second, Double frames_per_second)
+   at OpenTK.GameWindow.Run()
+   at MapStudio.Program.Main(String[] args) in D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\Track Studio\src\Program.cs:line 55

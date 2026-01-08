@@ -14,9 +14,8 @@ namespace SampleMapEditor
         //public static Dictionary<int, ActorDefinition> ActorDatabase = new Dictionary<int, ActorDefinition>();    // use name instead
         public static Dictionary<string, ActorDefinition> ActorDatabase = new Dictionary<string, ActorDefinition>();
 
-        public static string S3GameVersion1 = "a";
-        public static string S3GameVersion2 = "1";
-        public static string S3GameVersion3 = "0";
+        // Auto-detected game version from ActorInfo.Product.XXX.rstbl.byml.zs
+        public static string DetectedGameVersion { get; private set; } = "";
 
         public static string GamePath { get; set; }
 
@@ -60,19 +59,44 @@ namespace SampleMapEditor
             return relativePath;
         }
 
+        /// <summary>
+        /// Finds a versioned file (e.g., SomeFile.Product.*.rstbl.byml.zs) in all game paths.
+        /// </summary>
+        public static string FindVersionedFile(string folder, string filePattern)
+        {
+            string[] searchPaths = { ModOutputPath, IPPath, SDORPath, GamePath };
+
+            foreach (var basePath in searchPaths)
+            {
+                if (string.IsNullOrEmpty(basePath))
+                    continue;
+
+                string searchPath = Path.Combine(basePath, folder);
+                if (!Directory.Exists(searchPath))
+                    continue;
+
+                var files = Directory.GetFiles(searchPath, filePattern);
+                if (files.Length > 0)
+                    return files[0];
+            }
+
+            return null;
+        }
+
         static void LoadActorDb()
         {
             Console.WriteLine("~ Called GlobalSettings.LoadActorDb() ~");
-            // Find the Mush pack and load it
-            string path = GetContentPath($"RSDB/ActorInfo.Product.{S3GameVersion1}{S3GameVersion2}{S3GameVersion3}.rstbl.byml.zs");
-            /*if (!File.Exists(path))
-                return;*/
 
-            if (!File.Exists(path))
+            // Auto-detect ActorInfo.Product.XXX.rstbl.byml.zs file
+            string path = FindActorDbFile();
+
+            if (string.IsNullOrEmpty(path) || !File.Exists(path))
             {
-                Console.WriteLine($"File \"{path}\" could not be found!");
+                Console.WriteLine($"ActorInfo.Product.*.rstbl.byml.zs could not be found in any game path!");
                 return;
             }
+
+            Console.WriteLine($"[ActorDB] Auto-detected: {path}");
 
             var actorDb = new ActorDefinitionDb(path);
             foreach (var actor in actorDb.Definitions)
@@ -80,6 +104,42 @@ namespace SampleMapEditor
                 //Console.WriteLine($"~ Adding Actor: {actor.Name}");
                 ActorDatabase.Add(actor.Name, actor);
             }
+        }
+
+        /// <summary>
+        /// Searches for ActorInfo.Product.*.rstbl.byml.zs in all game paths and returns the first found.
+        /// </summary>
+        static string FindActorDbFile()
+        {
+            string[] searchPaths = { ModOutputPath, IPPath, SDORPath, GamePath };
+            string pattern = "ActorInfo.Product.*.rstbl.byml.zs";
+
+            foreach (var basePath in searchPaths)
+            {
+                if (string.IsNullOrEmpty(basePath))
+                    continue;
+
+                string rsdbPath = Path.Combine(basePath, "RSDB");
+                if (!Directory.Exists(rsdbPath))
+                    continue;
+
+                var files = Directory.GetFiles(rsdbPath, pattern);
+                if (files.Length > 0)
+                {
+                    // Extract version from filename for other uses
+                    string fileName = Path.GetFileName(files[0]);
+                    // ActorInfo.Product.a10.rstbl.byml.zs -> a10 (supports alphanumeric versions)
+                    var match = System.Text.RegularExpressions.Regex.Match(fileName, @"ActorInfo\.Product\.([a-zA-Z0-9]+)\.rstbl\.byml\.zs");
+                    if (match.Success)
+                    {
+                        DetectedGameVersion = match.Groups[1].Value;
+                        Console.WriteLine($"[ActorDB] Detected game version: {DetectedGameVersion}");
+                    }
+                    return files[0];
+                }
+            }
+
+            return null;
         }
 
 

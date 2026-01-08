@@ -28,3 +28,18 @@ C:\Users\zach\Documents\GitHub\Splatoon-3-Map-Editor\Updater\obj\Release\net8.0\
 C:\Users\zach\Documents\GitHub\Splatoon-3-Map-Editor\Updater\obj\Release\net8.0\Updater.pdb
 C:\Users\zach\Documents\GitHub\Splatoon-3-Map-Editor\Updater\obj\Release\net8.0\Updater.genruntimeconfig.cache
 C:\Users\zach\Documents\GitHub\Splatoon-3-Map-Editor\Updater\obj\Release\net8.0\ref\Updater.dll
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\Splatoon-3-Map-Editor\Track Studio\bin\Release\net8.0\Updater.exe
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\Splatoon-3-Map-Editor\Track Studio\bin\Release\net8.0\Updater.deps.json
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\Splatoon-3-Map-Editor\Track Studio\bin\Release\net8.0\Updater.runtimeconfig.json
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\Splatoon-3-Map-Editor\Track Studio\bin\Release\net8.0\Updater.dll
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\Splatoon-3-Map-Editor\Track Studio\bin\Release\net8.0\Updater.pdb
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\Splatoon-3-Map-Editor\Updater\obj\Release\net8.0\Updater.GeneratedMSBuildEditorConfig.editorconfig
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\Splatoon-3-Map-Editor\Updater\obj\Release\net8.0\Updater.AssemblyInfoInputs.cache
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\Splatoon-3-Map-Editor\Updater\obj\Release\net8.0\Updater.AssemblyInfo.cs
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\Splatoon-3-Map-Editor\Updater\obj\Release\net8.0\Updater.csproj.CoreCompileInputs.cache
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\Splatoon-3-Map-Editor\Updater\obj\Release\net8.0\Updater.sourcelink.json
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\Splatoon-3-Map-Editor\Updater\obj\Release\net8.0\Updater.dll
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\Splatoon-3-Map-Editor\Updater\obj\Release\net8.0\refint\Updater.dll
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\Splatoon-3-Map-Editor\Updater\obj\Release\net8.0\Updater.pdb
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\Splatoon-3-Map-Editor\Updater\obj\Release\net8.0\Updater.genruntimeconfig.cache
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\Splatoon-3-Map-Editor\Updater\obj\Release\net8.0\ref\Updater.dll

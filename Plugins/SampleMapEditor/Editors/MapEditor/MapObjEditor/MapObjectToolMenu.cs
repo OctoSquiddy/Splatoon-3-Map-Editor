@@ -143,7 +143,19 @@ namespace SampleMapEditor.LayoutEditor
                     }
                 }
 
-                
+                if (ImGui.Checkbox("Show Linked Actors in 3D View", ref Editor.ShowLinkedActors))
+                {
+                    // Set the global flag to always show all links when checkbox is active
+                    ObjectLinkDrawer.AlwaysShowAllLinks = Editor.ShowLinkedActors;
+
+                    for (int e = 0; e < Editors.Count; e++)
+                    {
+                        Editors[e].ShowLinkedActors = Editor.ShowLinkedActors;
+                        Editors[e].RefreshAllObjectLinks();
+                    }
+                }
+
+
 
                 if (ImGui.Checkbox("Display Sub Models", ref Editor.ObjectSubModelDisplay))
                 {

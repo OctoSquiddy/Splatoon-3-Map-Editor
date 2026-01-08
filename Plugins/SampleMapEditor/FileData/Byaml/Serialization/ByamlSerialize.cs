@@ -7977,14 +7977,6 @@ namespace SampleMapEditor
                     type = typeof(SpongeTall);
                     break;
 
-                case "SpongeTall_3p5_VS":
-                    type = typeof(SpongeTall_3p5_VS);
-                    break;
-
-                case "SpongeTall_4p0_VS":
-                    type = typeof(SpongeTall_4p0_VS);
-                    break;
-
                 case "SpongeTall_4p5_VS":
                     type = typeof(SpongeTall_4p5_VS);
                     break;

@@ -354,6 +354,8 @@ namespace SampleMapEditor
 
 
             //Load a custom map object category for the asset handler.
+            Workspace.AddAssetCategory(new AssetViewPresets()); // Presets first (top of list)
+            Workspace.AddAssetCategory(new AssetViewAINBObjects()); // AINB Objects category
             Workspace.AddAssetCategory(new AssetViewMapObject());
             //Workspace.AddAssetCategory(new AssetViewMapObjectVR());
 
@@ -377,6 +379,12 @@ namespace SampleMapEditor
             Editors.Add(new ObjectEditor(this, stage.ActorsFile1));
             Editors.Add(new RailEditor(this, colorSettings.RailColor0, stage.RailsFile0, (ObjectEditor)Editors[0]));
             Editors.Add(new RailEditor(this, colorSettings.RailColor1, stage.RailsFile1, (ObjectEditor)Editors[1]));
+
+            // Add AINB editor if AINB data is available
+            if (stage.AINBFile != null)
+            {
+                Editors.Add(new AINBLayoutEditor(this, stage.AINBFile));
+            }
 
             foreach (var editor in Editors)
                 editor.MapEditor = this;
@@ -436,8 +444,19 @@ namespace SampleMapEditor
             file1Node.AddChild(Editors[1].Root);
             file1Node.AddChild(Editors[3].Root);
 
+            // Add AINB editor to Additional Data if available
+            var ainbEditor = Editors.FirstOrDefault(e => e is AINBLayoutEditor);
+            if (ainbEditor != null)
+            {
+                additionalData.AddChild(ainbEditor.Root);
+            }
+
             Root.AddChild(file0Node);
             Root.AddChild(file1Node);
+            if (ainbEditor != null)
+            {
+                Root.AddChild(additionalData);
+            }
 
             // ~~~
 
@@ -482,6 +501,12 @@ namespace SampleMapEditor
             Editors.Add(new MapInfoEditor(this, stage.MapInfo));
             Editors.Add(new TeamColorSetEditor(this, stage.TeamColorDataSet));
 
+            // Add AINB editor if AINB data is available
+            if (stage.AINBFile != null)
+            {
+                Editors.Add(new AINBLayoutEditor(this, stage.AINBFile));
+            }
+
             foreach (var editor in Editors)
                 editor.MapEditor = this;
 
@@ -498,13 +523,17 @@ namespace SampleMapEditor
                 Editors[0].IsActive = true;
             }
 
+            // Setze HasInfoMap standardmäßig auf true
+            stage.MapInfo.HasInfoMap = true;
+
             NodeBase pathFolder = new NodeBase("Paths");
             NodeBase objFolder = new NodeBase("Objects");
             NodeBase additionalData = new NodeBase("Additional Data");
 
             additionalData.TagUI.UIDrawer += delegate
             {
-                bool refValue = false;
+                // Initialisiere refValue mit dem aktuellen Wert von HasInfoMap
+                bool refValue = stage.MapInfo.HasInfoMap;
 
                 int numColumns = 2;
                 float colwidth = 0.0f;
@@ -519,7 +548,7 @@ namespace SampleMapEditor
                 colwidth = ImGui.GetColumnWidth();
                 ImGui.PushItemWidth(colwidth - 6);
 
-                refValue = stage.MapInfo.HasInfoMap;
+                // Zeichne die Checkbox, die standardmäßig aktiviert ist
                 if (ImGui.Checkbox("###MapInfoEditorCBox", ref refValue))
                 {
                     stage.MapInfo.HasInfoMap = refValue;
@@ -538,7 +567,7 @@ namespace SampleMapEditor
             {
                 if (editor is ObjectEditor) // || editor is SoundObjEditor || editor is RouteChangeEditor)
                     objFolder.AddChild(editor.Root);
-                else if (editor is RailEditor)
+                else if (editor is RailEditor || editor is AINBLayoutEditor)
                     pathFolder.AddChild(editor.Root);
                 else
                     additionalData.AddChild(editor.Root);
@@ -568,8 +597,7 @@ namespace SampleMapEditor
                 };
             }
 
-
-            //Set the active editor as the map object one.
+            // Set the active editor as the map object one.
             ActiveEditor = Editors.FirstOrDefault();
             UpdateLayoutEditor(ActiveEditor);
 
@@ -580,6 +608,7 @@ namespace SampleMapEditor
                    ReloadEditorMode();
                }));
         }
+
 
         public override void DrawViewportMenuBar()
         {
@@ -850,6 +879,15 @@ namespace SampleMapEditor
 
         public override void AssetViewportDrop(AssetItem item, Vector2 screenCoords)
         {
+            // Handle preset drops
+            var preset = item as PresetAssetItem;
+            if (preset != null)
+            {
+                ((ObjectEditor)Editors[0]).OnPresetViewportDrop(preset, screenCoords);
+                return;
+            }
+
+            // Handle regular map object drops
             var asset = item as MapObjectAsset;
             if (asset == null)
                 return;

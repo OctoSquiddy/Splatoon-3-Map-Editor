@@ -108,14 +108,22 @@ namespace SampleMapEditor
                 }
                 else
                 {
-                    TransformableObject o = new TransformableObject(objFolder);
-                    //CustomBoundingBoxRender o = new CustomBoundingBoxRender(objFolder);
+                    // Use AreaWireframeRender for Area/Locator/KeepOut objects (wireframe with correct scale)
+                    string objName = mapObj["UnitConfigName"]?.ToString() ?? "";
+                    EditableObject o;
+                    if (objName.Contains("Area") || objName.Contains("Locator") || objName.Contains("KeepOut"))
+                    {
+                        o = new AreaWireframeRender(objFolder);
+                    }
+                    else
+                    {
+                        o = new TransformableObject(objFolder);
+                    }
                     o.UINode.Header = mapObj["UnitConfigName"];
                     o.UINode.Icon = IconManager.MESH_ICON.ToString();
                     o.Transform.Position = EditorLoader.GetObjPos(mapObj);
                     o.Transform.Scale = EditorLoader.GetObjScale(mapObj);
                     o.Transform.RotationEulerDegrees = EditorLoader.GetObjRotation(mapObj);
-                    //o.Color = new Vector4(0.5F, 0.5F, 0.5F, 0.5F);
                     o.Transform.UpdateMatrix(true);
                     loader.AddRender(o);
 

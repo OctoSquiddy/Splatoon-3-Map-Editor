@@ -1,53 +1,18 @@
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor\Toolbox.Core\bin\Release\netstandard2.1\Toolbox.Core.deps.json
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor\Toolbox.Core\bin\Release\netstandard2.1\Toolbox.Core.dll
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor\Toolbox.Core\bin\Release\netstandard2.1\Toolbox.Core.pdb
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor\Toolbox.Core\bin\Release\netstandard2.1\IONET.dll
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor\Toolbox.Core\bin\Release\netstandard2.1\OpenTK.dll
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor\Toolbox.Core\bin\Release\netstandard2.1\Syroot.BinaryData.dll
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor\Toolbox.Core\bin\Release\netstandard2.1\Syroot.Maths.dll
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor\Toolbox.Core\obj\Release\netstandard2.1\Toolbox.Core.csproj.AssemblyReference.cache
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor\Toolbox.Core\obj\Release\netstandard2.1\Toolbox.Core.Properties.Resources.resources
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor\Toolbox.Core\obj\Release\netstandard2.1\Toolbox.Core.csproj.GenerateResource.cache
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor\Toolbox.Core\obj\Release\netstandard2.1\Toolbox.Core.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor\Toolbox.Core\obj\Release\netstandard2.1\Toolbox.Core.AssemblyInfoInputs.cache
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor\Toolbox.Core\obj\Release\netstandard2.1\Toolbox.Core.AssemblyInfo.cs
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor\Toolbox.Core\obj\Release\netstandard2.1\Toolbox.Core.csproj.CoreCompileInputs.cache
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor\Toolbox.Core\obj\Release\netstandard2.1\Toolbox..7F4D7A2D.Up2Date
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor\Toolbox.Core\obj\Release\netstandard2.1\Toolbox.Core.dll
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor\Toolbox.Core\obj\Release\netstandard2.1\Toolbox.Core.pdb
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Toolbox.Core\bin\Release\netstandard2.1\Toolbox.Core.deps.json
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Toolbox.Core\bin\Release\netstandard2.1\Toolbox.Core.dll
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Toolbox.Core\bin\Release\netstandard2.1\Toolbox.Core.pdb
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Toolbox.Core\bin\Release\netstandard2.1\IONET.dll
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Toolbox.Core\bin\Release\netstandard2.1\Syroot.BinaryData.dll
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Toolbox.Core\bin\Release\netstandard2.1\Syroot.Maths.dll
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Toolbox.Core\obj\Release\netstandard2.1\Toolbox.Core.csproj.AssemblyReference.cache
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Toolbox.Core\obj\Release\netstandard2.1\Toolbox.Core.Properties.Resources.resources
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Toolbox.Core\obj\Release\netstandard2.1\Toolbox.Core.csproj.GenerateResource.cache
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Toolbox.Core\obj\Release\netstandard2.1\Toolbox.Core.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Toolbox.Core\obj\Release\netstandard2.1\Toolbox.Core.AssemblyInfoInputs.cache
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Toolbox.Core\obj\Release\netstandard2.1\Toolbox.Core.AssemblyInfo.cs
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Toolbox.Core\obj\Release\netstandard2.1\Toolbox.Core.csproj.CoreCompileInputs.cache
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Toolbox.Core\obj\Release\netstandard2.1\Toolbox.Core.sourcelink.json
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Toolbox.Core\obj\Release\netstandard2.1\Toolbox..7F4D7A2D.Up2Date
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Toolbox.Core\obj\Release\netstandard2.1\Toolbox.Core.dll
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Toolbox.Core\obj\Release\netstandard2.1\Toolbox.Core.pdb
-C:\Users\zach\Desktop\MapEditor-Fork\MapEditor-Updated\source\Toolbox.Core\bin\Release\netstandard2.1\OpenTK.dll
-C:\Users\zach\Documents\GitHub\Splatoon-3-Map-Editor\Toolbox.Core\bin\Release\netstandard2.1\Toolbox.Core.deps.json
-C:\Users\zach\Documents\GitHub\Splatoon-3-Map-Editor\Toolbox.Core\bin\Release\netstandard2.1\Toolbox.Core.dll
-C:\Users\zach\Documents\GitHub\Splatoon-3-Map-Editor\Toolbox.Core\bin\Release\netstandard2.1\Toolbox.Core.pdb
-C:\Users\zach\Documents\GitHub\Splatoon-3-Map-Editor\Toolbox.Core\bin\Release\netstandard2.1\IONET.dll
-C:\Users\zach\Documents\GitHub\Splatoon-3-Map-Editor\Toolbox.Core\bin\Release\netstandard2.1\OpenTK.dll
-C:\Users\zach\Documents\GitHub\Splatoon-3-Map-Editor\Toolbox.Core\bin\Release\netstandard2.1\Syroot.BinaryData.dll
-C:\Users\zach\Documents\GitHub\Splatoon-3-Map-Editor\Toolbox.Core\bin\Release\netstandard2.1\Syroot.Maths.dll
-C:\Users\zach\Documents\GitHub\Splatoon-3-Map-Editor\Toolbox.Core\obj\Release\netstandard2.1\Toolbox.Core.csproj.AssemblyReference.cache
-C:\Users\zach\Documents\GitHub\Splatoon-3-Map-Editor\Toolbox.Core\obj\Release\netstandard2.1\Toolbox.Core.Properties.Resources.resources
-C:\Users\zach\Documents\GitHub\Splatoon-3-Map-Editor\Toolbox.Core\obj\Release\netstandard2.1\Toolbox.Core.csproj.GenerateResource.cache
-C:\Users\zach\Documents\GitHub\Splatoon-3-Map-Editor\Toolbox.Core\obj\Release\netstandard2.1\Toolbox.Core.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\zach\Documents\GitHub\Splatoon-3-Map-Editor\Toolbox.Core\obj\Release\netstandard2.1\Toolbox.Core.AssemblyInfoInputs.cache
-C:\Users\zach\Documents\GitHub\Splatoon-3-Map-Editor\Toolbox.Core\obj\Release\netstandard2.1\Toolbox.Core.AssemblyInfo.cs
-C:\Users\zach\Documents\GitHub\Splatoon-3-Map-Editor\Toolbox.Core\obj\Release\netstandard2.1\Toolbox.Core.csproj.CoreCompileInputs.cache
-C:\Users\zach\Documents\GitHub\Splatoon-3-Map-Editor\Toolbox.Core\obj\Release\netstandard2.1\Toolbox.Core.sourcelink.json
-C:\Users\zach\Documents\GitHub\Splatoon-3-Map-Editor\Toolbox.Core\obj\Release\netstandard2.1\Toolbox..7F4D7A2D.Up2Date
-C:\Users\zach\Documents\GitHub\Splatoon-3-Map-Editor\Toolbox.Core\obj\Release\netstandard2.1\Toolbox.Core.dll
-C:\Users\zach\Documents\GitHub\Splatoon-3-Map-Editor\Toolbox.Core\obj\Release\netstandard2.1\Toolbox.Core.pdb
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\Toolbox.Core\bin\Release\netstandard2.1\Toolbox.Core.deps.json
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\Toolbox.Core\bin\Release\netstandard2.1\Toolbox.Core.dll
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\Toolbox.Core\bin\Release\netstandard2.1\Toolbox.Core.pdb
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\Toolbox.Core\bin\Release\netstandard2.1\IONET.dll
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\Toolbox.Core\bin\Release\netstandard2.1\OpenTK.dll
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\Toolbox.Core\bin\Release\netstandard2.1\Syroot.BinaryData.dll
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\Toolbox.Core\bin\Release\netstandard2.1\Syroot.Maths.dll
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\Toolbox.Core\obj\Release\netstandard2.1\Toolbox.Core.csproj.AssemblyReference.cache
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\Toolbox.Core\obj\Release\netstandard2.1\Toolbox.Core.Properties.Resources.resources
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\Toolbox.Core\obj\Release\netstandard2.1\Toolbox.Core.csproj.GenerateResource.cache
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\Toolbox.Core\obj\Release\netstandard2.1\Toolbox.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\Toolbox.Core\obj\Release\netstandard2.1\Toolbox.Core.AssemblyInfoInputs.cache
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\Toolbox.Core\obj\Release\netstandard2.1\Toolbox.Core.AssemblyInfo.cs
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\Toolbox.Core\obj\Release\netstandard2.1\Toolbox.Core.csproj.CoreCompileInputs.cache
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\Toolbox.Core\obj\Release\netstandard2.1\Toolbox.Core.sourcelink.json
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\Toolbox.Core\obj\Release\netstandard2.1\Toolbox..7F4D7A2D.Up2Date
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\Toolbox.Core\obj\Release\netstandard2.1\Toolbox.Core.dll
+D:\[OneDrive]\OneDrive\[Hacking]\[Splatoon 3]\[[Projects]]\[[[[[[[OctoToolbox]]]]]]]]\OctoToolbox\EditorAINB\MapStudio\Toolbox.Core\obj\Release\netstandard2.1\Toolbox.Core.pdb
